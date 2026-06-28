@@ -6,6 +6,9 @@ import ai.voqal.sdk.VoqalHome
 import ai.voqal.sdk.VoqalSDK
 import ai.voqal.sdk.VoqalTheme
 import android.app.Activity
+import android.graphics.Bitmap
+import android.graphics.BitmapFactory
+import android.util.Base64
 import android.util.Log
 import androidx.activity.ComponentActivity
 import io.flutter.embedding.engine.plugins.FlutterPlugin
@@ -105,7 +108,25 @@ class VoqalFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
             home = home(config["home"] as? Map<*, *>),
             hapticsEnabled = config["hapticsEnabled"] as? Boolean ?: true,
             conversationTimeoutSeconds = (config["conversationTimeoutSeconds"] as? Number)?.toLong() ?: 7200L,
+            presentationStyle = when (config["presentationStyle"] as? String) {
+                "fullScreen" -> VoqalConfiguration.PresentationStyle.FULL_SCREEN
+                else -> VoqalConfiguration.PresentationStyle.SHEET
+            },
+            headerTitle = config["headerTitle"] as? String,
+            headerIcon = decodeIcon(config["headerIconPngBase64"] as? String),
         )
+    }
+
+    /** Decodes a base64 PNG (the header logo, sent from Dart) to a Bitmap. */
+    private fun decodeIcon(base64: String?): Bitmap? {
+        if (base64.isNullOrEmpty()) return null
+        return try {
+            val bytes = Base64.decode(base64, Base64.DEFAULT)
+            BitmapFactory.decodeByteArray(bytes, 0, bytes.size)
+        } catch (e: IllegalArgumentException) {
+            Log.w("VoqalFlutter", "Ignoring malformed header icon", e)
+            null
+        }
     }
 
     private fun theme(map: Map<*, *>?): VoqalTheme {

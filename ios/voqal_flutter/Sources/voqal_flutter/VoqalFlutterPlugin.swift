@@ -115,6 +115,19 @@ public class VoqalFlutterPlugin: NSObject, FlutterPlugin {
     configuration.theme = theme(from: config["theme"] as? [String: Any])
     configuration.home = home(from: config["home"] as? [String: Any])
     configuration.observability = observability(from: config["observability"] as? [String: Any])
+    switch config["presentationStyle"] as? String {
+    case "fullScreen": configuration.presentationStyle = .fullScreen
+    default: configuration.presentationStyle = .sheet
+    }
+    if let title = config["headerTitle"] as? String {
+      configuration.strings.chatHeaderTitle = title
+    }
+    if let base64 = config["headerIconPngBase64"] as? String,
+      let data = Data(base64Encoded: base64),
+      let image = UIImage(data: data)
+    {
+      configuration.icons.chatHeaderIcon = image
+    }
     return configuration
   }
 

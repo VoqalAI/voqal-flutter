@@ -1,7 +1,9 @@
 import 'src/voqal_config.dart';
+import 'src/voqal_image.dart';
 import 'voqal_flutter_platform_interface.dart';
 
 export 'src/voqal_config.dart';
+export 'src/voqal_image.dart';
 
 /// Entry point for the Voqal voice assistant.
 ///
@@ -28,7 +30,17 @@ class Voqal {
   VoqalFlutterPlatform get _platform => VoqalFlutterPlatform.instance;
 
   /// Configures the SDK. Call once at app launch before [prewarm]/[present].
-  Future<void> setup(VoqalConfig config) => _platform.setup(config.toMap());
+  ///
+  /// A [VoqalConfig.headerIcon] is resolved to bytes here (it may read from the
+  /// asset bundle) and sent alongside the config map as base64.
+  Future<void> setup(VoqalConfig config) async {
+    final Map<String, Object?> map = config.toMap();
+    final VoqalImage? icon = config.headerIcon;
+    if (icon != null) {
+      map['headerIconPngBase64'] = await icon.resolveBase64();
+    }
+    await _platform.setup(map);
+  }
 
   /// Pushes the live auth [token] (and optional [metadataJson], a JSON string
   /// such as `{"country_code":"EGY","user_id":"123"}`) into the native cache.

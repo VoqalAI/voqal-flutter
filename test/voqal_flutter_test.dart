@@ -69,4 +69,32 @@ void main() {
     expect(map.containsKey('token'), isFalse);
     expect(map.toString().contains('token'), isFalse);
   });
+
+  test('presentationStyle defaults to sheet and serializes the wire value', () {
+    expect(
+      const VoqalConfig(apiKey: 'pk').toMap()['presentationStyle'],
+      'sheet',
+    );
+    expect(
+      const VoqalConfig(
+        apiKey: 'pk',
+        presentationStyle: VoqalPresentationStyle.fullScreen,
+      ).toMap()['presentationStyle'],
+      'fullScreen',
+    );
+  });
+
+  test('headerTitle is omitted when null and serialized when set', () {
+    expect(
+      const VoqalConfig(apiKey: 'pk').toMap().containsKey('headerTitle'),
+      isFalse,
+    );
+    expect(
+      const VoqalConfig(
+        apiKey: 'pk',
+        headerTitle: 'Rabbit',
+      ).toMap()['headerTitle'],
+      'Rabbit',
+    );
+  });
 }

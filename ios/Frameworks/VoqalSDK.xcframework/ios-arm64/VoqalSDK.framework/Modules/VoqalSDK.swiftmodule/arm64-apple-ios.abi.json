@@ -4101,13 +4101,228 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "VoqalPresentationStyle",
+        "printedName": "VoqalPresentationStyle",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sheet",
+            "printedName": "sheet",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VoqalSDK.VoqalPresentationStyle.Type) -> VoqalSDK.VoqalPresentationStyle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VoqalPresentationStyle",
+                    "printedName": "VoqalSDK.VoqalPresentationStyle",
+                    "usr": "s:8VoqalSDK0A17PresentationStyleO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VoqalSDK.VoqalPresentationStyle.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VoqalPresentationStyle",
+                        "printedName": "VoqalSDK.VoqalPresentationStyle",
+                        "usr": "s:8VoqalSDK0A17PresentationStyleO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8VoqalSDK0A17PresentationStyleO5sheetyA2CmF",
+            "mangledName": "$s8VoqalSDK0A17PresentationStyleO5sheetyA2CmF",
+            "moduleName": "VoqalSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "fullScreen",
+            "printedName": "fullScreen",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(VoqalSDK.VoqalPresentationStyle.Type) -> VoqalSDK.VoqalPresentationStyle",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VoqalPresentationStyle",
+                    "printedName": "VoqalSDK.VoqalPresentationStyle",
+                    "usr": "s:8VoqalSDK0A17PresentationStyleO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "VoqalSDK.VoqalPresentationStyle.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VoqalPresentationStyle",
+                        "printedName": "VoqalSDK.VoqalPresentationStyle",
+                        "usr": "s:8VoqalSDK0A17PresentationStyleO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8VoqalSDK0A17PresentationStyleO10fullScreenyA2CmF",
+            "mangledName": "$s8VoqalSDK0A17PresentationStyleO10fullScreenyA2CmF",
+            "moduleName": "VoqalSDK"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VoqalPresentationStyle",
+                "printedName": "VoqalSDK.VoqalPresentationStyle",
+                "usr": "s:8VoqalSDK0A17PresentationStyleO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VoqalPresentationStyle",
+                "printedName": "VoqalSDK.VoqalPresentationStyle",
+                "usr": "s:8VoqalSDK0A17PresentationStyleO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8VoqalSDK0A17PresentationStyleO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s8VoqalSDK0A17PresentationStyleO2eeoiySbAC_ACtFZ",
+            "moduleName": "VoqalSDK",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8VoqalSDK0A17PresentationStyleO9hashValueSivp",
+            "mangledName": "$s8VoqalSDK0A17PresentationStyleO9hashValueSivp",
+            "moduleName": "VoqalSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8VoqalSDK0A17PresentationStyleO9hashValueSivg",
+                "mangledName": "$s8VoqalSDK0A17PresentationStyleO9hashValueSivg",
+                "moduleName": "VoqalSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8VoqalSDK0A17PresentationStyleO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s8VoqalSDK0A17PresentationStyleO4hash4intoys6HasherVz_tF",
+            "moduleName": "VoqalSDK",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8VoqalSDK0A17PresentationStyleO",
+        "mangledName": "$s8VoqalSDK0A17PresentationStyleO",
+        "moduleName": "VoqalSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "VoqalSDKConfiguration",
         "printedName": "VoqalSDKConfiguration",
         "children": [
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(requestId:agentURL:theme:stringsConfiguration:colorsConfiguration:iconsConfiguration:fontConfiguration:home:recordingInteractionMode:)",
+            "printedName": "init(requestId:agentURL:theme:stringsConfiguration:colorsConfiguration:iconsConfiguration:fontConfiguration:home:recordingInteractionMode:presentationStyle:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4184,11 +4399,18 @@
                 "printedName": "VoqalSDK.RecordingInteractionMode",
                 "hasDefaultArg": true,
                 "usr": "s:8VoqalSDK24RecordingInteractionModeV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "VoqalPresentationStyle",
+                "printedName": "VoqalSDK.VoqalPresentationStyle",
+                "hasDefaultArg": true,
+                "usr": "s:8VoqalSDK0A17PresentationStyleO"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8VoqalSDK0A16SDKConfigurationV9requestId8agentURL5theme20stringsConfiguration06colorsJ005iconsJ004fontJ04home24recordingInteractionModeACSS_10Foundation0G0VSgAA0A5ThemeVAA0a10SDKStringsJ0VAA0a8SDKColorJ0VAA0a7SDKIconJ0VAA0a7SDKFontJ0VAA0A4HomeVAA09RecordingpQ0Vtcfc",
-            "mangledName": "$s8VoqalSDK0A16SDKConfigurationV9requestId8agentURL5theme20stringsConfiguration06colorsJ005iconsJ004fontJ04home24recordingInteractionModeACSS_10Foundation0G0VSgAA0A5ThemeVAA0a10SDKStringsJ0VAA0a8SDKColorJ0VAA0a7SDKIconJ0VAA0a7SDKFontJ0VAA0A4HomeVAA09RecordingpQ0Vtcfc",
+            "usr": "s:8VoqalSDK0A16SDKConfigurationV9requestId8agentURL5theme20stringsConfiguration06colorsJ005iconsJ004fontJ04home24recordingInteractionMode17presentationStyleACSS_10Foundation0G0VSgAA0A5ThemeVAA0a10SDKStringsJ0VAA0a8SDKColorJ0VAA0a7SDKIconJ0VAA0a7SDKFontJ0VAA0A4HomeVAA09RecordingpQ0VAA0a12PresentationS0Otcfc",
+            "mangledName": "$s8VoqalSDK0A16SDKConfigurationV9requestId8agentURL5theme20stringsConfiguration06colorsJ005iconsJ004fontJ04home24recordingInteractionMode17presentationStyleACSS_10Foundation0G0VSgAA0A5ThemeVAA0a10SDKStringsJ0VAA0a8SDKColorJ0VAA0a7SDKIconJ0VAA0a7SDKFontJ0VAA0A4HomeVAA09RecordingpQ0VAA0a12PresentationS0Otcfc",
             "moduleName": "VoqalSDK",
             "declAttributes": [
               "AccessControl"
@@ -5139,6 +5361,93 @@
                 "declKind": "Accessor",
                 "usr": "s:8VoqalSDK0A16SDKConfigurationV24recordingInteractionModeAA09RecordingeF0VvM",
                 "mangledName": "$s8VoqalSDK0A16SDKConfigurationV24recordingInteractionModeAA09RecordingeF0VvM",
+                "moduleName": "VoqalSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "presentationStyle",
+            "printedName": "presentationStyle",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VoqalPresentationStyle",
+                "printedName": "VoqalSDK.VoqalPresentationStyle",
+                "usr": "s:8VoqalSDK0A17PresentationStyleO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8VoqalSDK0A16SDKConfigurationV17presentationStyleAA0a12PresentationE0Ovp",
+            "mangledName": "$s8VoqalSDK0A16SDKConfigurationV17presentationStyleAA0a12PresentationE0Ovp",
+            "moduleName": "VoqalSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VoqalPresentationStyle",
+                    "printedName": "VoqalSDK.VoqalPresentationStyle",
+                    "usr": "s:8VoqalSDK0A17PresentationStyleO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8VoqalSDK0A16SDKConfigurationV17presentationStyleAA0a12PresentationE0Ovg",
+                "mangledName": "$s8VoqalSDK0A16SDKConfigurationV17presentationStyleAA0a12PresentationE0Ovg",
+                "moduleName": "VoqalSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VoqalPresentationStyle",
+                    "printedName": "VoqalSDK.VoqalPresentationStyle",
+                    "usr": "s:8VoqalSDK0A17PresentationStyleO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8VoqalSDK0A16SDKConfigurationV17presentationStyleAA0a12PresentationE0Ovs",
+                "mangledName": "$s8VoqalSDK0A16SDKConfigurationV17presentationStyleAA0a12PresentationE0Ovs",
+                "moduleName": "VoqalSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8VoqalSDK0A16SDKConfigurationV17presentationStyleAA0a12PresentationE0OvM",
+                "mangledName": "$s8VoqalSDK0A16SDKConfigurationV17presentationStyleAA0a12PresentationE0OvM",
                 "moduleName": "VoqalSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -26499,7 +26808,7 @@
       "kind": "StringLiteral",
       "offset": 147,
       "length": 7,
-      "value": "\"1.2.5\""
+      "value": "\"1.2.7\""
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Constants.swift",
@@ -27050,98 +27359,98 @@
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 2487,
+      "offset": 3111,
       "length": 4,
       "value": "7200"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 2685,
+      "offset": 3309,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "Array",
-      "offset": 3295,
+      "offset": 3919,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 3323,
+      "offset": 3947,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 3907,
+      "offset": 4531,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 3994,
+      "offset": 4618,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 4063,
+      "offset": 4687,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 4151,
+      "offset": 4775,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 4222,
+      "offset": 4846,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 4503,
+      "offset": 5127,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 4588,
+      "offset": 5212,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 4655,
+      "offset": 5279,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 4741,
+      "offset": 5365,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 4810,
+      "offset": 5434,
       "length": 2,
       "value": "16"
     },

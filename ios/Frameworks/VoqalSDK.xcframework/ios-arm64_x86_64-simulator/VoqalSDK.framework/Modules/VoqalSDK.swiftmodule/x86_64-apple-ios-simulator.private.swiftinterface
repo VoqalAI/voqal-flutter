@@ -126,8 +126,17 @@ public enum NetworkError : Foundation.LocalizedError {
     get
   }
 }
+public enum VoqalPresentationStyle {
+  case sheet
+  case fullScreen
+  public static func == (a: VoqalSDK.VoqalPresentationStyle, b: VoqalSDK.VoqalPresentationStyle) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public struct VoqalSDKConfiguration {
-  public init(requestId: Swift.String, agentURL: Foundation.URL? = nil, theme: VoqalSDK.VoqalTheme = .init(), stringsConfiguration: VoqalSDK.VoqalSDKStringsConfiguration = .init(), colorsConfiguration: VoqalSDK.VoqalSDKColorConfiguration = .init(), iconsConfiguration: VoqalSDK.VoqalSDKIconConfiguration = .init(), fontConfiguration: VoqalSDK.VoqalSDKFontConfiguration = .init(), home: VoqalSDK.VoqalHome = .init(), recordingInteractionMode: VoqalSDK.RecordingInteractionMode = .tapToToggle)
+  public init(requestId: Swift.String, agentURL: Foundation.URL? = nil, theme: VoqalSDK.VoqalTheme = .init(), stringsConfiguration: VoqalSDK.VoqalSDKStringsConfiguration = .init(), colorsConfiguration: VoqalSDK.VoqalSDKColorConfiguration = .init(), iconsConfiguration: VoqalSDK.VoqalSDKIconConfiguration = .init(), fontConfiguration: VoqalSDK.VoqalSDKFontConfiguration = .init(), home: VoqalSDK.VoqalHome = .init(), recordingInteractionMode: VoqalSDK.RecordingInteractionMode = .tapToToggle, presentationStyle: VoqalSDK.VoqalPresentationStyle = .sheet)
   public init()
   public var requestId: Swift.String?
   public var apiKey: Swift.String?
@@ -139,6 +148,7 @@ public struct VoqalSDKConfiguration {
   public var strings: VoqalSDK.VoqalSDKStringsConfiguration
   public var font: VoqalSDK.VoqalSDKFontConfiguration
   public var recordingInteractionMode: VoqalSDK.RecordingInteractionMode
+  public var presentationStyle: VoqalSDK.VoqalPresentationStyle
   public var conversationTimeout: Swift.Double
   public var hapticsEnabled: Swift.Bool
   public var observability: VoqalSDK.VoqalObservabilityOptions
@@ -669,6 +679,8 @@ extension VoqalSDK.RecordingError : Swift.Hashable {}
 extension VoqalSDK.HTTPMethod : Swift.Equatable {}
 extension VoqalSDK.HTTPMethod : Swift.Hashable {}
 extension VoqalSDK.HTTPMethod : Swift.RawRepresentable {}
+extension VoqalSDK.VoqalPresentationStyle : Swift.Equatable {}
+extension VoqalSDK.VoqalPresentationStyle : Swift.Hashable {}
 extension VoqalSDK.VoqalTheme.Appearance : Swift.Hashable {}
 extension VoqalSDK.VoqalPhase : Swift.Hashable {}
 extension VoqalSDK.VoqalLogLevel : Swift.Hashable {}

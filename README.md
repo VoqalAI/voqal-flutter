@@ -101,6 +101,46 @@ await voqal.present();
 
 See `example/` for a runnable app (Rabbit tenant, production engine).
 
+### Opening it: your button, and presentation style
+
+- **Open from your own button/action** — call `voqal.present()` from any widget's
+  `onPressed` (a button, icon, FAB, nav action). That's the supported path; there
+  is no separate native orb widget in Flutter (build your own button + `present()`).
+- **Presentation style** — by default the assistant slides up as a **sheet** the
+  user can swipe down to dismiss. For a **full, edge-to-edge app screen** (no
+  swipe-to-dismiss; close via the button), set it in the config:
+
+  ```dart
+  await voqal.setup(VoqalConfig(
+    apiKey: 'pk_live_…',
+    presentationStyle: VoqalPresentationStyle.fullScreen, // default: .sheet
+  ));
+  ```
+
+  It's a setup-time setting, so apply it before `present()`. Works identically on
+  iOS and Android.
+
+### Branding the header (name + logo)
+
+By default the sheet header shows **"Voqal"** with the default mark. Override both:
+
+```dart
+await voqal.setup(VoqalConfig(
+  apiKey: 'pk_live_…',
+  headerTitle: 'Rabbit',                                  // header name
+  headerIcon: const VoqalImage.asset('assets/logo.png'),  // header logo (PNG)
+));
+```
+
+`headerIcon` accepts `VoqalImage.asset('<path>')` (declare it under `flutter:
+assets:` in your pubspec) or `VoqalImage.bytes(...)`. The bytes are resolved at
+`setup` and handed to the native SDK as a `UIImage` / `Bitmap`.
+
+**Also customizable** — via `VoqalTheme`: accent colors (`accent`, `accent2`),
+`appearance` (light/dark/auto), `fontName`, corner `radius`; via `VoqalHome`: the
+greeting `userName` + `pinnedCTAs`; plus `hapticsEnabled` and
+`conversationTimeoutSeconds`.
+
 ## Security
 
 This wrapper preserves the native SDK's security model and adds nothing:

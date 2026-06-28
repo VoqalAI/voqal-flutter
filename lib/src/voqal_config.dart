@@ -6,6 +6,8 @@
 /// separately through `Voqal.setCredentials` and held in a native cache only.
 library;
 
+import 'voqal_image.dart';
+
 /// Requested color scheme for the assistant surface.
 enum VoqalAppearance {
   /// Always light.
@@ -18,6 +20,20 @@ enum VoqalAppearance {
   auto;
 
   /// The wire value the native bridges expect (`light` | `dark` | `auto`).
+  String get wireValue => name;
+}
+
+/// How the assistant surface is presented over the host app.
+enum VoqalPresentationStyle {
+  /// A slide-up sheet (near-full height) the user can swipe down to dismiss.
+  /// This is the default.
+  sheet,
+
+  /// A full, edge-to-edge app screen — no swipe-down-to-dismiss; the user
+  /// dismisses via the close button. Behaves like a dedicated app page.
+  fullScreen;
+
+  /// The wire value the native bridges expect (`sheet` | `fullScreen`).
   String get wireValue => name;
 }
 
@@ -146,6 +162,9 @@ class VoqalConfig {
     this.conversationTimeoutSeconds,
     this.hapticsEnabled,
     this.observability,
+    this.presentationStyle = VoqalPresentationStyle.sheet,
+    this.headerTitle,
+    this.headerIcon,
   });
 
   /// Default environment-routing request id (production MCP).
@@ -175,6 +194,17 @@ class VoqalConfig {
   /// Optional off-device diagnostics options (iOS only in v1).
   final VoqalObservability? observability;
 
+  /// How the assistant is presented. Defaults to a dismissible slide-up sheet;
+  /// set to [VoqalPresentationStyle.fullScreen] for a full, edge-to-edge app screen.
+  final VoqalPresentationStyle presentationStyle;
+
+  /// Brand title shown in the sheet header (e.g. `'Rabbit'`). Null shows `'Voqal'`.
+  final String? headerTitle;
+
+  /// Brand logo shown in the sheet header. Null shows the default Voqal mark.
+  /// Resolved to bytes at [Voqal.setup] time, so it is not part of [toMap].
+  final VoqalImage? headerIcon;
+
   /// Serializes to a primitives-only map for the method channel.
   ///
   /// Omits null fields so the native bridges fall back to their own defaults.
@@ -188,5 +218,7 @@ class VoqalConfig {
       'conversationTimeoutSeconds': conversationTimeoutSeconds,
     if (hapticsEnabled != null) 'hapticsEnabled': hapticsEnabled,
     if (observability != null) 'observability': observability!.toMap(),
+    'presentationStyle': presentationStyle.wireValue,
+    if (headerTitle != null) 'headerTitle': headerTitle,
   };
 }
