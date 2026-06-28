@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - voqal_flutter (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - voqal_flutter (from `.symlinks/plugins/voqal_flutter/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  voqal_flutter:
+    :path: ".symlinks/plugins/voqal_flutter/ios"
+
+SPEC CHECKSUMS:
+  Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
+  voqal_flutter: 252c2c2a884700c07cfdebda95adedbaf949e89a
+
+PODFILE CHECKSUM: 0f3738e3a1f9c88dffef5585fe9d23c498cf099f
+
+COCOAPODS: 1.16.2

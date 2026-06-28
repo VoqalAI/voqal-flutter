@@ -1,0 +1,681 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3 effective-5.10 (swiftlang-6.3.0.123.5 clang-2100.0.123.102)
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name VoqalSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3
+import AVFAudio
+import AVFoundation
+import AdSupport
+import AppTrackingTransparency
+import Combine
+import CoreGraphics
+import CryptoKit
+import DeveloperToolsSupport
+import Foundation
+import LocalAuthentication
+import Swift
+import SwiftUI
+import UIKit
+@_exported import VoqalSDK
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum RecordingError : Foundation.LocalizedError {
+  case uploadFailed
+  public static func == (a: VoqalSDK.RecordingError, b: VoqalSDK.RecordingError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor @preconcurrency final public class VoqalChatViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc override final public func viewDidLayoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor @preconcurrency final public class VoqalButton : UIKit.UIButton {
+  @_Concurrency.MainActor @preconcurrency weak final public var presentingViewController: UIKit.UIViewController?
+  @_Concurrency.MainActor @preconcurrency @objc override final public var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor @preconcurrency weak final public var delegate: (any VoqalSDK.VocalButtonDelegate)?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override final public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency @objc override final public var isHighlighted: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class BallBeatIndicator : VoqalSDK.LBIndicator {
+  @_Concurrency.MainActor @preconcurrency override open func setupAnimation(in layer: QuartzCore.CALayer, size: CoreFoundation.CGSize)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol IndicatorProtocol {
+  var radius: CoreFoundation.CGFloat { get set }
+  var color: UIKit.UIColor { get set }
+  var isAnimating: Swift.Bool { get }
+  func startAnimating()
+  func stopAnimating()
+  func setupAnimation(in layer: QuartzCore.CALayer, size: CoreFoundation.CGSize)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class LBIndicator : UIKit.UIView, VoqalSDK.IndicatorProtocol {
+  @_Concurrency.MainActor @preconcurrency open var isAnimating: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency open var radius: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency open var color: UIKit.UIColor
+  @_Concurrency.MainActor @preconcurrency convenience public init(radius: CoreFoundation.CGFloat = 18.0, color: UIKit.UIColor = .gray)
+  @_Concurrency.MainActor @preconcurrency open func startAnimating()
+  @_Concurrency.MainActor @preconcurrency open func stopAnimating()
+  @_Concurrency.MainActor @preconcurrency open func setupAnimation(in layer: QuartzCore.CALayer, size: CoreFoundation.CGSize)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public protocol VocalButtonDelegate : AnyObject {
+  func getToken() -> Swift.String
+  func getMetaData() -> Swift.String?
+  func getViewController() -> UIKit.UIViewController
+  func voqalButton(didUploadRecording result: Swift.String)
+  func voqalButton(didFailWith error: any Swift.Error)
+}
+public enum HTTPMethod : Swift.String {
+  case get
+  case post
+  case put
+  case patch
+  case delete
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class MaterialLoadingIndicator : VoqalSDK.LBIndicator {
+  @_Concurrency.MainActor @preconcurrency override open var color: UIKit.UIColor {
+    get
+    set
+  }
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency open var lineWidth: CoreFoundation.CGFloat {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open var bounds: CoreFoundation.CGRect {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency convenience public init(radius: CoreFoundation.CGFloat = 18.0, color: UIKit.UIColor = .gray)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency override open func startAnimating()
+  @_Concurrency.MainActor @preconcurrency override open func stopAnimating()
+  @_Concurrency.MainActor @preconcurrency override open func setupAnimation(in layer: QuartzCore.CALayer, size: CoreFoundation.CGSize)
+  @objc deinit
+}
+public enum NetworkError : Foundation.LocalizedError {
+  case invalidURL
+  case transport(any Swift.Error)
+  case server(statusCode: Swift.Int, data: Foundation.Data?)
+  case decoding(any Swift.Error)
+  case retryExhausted(lastError: any Swift.Error)
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
+public struct VoqalSDKConfiguration {
+  public init(requestId: Swift.String, agentURL: Foundation.URL? = nil, theme: VoqalSDK.VoqalTheme = .init(), stringsConfiguration: VoqalSDK.VoqalSDKStringsConfiguration = .init(), colorsConfiguration: VoqalSDK.VoqalSDKColorConfiguration = .init(), iconsConfiguration: VoqalSDK.VoqalSDKIconConfiguration = .init(), fontConfiguration: VoqalSDK.VoqalSDKFontConfiguration = .init(), home: VoqalSDK.VoqalHome = .init(), recordingInteractionMode: VoqalSDK.RecordingInteractionMode = .tapToToggle)
+  public init()
+  public var requestId: Swift.String?
+  public var apiKey: Swift.String?
+  public var agentURL: Foundation.URL?
+  public var theme: VoqalSDK.VoqalTheme
+  public var home: VoqalSDK.VoqalHome
+  public var colors: VoqalSDK.VoqalSDKColorConfiguration
+  public var icons: VoqalSDK.VoqalSDKIconConfiguration
+  public var strings: VoqalSDK.VoqalSDKStringsConfiguration
+  public var font: VoqalSDK.VoqalSDKFontConfiguration
+  public var recordingInteractionMode: VoqalSDK.RecordingInteractionMode
+  public var conversationTimeout: Swift.Double
+  public var hapticsEnabled: Swift.Bool
+  public var observability: VoqalSDK.VoqalObservabilityOptions
+}
+public struct VoqalHome {
+  public init(userName: Swift.String? = nil, pinnedCTAs: [Swift.String] = [], showAgentGlance: Swift.Bool = true)
+  public var userName: Swift.String?
+  public var pinnedCTAs: [Swift.String]
+  public var showAgentGlance: Swift.Bool
+}
+public struct VoqalSDKFontConfiguration {
+  public init(headerFont: UIKit.UIFont = UIFont.systemFont(ofSize: 20, weight: .regular), messageFont: UIKit.UIFont = UIFont.systemFont(ofSize: 16), primaryFont: UIKit.UIFont = UIFont.systemFont(ofSize: 15, weight: .medium), secondaryFont: UIKit.UIFont = UIFont.systemFont(ofSize: 16), chatInputFont: UIKit.UIFont = UIFont.systemFont(ofSize: 16))
+  public var headerFont: UIKit.UIFont
+  public var messageFont: UIKit.UIFont
+  public var primaryFont: UIKit.UIFont
+  public var secondaryFont: UIKit.UIFont
+  public var chatInputFont: UIKit.UIFont
+}
+public struct VoqalSDKColorConfiguration {
+  public init(recordingButtonBackground: UIKit.UIColor, voqalButtonBackground: UIKit.UIColor, userMessageBackground: UIKit.UIColor, agentMessageBackground: UIKit.UIColor, recordingWaveBackground: UIKit.UIColor)
+  public init()
+  public var recordingButtonBackground: UIKit.UIColor
+  public var voqalButtonBackground: UIKit.UIColor
+  public var userMessageBackground: UIKit.UIColor
+  public var agentMessageBackground: UIKit.UIColor
+  public var recordingWaveBackground: UIKit.UIColor
+}
+public struct VoqalSDKIconConfiguration {
+  public init(chatHeaderIcon: UIKit.UIImage? = nil, voqalButtonIcon: UIKit.UIImage? = nil)
+  public init()
+  public var chatHeaderIcon: UIKit.UIImage?
+  public var voqalButtonIcon: UIKit.UIImage?
+}
+public struct VoqalSDKStringsConfiguration {
+  public init(chatMessageHeaderTitle: Swift.String, chatHeaderTitle: Swift.String, chatWelcomeMessage: Swift.String)
+  public init()
+  public var chatMessageHeaderTitle: Swift.String
+  public var chatHeaderTitle: Swift.String
+  public var chatWelcomeMessage: Swift.String
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class BallSpinFadeIndicator : VoqalSDK.LBIndicator {
+  @_Concurrency.MainActor @preconcurrency override open func setupAnimation(in layer: QuartzCore.CALayer, size: CoreFoundation.CGSize)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public struct RecordingInteractionMode : Swift.OptionSet {
+  public let rawValue: Swift.Int
+  public init(rawValue: Swift.Int)
+  public static let tapToToggle: VoqalSDK.RecordingInteractionMode
+  public static let holdWhilePressed: VoqalSDK.RecordingInteractionMode
+  public typealias ArrayLiteralElement = VoqalSDK.RecordingInteractionMode
+  public typealias Element = VoqalSDK.RecordingInteractionMode
+  public typealias RawValue = Swift.Int
+}
+@_hasMissingDesignatedInitializers public class VoqalSDKManager {
+  public static var shared: VoqalSDK.VoqalSDKManager
+  public func setup(configuration: VoqalSDK.VoqalSDKConfiguration)
+  public func prewarm(delegate: any VoqalSDK.VocalButtonDelegate)
+  public func addLogSink(_ sink: any VoqalSDK.VoqalLogSink)
+  @discardableResult
+  public func presentChat(from presenter: UIKit.UIViewController, delegate: (any VoqalSDK.VocalButtonDelegate)?, animated: Swift.Bool = true) -> VoqalSDK.VoqalChatViewController
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class LineSpinFadeLoader : VoqalSDK.LBIndicator {
+  @_Concurrency.MainActor @preconcurrency override open func setupAnimation(in layer: QuartzCore.CALayer, size: CoreFoundation.CGSize)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+public enum JSONValue : Swift.Codable, Swift.Equatable {
+  case string(Swift.String)
+  case number(Swift.Double)
+  case bool(Swift.Bool)
+  case object([Swift.String : VoqalSDK.JSONValue])
+  case array([VoqalSDK.JSONValue])
+  case null
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public var stringValue: Swift.String? {
+    get
+  }
+  public static func == (a: VoqalSDK.JSONValue, b: VoqalSDK.JSONValue) -> Swift.Bool
+}
+public struct SpecMeta : Swift.Decodable, Swift.Equatable {
+  public let conversationId: Swift.String?
+  public let direction: Swift.String?
+  public let ttsVoice: Swift.String?
+  public let ttsAudioUrl: Swift.String?
+  public let ephemeral: Swift.Bool?
+  public static func == (a: VoqalSDK.SpecMeta, b: VoqalSDK.SpecMeta) -> Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct InboundAction : Swift.Decodable, Swift.Equatable {
+  public let label: Swift.String
+  public let primary: Swift.Bool?
+  public let spec: VoqalSDK.RenderSpec?
+  public static func == (a: VoqalSDK.InboundAction, b: VoqalSDK.InboundAction) -> Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RenderSpec : Swift.Decodable, Swift.Equatable {
+  public let speak: Swift.String?
+  public let widgets: [VoqalSDK.Widget]?
+  public let suggestions: [Swift.String]?
+  public let follow: Swift.String?
+  public let actions: [VoqalSDK.InboundAction]?
+  public let meta: VoqalSDK.SpecMeta?
+  public var isRTL: Swift.Bool {
+    get
+  }
+  public static func == (a: VoqalSDK.RenderSpec, b: VoqalSDK.RenderSpec) -> Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DoneSpec : Swift.Decodable, Swift.Equatable {
+  public let type: Swift.String
+  public let title: Swift.String
+  public let line1: Swift.String?
+  public let line2: Swift.String?
+  public static func == (a: VoqalSDK.DoneSpec, b: VoqalSDK.DoneSpec) -> Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ExecuteResponse : Swift.Decodable, Swift.Equatable {
+  public let done: VoqalSDK.DoneSpec
+  public let speak: Swift.String?
+  public static func == (a: VoqalSDK.ExecuteResponse, b: VoqalSDK.ExecuteResponse) -> Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ErrorEnvelope : Swift.Decodable, Swift.Equatable {
+  public struct Detail : Swift.Decodable, Swift.Equatable {
+    public let code: Swift.String
+    public let message: Swift.String?
+    public let recoverable: Swift.Bool?
+    public let speak: Swift.String?
+    public static func == (a: VoqalSDK.ErrorEnvelope.Detail, b: VoqalSDK.ErrorEnvelope.Detail) -> Swift.Bool
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public let error: VoqalSDK.ErrorEnvelope.Detail
+  public static func == (a: VoqalSDK.ErrorEnvelope, b: VoqalSDK.ErrorEnvelope) -> Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct VoqalEndpoint {
+  public let baseURL: Foundation.URL
+  public init(baseURL: Foundation.URL)
+  public static let production: VoqalSDK.VoqalEndpoint
+  public static func resolve(_ override: Foundation.URL?) -> VoqalSDK.VoqalEndpoint
+}
+public struct ExecuteTool : Swift.Codable, Swift.Equatable {
+  public let tool: Swift.String
+  public let args: [Swift.String : VoqalSDK.JSONValue]
+  public static func == (a: VoqalSDK.ExecuteTool, b: VoqalSDK.ExecuteTool) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ExecuteStep : Swift.Codable, Swift.Equatable {
+  public let kind: Swift.String
+  public let name: Swift.String
+  public let args: [Swift.String : VoqalSDK.JSONValue]
+  public static func == (a: VoqalSDK.ExecuteStep, b: VoqalSDK.ExecuteStep) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum ExecuteSpec : Swift.Codable, Swift.Equatable {
+  case tool(VoqalSDK.ExecuteTool)
+  case chain([VoqalSDK.ExecuteStep])
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (a: VoqalSDK.ExecuteSpec, b: VoqalSDK.ExecuteSpec) -> Swift.Bool
+}
+public struct Chart : Swift.Codable, Swift.Equatable {
+  public let chartType: Swift.String
+  public let data: [Swift.Double]
+  public let labels: [Swift.String]?
+  public let highlight: Swift.Int?
+  public let caption: Swift.String?
+  public static func == (a: VoqalSDK.Chart, b: VoqalSDK.Chart) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Stat : Swift.Codable, Swift.Equatable {
+  public let label: Swift.String
+  public let value: Swift.String
+  public let delta: Swift.String?
+  public let trend: Swift.String?
+  public let chart: VoqalSDK.Chart?
+  public static func == (a: VoqalSDK.Stat, b: VoqalSDK.Stat) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Progress : Swift.Codable, Swift.Equatable {
+  public let title: Swift.String
+  public let value: Swift.Double
+  public let steps: [Swift.String]?
+  public let stepActive: Swift.Int?
+  public let eta: Swift.String?
+  public static func == (a: VoqalSDK.Progress, b: VoqalSDK.Progress) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ListRow : Swift.Codable, Swift.Equatable {
+  public let title: Swift.String
+  public let meta: Swift.String?
+  public let trailing: Swift.String?
+  public let media: Swift.String?
+  public let icon: Swift.String?
+  public static func == (a: VoqalSDK.ListRow, b: VoqalSDK.ListRow) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ListWidget : Swift.Codable, Swift.Equatable {
+  public let title: Swift.String?
+  public let rows: [VoqalSDK.ListRow]
+  public static func == (a: VoqalSDK.ListWidget, b: VoqalSDK.ListWidget) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Badge : Swift.Codable, Swift.Equatable {
+  public let text: Swift.String
+  public let tone: Swift.String?
+  public static func == (a: VoqalSDK.Badge, b: VoqalSDK.Badge) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Card : Swift.Codable, Swift.Equatable {
+  public let title: Swift.String
+  public let rows: [[Swift.String]]
+  public let media: Swift.String?
+  public let footer: Swift.String?
+  public let badge: VoqalSDK.Badge?
+  public static func == (a: VoqalSDK.Card, b: VoqalSDK.Card) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Markdown : Swift.Codable, Swift.Equatable {
+  public let text: Swift.String
+  public static func == (a: VoqalSDK.Markdown, b: VoqalSDK.Markdown) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Media : Swift.Codable, Swift.Equatable {
+  public let url: Swift.String
+  public let kind: Swift.String?
+  public let aspect: Swift.Double?
+  public let caption: Swift.String?
+  public static func == (a: VoqalSDK.Media, b: VoqalSDK.Media) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Confirm : Swift.Codable, Swift.Equatable {
+  public let title: Swift.String
+  public let rows: [[Swift.String]]?
+  public let price: Swift.String?
+  public let cta: Swift.String?
+  public let requiresBiometric: Swift.Bool?
+  public let execute: VoqalSDK.ExecuteSpec
+  public static func == (a: VoqalSDK.Confirm, b: VoqalSDK.Confirm) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Ticket : Swift.Codable, Swift.Equatable {
+  public let id: Swift.String
+  public let subject: Swift.String
+  public let status: Swift.String
+  public let label: Swift.String?
+  public let steps: [Swift.String]?
+  public let stepActive: Swift.Int?
+  public let eta: Swift.String?
+  public let etaLabel: Swift.String?
+  public static func == (a: VoqalSDK.Ticket, b: VoqalSDK.Ticket) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Callback : Swift.Codable, Swift.Equatable {
+  public let title: Swift.String
+  public let sub: Swift.String?
+  public let eta: Swift.String?
+  public static func == (a: VoqalSDK.Callback, b: VoqalSDK.Callback) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CSAT : Swift.Codable, Swift.Equatable {
+  public let title: Swift.String?
+  public let scale: Swift.Int?
+  public static func == (a: VoqalSDK.CSAT, b: VoqalSDK.CSAT) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CustomFallback : Swift.Codable, Swift.Equatable {
+  public let speak: Swift.String?
+  public static func == (a: VoqalSDK.CustomFallback, b: VoqalSDK.CustomFallback) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Custom : Swift.Codable, Swift.Equatable {
+  public let slot: Swift.String
+  public let props: [Swift.String : VoqalSDK.JSONValue]
+  public let fallback: VoqalSDK.CustomFallback?
+  public static func == (a: VoqalSDK.Custom, b: VoqalSDK.Custom) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ProductItem : Swift.Codable, Swift.Equatable {
+  public let id: Swift.String
+  public let name: Swift.String
+  public let price: Swift.String
+  public let size: Swift.String?
+  public let image: Swift.String?
+  public static func == (a: VoqalSDK.ProductItem, b: VoqalSDK.ProductItem) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Products : Swift.Codable, Swift.Equatable {
+  public let title: Swift.String?
+  public let items: [VoqalSDK.ProductItem]
+  public static func == (a: VoqalSDK.Products, b: VoqalSDK.Products) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum Widget : Swift.Decodable, Swift.Equatable {
+  case stat(VoqalSDK.Stat)
+  case progress(VoqalSDK.Progress)
+  case list(VoqalSDK.ListWidget)
+  case card(VoqalSDK.Card)
+  case chart(VoqalSDK.Chart)
+  case confirm(VoqalSDK.Confirm)
+  case markdown(VoqalSDK.Markdown)
+  case media(VoqalSDK.Media)
+  case ticket(VoqalSDK.Ticket)
+  case callback(VoqalSDK.Callback)
+  case csat(VoqalSDK.CSAT)
+  case products(VoqalSDK.Products)
+  case custom(VoqalSDK.Custom)
+  case unknown(type: Swift.String)
+  public init(from decoder: any Swift.Decoder) throws
+  public static func == (a: VoqalSDK.Widget, b: VoqalSDK.Widget) -> Swift.Bool
+}
+extension VoqalSDK.Widget {
+  public var hasContent: Swift.Bool {
+    get
+  }
+}
+extension VoqalSDK.RGBA {
+  public var uiColor: UIKit.UIColor {
+    get
+  }
+  public var color: SwiftUICore.Color {
+    get
+  }
+}
+public struct RGBA : Swift.Equatable {
+  public let red: Swift.Double
+  public let green: Swift.Double
+  public let blue: Swift.Double
+  public let alpha: Swift.Double
+  public init(red: Swift.Double, green: Swift.Double, blue: Swift.Double, alpha: Swift.Double = 1)
+  public init?(hex: Swift.String)
+  public func withAlpha(_ newAlpha: Swift.Double) -> VoqalSDK.RGBA
+  public func blended(with other: VoqalSDK.RGBA, amount: Swift.Double) -> VoqalSDK.RGBA
+  public static func == (a: VoqalSDK.RGBA, b: VoqalSDK.RGBA) -> Swift.Bool
+}
+public struct ResolvedTheme : Swift.Equatable {
+  public let isDark: Swift.Bool
+  public let accent: VoqalSDK.RGBA
+  public let accent2: VoqalSDK.RGBA
+  public let sheetBackground: VoqalSDK.RGBA
+  public let surface: VoqalSDK.RGBA
+  public let surfaceSolid: VoqalSDK.RGBA
+  public let hairline: VoqalSDK.RGBA
+  public let hairline2: VoqalSDK.RGBA
+  public let textPrimary: VoqalSDK.RGBA
+  public let textSecondary: VoqalSDK.RGBA
+  public let textTertiary: VoqalSDK.RGBA
+  public let radius: CoreFoundation.CGFloat
+  public init(theme: VoqalSDK.VoqalTheme, isDark: Swift.Bool)
+  public static func resolve(theme: VoqalSDK.VoqalTheme, systemIsDark: Swift.Bool) -> VoqalSDK.ResolvedTheme
+  public static func == (a: VoqalSDK.ResolvedTheme, b: VoqalSDK.ResolvedTheme) -> Swift.Bool
+}
+public struct VoqalTheme : Swift.Equatable {
+  public enum Appearance : Swift.Equatable {
+    case light
+    case dark
+    case auto
+    public static func == (a: VoqalSDK.VoqalTheme.Appearance, b: VoqalSDK.VoqalTheme.Appearance) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var accent: Swift.String
+  public var accent2: Swift.String?
+  public var appearance: VoqalSDK.VoqalTheme.Appearance
+  public var fontName: Swift.String?
+  public var radius: CoreFoundation.CGFloat
+  public init(accent: Swift.String = "#2d5bff", accent2: Swift.String? = nil, appearance: VoqalSDK.VoqalTheme.Appearance = .auto, fontName: Swift.String? = nil, radius: CoreFoundation.CGFloat = 20)
+  public static func == (a: VoqalSDK.VoqalTheme, b: VoqalSDK.VoqalTheme) -> Swift.Bool
+}
+public enum VoqalPhase : Swift.Equatable {
+  case idle
+  case listening
+  case transcribing
+  case thinking
+  case speaking
+  public static func == (a: VoqalSDK.VoqalPhase, b: VoqalSDK.VoqalPhase) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct VoqalExchange : Swift.Identifiable, Swift.Equatable {
+  public let id: Foundation.UUID
+  public var question: Swift.String
+  public let isVoice: Swift.Bool
+  public var answer: VoqalSDK.RenderSpec?
+  public static func == (a: VoqalSDK.VoqalExchange, b: VoqalSDK.VoqalExchange) -> Swift.Bool
+  public typealias ID = Foundation.UUID
+}
+public enum VoqalLogLevel : Swift.Int, Swift.Comparable {
+  case debug, info, warning, error
+  public static func < (lhs: VoqalSDK.VoqalLogLevel, rhs: VoqalSDK.VoqalLogLevel) -> Swift.Bool
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct VoqalBreadcrumb {
+  public let level: VoqalSDK.VoqalLogLevel
+  public let category: Swift.String
+  public let message: Swift.String
+  public let timestamp: Foundation.Date
+}
+public struct VoqalLogEvent {
+  public let level: VoqalSDK.VoqalLogLevel
+  public let category: Swift.String
+  public let message: Swift.String
+  public let metadata: [Swift.String : Swift.String]
+  public let error: (any Swift.Error)?
+  public let timestamp: Foundation.Date
+  public let trace: VoqalSDK.VoqalTraceFrame?
+  public let breadcrumbs: [VoqalSDK.VoqalBreadcrumb]?
+}
+public protocol VoqalLogSink : AnyObject {
+  func record(_ event: VoqalSDK.VoqalLogEvent)
+}
+@_hasMissingDesignatedInitializers final public class VoqalLog {
+  public static let shared: VoqalSDK.VoqalLog
+  final public var minimumLevel: VoqalSDK.VoqalLogLevel
+  final public func addSink(_ sink: any VoqalSDK.VoqalLogSink)
+  @objc deinit
+}
+final public class VoqalConsoleLogSink : VoqalSDK.VoqalLogSink {
+  public init()
+  final public func record(_ event: VoqalSDK.VoqalLogEvent)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class VoqalDiagnosticsContext {
+  public static let shared: VoqalSDK.VoqalDiagnosticsContext
+  final public func update(metadataJSON: Swift.String?, apiKey: Swift.String?, requestId: Swift.String?)
+  final public func setSessionId(_ sessionId: Swift.String?)
+  final public var userId: Swift.String? {
+    get
+  }
+  final public func snapshot() -> [Swift.String : Swift.String]
+  @objc deinit
+}
+public enum VoqalSpanStatus : Swift.String {
+  case ok
+  case failed
+  case cancelled
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum VoqalTracePhase : Swift.String {
+  case start
+  case finish
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct VoqalTraceFrame {
+  public let traceId: Swift.String
+  public let spanId: Swift.String
+  public let parentSpanId: Swift.String?
+  public let op: Swift.String
+  public let description: Swift.String?
+  public let phase: VoqalSDK.VoqalTracePhase
+  public let status: VoqalSDK.VoqalSpanStatus?
+  public let durationMs: Swift.Double?
+  public let data: [Swift.String : Swift.String]
+  public let isTransaction: Swift.Bool
+}
+@_hasMissingDesignatedInitializers final public class VoqalSpan {
+  final public let traceId: Swift.String
+  final public let spanId: Swift.String
+  final public let parentSpanId: Swift.String?
+  final public let op: Swift.String
+  final public let isTransaction: Swift.Bool
+  final public func startChild(op: Swift.String, description: Swift.String? = nil, data: [Swift.String : Swift.String] = [:]) -> VoqalSDK.VoqalSpan
+  final public func setData(_ key: Swift.String, _ value: Swift.String)
+  final public func finish(status: VoqalSDK.VoqalSpanStatus = .ok, description: Swift.String? = nil)
+  @objc deinit
+}
+public enum VoqalTrace {
+  public static func startTransaction(_ op: Swift.String, description: Swift.String? = nil, data: [Swift.String : Swift.String] = [:]) -> VoqalSDK.VoqalSpan
+}
+public struct VoqalObservabilityOptions {
+  public init(dsn: Swift.String? = nil, enabled: Swift.Bool = true, scrubPII: Swift.Bool = true, tracesSampleRate: Swift.Double = 1.0, environment: Swift.String? = nil)
+  public var dsn: Swift.String?
+  public var enabled: Swift.Bool
+  public var scrubPII: Swift.Bool
+  public var tracesSampleRate: Swift.Double
+  public var environment: Swift.String?
+  public var effectiveDSN: Swift.String? {
+    get
+  }
+}
+public enum VoqalObservability {
+  public static let defaultDSN: Swift.String
+  public static func registerInstaller(_ installer: @escaping (VoqalSDK.VoqalObservabilityOptions) -> Swift.Void)
+  public static func startIfConfigured(_ options: VoqalSDK.VoqalObservabilityOptions)
+}
+extension VoqalSDK.RecordingError : Swift.Equatable {}
+extension VoqalSDK.RecordingError : Swift.Hashable {}
+extension VoqalSDK.HTTPMethod : Swift.Equatable {}
+extension VoqalSDK.HTTPMethod : Swift.Hashable {}
+extension VoqalSDK.HTTPMethod : Swift.RawRepresentable {}
+extension VoqalSDK.VoqalTheme.Appearance : Swift.Hashable {}
+extension VoqalSDK.VoqalPhase : Swift.Hashable {}
+extension VoqalSDK.VoqalLogLevel : Swift.Hashable {}
+extension VoqalSDK.VoqalLogLevel : Swift.RawRepresentable {}
+extension VoqalSDK.VoqalSpanStatus : Swift.Equatable {}
+extension VoqalSDK.VoqalSpanStatus : Swift.Hashable {}
+extension VoqalSDK.VoqalSpanStatus : Swift.RawRepresentable {}
+extension VoqalSDK.VoqalTracePhase : Swift.Equatable {}
+extension VoqalSDK.VoqalTracePhase : Swift.Hashable {}
+extension VoqalSDK.VoqalTracePhase : Swift.RawRepresentable {}

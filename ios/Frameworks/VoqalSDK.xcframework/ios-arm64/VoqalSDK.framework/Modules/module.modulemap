@@ -1,0 +1,6 @@
+framework module VoqalSDK {
+  umbrella header "VoqalSDK.h"
+  export *
+
+  module * { export * }
+}

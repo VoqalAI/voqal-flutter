@@ -1,0 +1,7 @@
+## 0.0.1
+
+- Initial thin Flutter bridge over the native Voqal iOS and Android SDKs.
+- Public API: `Voqal.setup`, `setCredentials`, `prewarm`, `present`.
+- iOS: vendored `VoqalSDK.xcframework`, minimum iOS 16.
+- Android: depends on `ai.voqal:voqal-sdk`, minSdk 28 (distribution to be finalized).
+- Security: push-credential model; no token logging, persistence, or read-back.
