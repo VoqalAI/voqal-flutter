@@ -2,6 +2,11 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        // Voqal native Android SDK distribution (public, no auth). A Flutter
+        // plugin cannot contribute repositories to the host app, so any app that
+        // uses voqal_flutter must add this repo here (or in settings.gradle.kts
+        // dependencyResolutionManagement).
+        maven { url = uri("https://raw.githubusercontent.com/VoqalAI/voqal-android-maven/main") }
     }
 }
 
