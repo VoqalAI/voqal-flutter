@@ -1,5 +1,6 @@
 allprojects {
     repositories {
+        mavenLocal() // local-test convenience; customers use the raw.githubusercontent repo below
         google()
         mavenCentral()
         // Voqal native Android SDK distribution (public, no auth). A Flutter

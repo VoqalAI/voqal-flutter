@@ -58,7 +58,7 @@ no network.
 - The SDK declares `INTERNET` and `RECORD_AUDIO` and requests audio at runtime —
   no manual permission wiring needed.
 
-- The native Android SDK (`ai.voqal:voqal-sdk:1.0.3`) ships from the public Maven
+- The native Android SDK (`ai.voqal:voqal-sdk:1.2.6`) ships from the public Maven
   repo `https://raw.githubusercontent.com/VoqalAI/voqal-android-maven/main` (no
   auth). A Flutter plugin **cannot** contribute repositories to the host app, so
   **you must add this repo to your app** — in `android/build.gradle.kts`:

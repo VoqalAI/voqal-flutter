@@ -76,7 +76,7 @@ kotlin {
 }
 
 dependencies {
-    implementation("ai.voqal:voqal-sdk:1.0.3")
+    implementation("ai.voqal:voqal-sdk:1.2.6") // iOS 1.2.x parity: hold-to-speak, products/add-to-cart, header logo
     testImplementation("org.jetbrains.kotlin:kotlin-test")
     testImplementation("org.mockito:mockito-core:5.0.0")
 }
