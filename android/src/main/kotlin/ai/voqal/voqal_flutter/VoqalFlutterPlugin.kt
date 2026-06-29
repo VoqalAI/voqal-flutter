@@ -6,6 +6,7 @@ import ai.voqal.sdk.VoqalHome
 import ai.voqal.sdk.VoqalSDK
 import ai.voqal.sdk.VoqalTheme
 import android.app.Activity
+import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.util.Base64
@@ -34,6 +35,9 @@ class VoqalFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
     private lateinit var channel: MethodChannel
     private var activity: Activity? = null
 
+    // Application context, cached for Sentry init (which outlives any Activity).
+    private var appContext: Context? = null
+
     // Latest credentials pushed from Dart. In-memory only — never persisted.
     @Volatile private var cachedToken: String = ""
     @Volatile private var cachedMetadata: String? = null
@@ -52,6 +56,7 @@ class VoqalFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
     }
 
     override fun onAttachedToEngine(binding: FlutterPlugin.FlutterPluginBinding) {
+        appContext = binding.applicationContext
         channel = MethodChannel(binding.binaryMessenger, "voqal_flutter")
         channel.setMethodCallHandler(this)
     }
@@ -66,6 +71,7 @@ class VoqalFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
                 val config = call.arguments as? Map<*, *>
                     ?: return result.error("bad_args", "setup expects a configuration map", null)
                 VoqalSDK.setup(configuration(config))
+                enableObservability(config["observability"] as? Map<*, *>)
                 result.success(null)
             }
 
@@ -97,9 +103,31 @@ class VoqalFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
         }
     }
 
+    /**
+     * Enables off-device diagnostics (Sentry) unless explicitly disabled.
+     *
+     * Default-on with the baked Voqal DSN: a missing `observability` map still
+     * starts Sentry with safe defaults (PII scrubbed). Init is wrapped so a
+     * Sentry failure can never break `setup`.
+     */
+    private fun enableObservability(observability: Map<*, *>?) {
+        if (observability?.get("enabled") as? Boolean == false) return
+        val context = appContext ?: return
+        val options = VoqalSentryBridge.Options(
+            dsn = observability?.get("dsn") as? String,
+            environment = observability?.get("environment") as? String,
+            scrubPii = observability?.get("scrubPII") as? Boolean ?: true,
+            tracesSampleRate = (observability?.get("tracesSampleRate") as? Number)?.toDouble() ?: 1.0,
+        )
+        // Broad catch is deliberate: third-party init must never fail setup.
+        try {
+            VoqalSentryBridge.enable(context, options)
+        } catch (error: Throwable) {
+            Log.w("VoqalFlutter", "Sentry init skipped: ${error.javaClass.simpleName}")
+        }
+    }
+
     private fun configuration(config: Map<*, *>): VoqalConfiguration {
-        // Note: `observability` is intentionally ignored — the Android SDK
-        // exposes no observability surface yet (documented follow-up).
         return VoqalConfiguration(
             requestId = config["requestId"] as? String ?: "prod-flutter",
             apiKey = config["apiKey"] as? String,

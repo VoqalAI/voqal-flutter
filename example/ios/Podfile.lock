@@ -1,11 +1,19 @@
 PODS:
   - Flutter (1.0.0)
+  - Sentry (8.58.3):
+    - Sentry/Core (= 8.58.3)
+  - Sentry/Core (8.58.3)
   - voqal_flutter (0.0.1):
     - Flutter
+    - Sentry (~> 8.0)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
   - voqal_flutter (from `.symlinks/plugins/voqal_flutter/ios`)
+
+SPEC REPOS:
+  trunk:
+    - Sentry
 
 EXTERNAL SOURCES:
   Flutter:
@@ -15,7 +23,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
-  voqal_flutter: 252c2c2a884700c07cfdebda95adedbaf949e89a
+  Sentry: 108fdbb76299c4189af12246bf0308c09c278922
+  voqal_flutter: 3a359435d1f02713089316af673a0e0086839fbc
 
 PODFILE CHECKSUM: 0f3738e3a1f9c88dffef5585fe9d23c498cf099f
 

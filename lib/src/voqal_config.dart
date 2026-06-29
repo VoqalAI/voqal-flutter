@@ -105,9 +105,10 @@ class VoqalHome {
 
 /// Off-device diagnostics options (errors, traces, breadcrumbs).
 ///
-/// Forwarded into the native iOS config. On Android the native SDK exposes no
-/// observability surface yet, so these options are ignored there (a documented
-/// follow-up). No Sentry pod ships with this plugin in v1.
+/// Forwarded into the native config on both platforms, where a Sentry bridge
+/// maps SDK diagnostics onto Sentry. Default-on with the baked Voqal DSN and
+/// PII scrubbing; set [enabled] to `false` to opt out, or [dsn] to report into
+/// your own Sentry project.
 class VoqalObservability {
   /// Creates immutable observability options.
   const VoqalObservability({

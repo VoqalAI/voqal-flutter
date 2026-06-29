@@ -5,4 +5,13 @@
       The SDK requests RECORD_AUDIO at runtime before voice starts, so the host
       app needs no manual permission wiring.
     -->
+    <application>
+        <!--
+          Disable sentry-android's auto-init ContentProvider. The plugin starts
+          Sentry programmatically (VoqalSentryBridge) with the baked Voqal DSN at
+          setup(); without this, the auto-init provider runs at app startup with
+          no manifest DSN and crashes the process ("DSN is required").
+        -->
+        <meta-data android:name="io.sentry.auto-init" android:value="false" />
+    </application>
 </manifest>
