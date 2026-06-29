@@ -76,7 +76,7 @@ kotlin {
 }
 
 dependencies {
-    implementation("ai.voqal:voqal-sdk:1.2.11") // iOS 1.2.x parity: hold-to-speak, products/add-to-cart, header logo, presentationStyle, LTR CTAs
+    implementation("ai.voqal:voqal-sdk:1.3.0") // iOS 1.2.x parity: hold-to-speak, products/add-to-cart, header logo, presentationStyle, LTR CTAs
     // sentry-android (not the SDK-only artifact) so we get Android lifecycle/ANR/crash handlers.
     implementation("io.sentry:sentry-android:7.22.6")
     testImplementation("org.jetbrains.kotlin:kotlin-test")
