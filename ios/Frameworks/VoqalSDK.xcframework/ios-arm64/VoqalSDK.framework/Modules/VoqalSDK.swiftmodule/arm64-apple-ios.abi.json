@@ -26808,7 +26808,7 @@
       "kind": "StringLiteral",
       "offset": 147,
       "length": 7,
-      "value": "\"1.3.0\""
+      "value": "\"1.3.1\""
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Constants.swift",
@@ -28143,14 +28143,14 @@
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/StageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8939,
+      "offset": 9457,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/StageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10789,
+      "offset": 11307,
       "length": 5,
       "value": "false"
     },

@@ -1,3 +1,7 @@
+## 1.3.1
+
+* Multiple next-step suggestion pills under answers (via VoqalSDK 1.3.1).
+
 ## 0.0.1
 
 - Initial thin Flutter bridge over the native Voqal iOS and Android SDKs.
