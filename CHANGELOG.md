@@ -1,3 +1,7 @@
+## 1.3.2
+
+* Fix intermittent RTL layout on English messages (stray Arabic ؟ from STT).
+
 ## 1.3.1
 
 * Multiple next-step suggestion pills under answers (via VoqalSDK 1.3.1).
