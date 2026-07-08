@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:voqal_flutter/voqal_flutter.dart';
 
+// Credentials live in a gitignored file so nothing sensitive is ever committed.
+// Copy demo_credentials.dart.example -> demo_credentials.dart and fill it in.
+import 'demo_credentials.dart';
+
 void main() => runApp(const RabbitDemoApp());
 
 class RabbitDemoApp extends StatelessWidget {
@@ -32,12 +36,11 @@ class _RabbitHomeState extends State<RabbitHome> {
   bool _ready = false;
   bool _fullScreen = false; // demo toggle: sheet (default) vs full app screen
 
-  // Rabbit's PUBLISHABLE key — public by design (resolves the tenant; sent as
-  // X-Voqal-Key). No secret lives in the app. Points at the baked production
-  // engine (https://api.voqal.ai/v2) — no agentUrl override.
+  // LOCAL TEST: agentUrl points at the local engine instead of the baked prod URL.
   VoqalConfig _config(VoqalPresentationStyle style) => VoqalConfig(
-    apiKey: 'REMOVED_DEMO_KEY',
+    apiKey: demoApiKey,
     requestId: 'prod-rabbit-demo',
+    agentUrl: demoAgentUrl,
     theme: const VoqalTheme(accent: '#1F7A4D', accent2: '#C7ED4A'),
     home: const VoqalHome(
       userName: 'Yaseen',
@@ -61,7 +64,7 @@ class _RabbitHomeState extends State<RabbitHome> {
       // A demo bearer the Rabbit mock MCP accepts. A real integration pushes a
       // live token here and re-pushes on every rotation.
       await _voqal.setCredentials(
-        'rabbit-demo-token',
+        demoUserToken,
         metadataJson: '{"country_code":"EGY","user_id":"999001"}',
       );
       await _voqal.prewarm();
@@ -84,7 +87,7 @@ class _RabbitHomeState extends State<RabbitHome> {
         ),
       );
       await _voqal.setCredentials(
-        'rabbit-demo-token',
+        demoUserToken,
         metadataJson: '{"country_code":"EGY","user_id":"999001"}',
       );
       await _voqal.present();

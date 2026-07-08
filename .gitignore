@@ -31,3 +31,6 @@ migrate_working_dir/
 .flutter-plugins-dependencies
 /build/
 /coverage/
+
+# example app credentials (never commit)
+example/lib/demo_credentials.dart
