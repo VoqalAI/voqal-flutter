@@ -1,3 +1,14 @@
+## 1.3.5
+
+Bundles native VoqalSDK **Android 1.3.5** + **iOS 1.3.3**.
+
+* Android → voqal-sdk 1.3.5: copyable payment-link card, home-page balance card (mode=home),
+  soft rounded card shadows (incl. under Confirm press / dimmed), configurable sheet height,
+  single-font support, CTA icons.
+* iOS → VoqalSDK 1.3.3: `VoqalTheme.font` now takes a UIFont (was `fontName`); light-mode card
+  shadow corner fix. The Flutter `fontName` config string is mapped to a UIFont internally, so
+  the Dart API is unchanged.
+
 ## 1.3.2
 
 * Fix intermittent RTL layout on English messages (stray Arabic ؟ from STT).

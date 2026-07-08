@@ -539,10 +539,10 @@ public struct VoqalTheme : Swift.Equatable {
   public var accent: Swift.String
   public var accent2: Swift.String?
   public var appearance: VoqalSDK.VoqalTheme.Appearance
-  public var fontName: Swift.String?
+  public var font: UIKit.UIFont?
   public var radius: CoreFoundation.CGFloat
-  public init(accent: Swift.String = "#2d5bff", accent2: Swift.String? = nil, appearance: VoqalSDK.VoqalTheme.Appearance = .auto, fontName: Swift.String? = nil, radius: CoreFoundation.CGFloat = 20)
-  public static func == (a: VoqalSDK.VoqalTheme, b: VoqalSDK.VoqalTheme) -> Swift.Bool
+  public init(accent: Swift.String = "#2d5bff", accent2: Swift.String? = nil, appearance: VoqalSDK.VoqalTheme.Appearance = .auto, font: UIKit.UIFont? = nil, radius: CoreFoundation.CGFloat = 20)
+  public static func == (lhs: VoqalSDK.VoqalTheme, rhs: VoqalSDK.VoqalTheme) -> Swift.Bool
 }
 public enum VoqalPhase : Swift.Equatable {
   case idle

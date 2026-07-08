@@ -20752,6 +20752,13 @@
         "moduleName": "VoqalSDK"
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "VoqalSDK"
+      },
+      {
         "kind": "TypeDecl",
         "name": "VoqalTheme",
         "printedName": "VoqalTheme",
@@ -21291,27 +21298,27 @@
           },
           {
             "kind": "Var",
-            "name": "fontName",
-            "printedName": "fontName",
+            "name": "font",
+            "printedName": "font",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "UIKit.UIFont?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "UIFont",
+                    "printedName": "UIKit.UIFont",
+                    "usr": "c:objc(cs)UIFont"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:8VoqalSDK0A5ThemeV8fontNameSSSgvp",
-            "mangledName": "$s8VoqalSDK0A5ThemeV8fontNameSSSgvp",
+            "usr": "s:8VoqalSDK0A5ThemeV4fontSo6UIFontCSgvp",
+            "mangledName": "$s8VoqalSDK0A5ThemeV4fontSo6UIFontCSgvp",
             "moduleName": "VoqalSDK",
             "declAttributes": [
               "HasInitialValue",
@@ -21329,21 +21336,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "UIKit.UIFont?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "UIFont",
+                        "printedName": "UIKit.UIFont",
+                        "usr": "c:objc(cs)UIFont"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8VoqalSDK0A5ThemeV8fontNameSSSgvg",
-                "mangledName": "$s8VoqalSDK0A5ThemeV8fontNameSSSgvg",
+                "usr": "s:8VoqalSDK0A5ThemeV4fontSo6UIFontCSgvg",
+                "mangledName": "$s8VoqalSDK0A5ThemeV4fontSo6UIFontCSgvg",
                 "moduleName": "VoqalSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -21361,21 +21368,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "UIKit.UIFont?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "UIFont",
+                        "printedName": "UIKit.UIFont",
+                        "usr": "c:objc(cs)UIFont"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8VoqalSDK0A5ThemeV8fontNameSSSgvs",
-                "mangledName": "$s8VoqalSDK0A5ThemeV8fontNameSSSgvs",
+                "usr": "s:8VoqalSDK0A5ThemeV4fontSo6UIFontCSgvs",
+                "mangledName": "$s8VoqalSDK0A5ThemeV4fontSo6UIFontCSgvs",
                 "moduleName": "VoqalSDK",
                 "implicit": true,
                 "accessorKind": "set"
@@ -21392,8 +21399,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8VoqalSDK0A5ThemeV8fontNameSSSgvM",
-                "mangledName": "$s8VoqalSDK0A5ThemeV8fontNameSSSgvM",
+                "usr": "s:8VoqalSDK0A5ThemeV4fontSo6UIFontCSgvM",
+                "mangledName": "$s8VoqalSDK0A5ThemeV4fontSo6UIFontCSgvM",
                 "moduleName": "VoqalSDK",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -21489,7 +21496,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(accent:accent2:appearance:fontName:radius:)",
+            "printedName": "init(accent:accent2:appearance:font:radius:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -21529,13 +21536,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "UIKit.UIFont?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "UIFont",
+                    "printedName": "UIKit.UIFont",
+                    "usr": "c:objc(cs)UIFont"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -21550,8 +21557,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:8VoqalSDK0A5ThemeV6accent7accent210appearance8fontName6radiusACSS_SSSgAC10AppearanceOAI14CoreFoundation7CGFloatVtcfc",
-            "mangledName": "$s8VoqalSDK0A5ThemeV6accent7accent210appearance8fontName6radiusACSS_SSSgAC10AppearanceOAI12CoreGraphics7CGFloatVtcfc",
+            "usr": "s:8VoqalSDK0A5ThemeV6accent7accent210appearance4font6radiusACSS_SSSgAC10AppearanceOSo6UIFontCSg14CoreFoundation7CGFloatVtcfc",
+            "mangledName": "$s8VoqalSDK0A5ThemeV6accent7accent210appearance4font6radiusACSS_SSSgAC10AppearanceOSo6UIFontCSg12CoreGraphics7CGFloatVtcfc",
             "moduleName": "VoqalSDK",
             "declAttributes": [
               "AccessControl"
@@ -21587,7 +21594,10 @@
             "mangledName": "$s8VoqalSDK0A5ThemeV2eeoiySbAC_ACtFZ",
             "moduleName": "VoqalSDK",
             "static": true,
-            "implicit": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -22396,6 +22406,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "VoqalSDK"
       },
       {
         "kind": "Import",
@@ -26808,7 +26825,7 @@
       "kind": "StringLiteral",
       "offset": 147,
       "length": 7,
-      "value": "\"1.3.2\""
+      "value": "\"1.3.3\""
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Constants.swift",
@@ -27947,35 +27964,35 @@
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
       "kind": "StringLiteral",
-      "offset": 974,
+      "offset": 1188,
       "length": 9,
       "value": "\"#2d5bff\""
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
       "kind": "IntegerLiteral",
-      "offset": 1116,
+      "offset": 1326,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
       "kind": "FloatLiteral",
-      "offset": 1414,
+      "offset": 1974,
       "length": 5,
       "value": "0.176"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
       "kind": "FloatLiteral",
-      "offset": 1428,
+      "offset": 1988,
       "length": 5,
       "value": "0.357"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
       "kind": "FloatLiteral",
-      "offset": 1441,
+      "offset": 2001,
       "length": 3,
       "value": "1.0"
     },
@@ -28087,14 +28104,14 @@
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/VoqalThemeEnvironment.swift",
       "kind": "BooleanLiteral",
-      "offset": 387,
+      "offset": 400,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/VoqalThemeEnvironment.swift",
       "kind": "FloatLiteral",
-      "offset": 1064,
+      "offset": 1620,
       "length": 4,
       "value": "10.5"
     },

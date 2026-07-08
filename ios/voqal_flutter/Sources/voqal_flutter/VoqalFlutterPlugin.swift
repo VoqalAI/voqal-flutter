@@ -141,11 +141,14 @@ public class VoqalFlutterPlugin: NSObject, FlutterPlugin {
     }
     let radius: CGFloat
     if let value = dictionary["radius"] as? Double { radius = CGFloat(value) } else { radius = 20 }
+    // VoqalSDK 1.3.3 replaced `fontName: String?` with `font: UIFont?`. Keep the Flutter API the
+    // same (a font-family name string) and map it to a UIFont here — the SDK uses its family.
+    let font = (dictionary["fontName"] as? String).flatMap { UIFont(name: $0, size: 16) }
     return VoqalTheme(
       accent: dictionary["accent"] as? String ?? "#2d5bff",
       accent2: dictionary["accent2"] as? String,
       appearance: appearance,
-      fontName: dictionary["fontName"] as? String,
+      font: font,
       radius: radius)
   }
 
