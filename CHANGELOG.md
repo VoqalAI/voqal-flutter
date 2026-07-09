@@ -1,3 +1,13 @@
+## 1.4.0
+
+Security fix — bundles native VoqalSDK **iOS 1.4.0** + **Android 1.4.0**.
+
+* **Cross-account chat-history leak fixed.** The assistant now auto-detects when the
+  signed-in account changes (from the token's identity) and wipes the retained
+  conversation + starts a fresh session, so one user's chat can never appear for the
+  next user after a logout/login. No app code change required — just this version bump.
+  A refresh of the *same* account's token does not reset the chat.
+
 ## 1.3.6
 
 Compatibility patch — no native SDK or public Dart API changes.
