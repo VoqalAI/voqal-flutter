@@ -1,3 +1,12 @@
+## 1.3.6
+
+Compatibility patch — no native SDK or public Dart API changes.
+
+* Lowered the Dart SDK floor to `>=3.9.0` (was `^3.12.2`) so the plugin resolves on
+  Flutter 3.35.x (Dart 3.9.2) through 3.44.x (Dart 3.12.2).
+* Realigned the Android/Gradle toolchain (host-driven AGP/Kotlin, `compileSdk 35`) so the
+  plugin builds under Flutter 3.35.7's Gradle 8.x as well as newer Flutter's Gradle 9.
+
 ## 1.3.5
 
 Bundles native VoqalSDK **Android 1.3.5** + **iOS 1.3.3**.

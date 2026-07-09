@@ -1,17 +1,21 @@
+// Host-driven toolchain: AGP + Kotlin versions come from the consuming app's
+// settings.gradle pluginManagement (via the Flutter plugin loader), NOT pinned here.
+// A hard-pinned buildscript classpath (previously AGP 9.0.1 / Kotlin 2.3.20) forced
+// Gradle 9 and broke apps on Flutter 3.35.x (Gradle 8.12 / AGP 8.9.1).
+plugins {
+    id("com.android.library")
+}
+
 group = "ai.voqal.voqal_flutter"
 version = "1.0-SNAPSHOT"
 
-buildscript {
-    val kotlinVersion = "2.3.20"
-    repositories {
-        google()
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath("com.android.tools.build:gradle:9.0.1")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
-    }
+// Built-in-Kotlin compatibility (Flutter's KGP migration). AGP >= 9 (Flutter 3.44+)
+// supplies Kotlin itself; applying KGP there triggers a deprecation warning that will
+// become a hard failure. Older Flutter (3.35.x / AGP 8.9) has no built-in Kotlin, so
+// the plugin must apply KGP itself. Gate on the host's AGP major version to do both.
+val agpMajorVersion = com.android.Version.ANDROID_GRADLE_PLUGIN_VERSION.substringBefore('.').toInt()
+if (agpMajorVersion < 9) {
+    apply(plugin = "org.jetbrains.kotlin.android")
 }
 
 allprojects {
@@ -24,14 +28,12 @@ allprojects {
     }
 }
 
-plugins {
-    id("com.android.library")
-}
-
 android {
     namespace = "ai.voqal.voqal_flutter"
 
-    compileSdk = 36
+    // Matches the native voqal-sdk AAR (compileSdk 35). 35 is supported by every AGP
+    // from 8.6 up, so this builds on Flutter 3.35.x (AGP 8.9.1) and newer alike.
+    compileSdk = 35
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -69,7 +71,9 @@ android {
     }
 }
 
-kotlin {
+// Set the Kotlin JVM target via the project extension (not `android { kotlinOptions }`),
+// so it works whether KGP was applied by us (AGP < 9) or is built into AGP (>= 9).
+project.extensions.configure(org.jetbrains.kotlin.gradle.dsl.KotlinAndroidProjectExtension::class.java) {
     compilerOptions {
         jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
     }

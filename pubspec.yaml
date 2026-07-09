@@ -1,11 +1,14 @@
 name: voqal_flutter
 description: "Voqal — voice-first assistant SDK for Flutter (thin wrapper over the native iOS/Android Voqal SDKs)."
-version: 1.3.5
+version: 1.3.6
 homepage: https://voqal.ai
 repository: https://github.com/VoqalAI/voqal-flutter
 
 environment:
-  sdk: ^3.12.2
+  # Dart 3.9 floor so the package resolves on Flutter 3.35.x (Dart 3.9.2) through
+  # 3.44.x (Dart 3.12.2). ^3.12.2 excluded customers on 3.35.7. No source uses
+  # post-3.9 language features, so 3.9 is safe.
+  sdk: '>=3.9.0 <4.0.0'
   flutter: '>=3.3.0'
 
 dependencies:
