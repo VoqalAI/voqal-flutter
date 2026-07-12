@@ -1,3 +1,14 @@
+## 1.5.0
+
+Bundles native VoqalSDK **iOS 1.5.0** + **Android 1.5.0**.
+
+* **Optional action button.** An accent-colored call-to-action button can be shown to the
+  right of the voice wave. Enable it with `VoqalConfig(actionButtonEnabled: true)` (optionally
+  `actionButtonIcon` / `actionButtonDismissOnTap`), then set `voqal.onActionButtonTapped` to
+  navigate from your Flutter app (e.g. `Navigator.push` to a checkout page). The SDK owns the
+  button; your app owns the route. Adds the plugin's first native→Dart callback. Opt-in and
+  fully backward compatible — existing integrations are unaffected.
+
 ## 1.4.0
 
 Security fix — bundles native VoqalSDK **iOS 1.4.0** + **Android 1.4.0**.

@@ -15,8 +15,15 @@ public class VoqalFlutterPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(
       name: "voqal_flutter", binaryMessenger: registrar.messenger())
+    Self.channel = channel
     registrar.addMethodCallDelegate(VoqalFlutterPlugin(), channel: channel)
   }
+
+  /// Retained so the native delegate can call back into Dart (e.g. action-button taps).
+  /// Used on the main thread only. Single-engine assumption (matches the static `coordinator`
+  /// and `VoqalSDKManager.shared`): in a multi-engine/add-to-app host the last-registered
+  /// engine's channel wins. Not a concern for a standard single-FlutterEngine app.
+  private static var channel: FlutterMethodChannel?
 
   /// Latest credentials pushed from Dart. The SDK delegate may read these off
   /// the main thread, so access is lock-guarded for cross-thread visibility.
@@ -128,6 +135,17 @@ public class VoqalFlutterPlugin: NSObject, FlutterPlugin {
     {
       configuration.icons.chatHeaderIcon = image
     }
+    if config["actionButtonEnabled"] as? Bool == true {
+      var button = VoqalActionButton()
+      if let dismiss = config["actionButtonDismissOnTap"] as? Bool { button.dismissOnTap = dismiss }
+      if let base64 = config["actionButtonIconPngBase64"] as? String,
+        let data = Data(base64Encoded: base64),
+        let image = UIImage(data: data)
+      {
+        button.icon = image
+      }
+      configuration.actionButton = button
+    }
     return configuration
   }
 
@@ -188,6 +206,12 @@ public class VoqalFlutterPlugin: NSObject, FlutterPlugin {
       #if DEBUG
         NSLog("[VoqalFlutter] error: \(error)")
       #endif
+    }
+    func voqalDidTapActionButton() {
+      // Forward to Dart so the Flutter app can navigate (Navigator.push).
+      DispatchQueue.main.async {
+        VoqalFlutterPlugin.channel?.invokeMethod("onActionButtonTapped", arguments: nil)
+      }
     }
   }
 }

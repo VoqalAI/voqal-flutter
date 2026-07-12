@@ -26,6 +26,11 @@ abstract class VoqalFlutterPlatform extends PlatformInterface {
     _instance = instance;
   }
 
+  /// Invoked when the user taps the native action button (see
+  /// [VoqalConfig.actionButtonEnabled]). The host wires navigation here. Delivered
+  /// from native over the method channel; null when the host hasn't set a handler.
+  void Function()? onActionButtonTapped;
+
   /// Configures the SDK once at launch. [config] is a primitives-only map.
   Future<void> setup(Map<String, Object?> config) {
     throw UnimplementedError('setup() has not been implemented.');

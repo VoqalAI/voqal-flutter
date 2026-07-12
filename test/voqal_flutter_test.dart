@@ -1,8 +1,20 @@
+import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 import 'package:voqal_flutter/voqal_flutter.dart';
 import 'package:voqal_flutter/voqal_flutter_method_channel.dart';
 import 'package:voqal_flutter/voqal_flutter_platform_interface.dart';
+
+/// Simulates the native side invoking a method back into Dart on the plugin channel.
+Future<void> _sendNativeCall(String method) async {
+  const StandardMethodCodec codec = StandardMethodCodec();
+  await TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+      .handlePlatformMessage(
+        'voqal_flutter',
+        codec.encodeMethodCall(MethodCall(method)),
+        (_) {},
+      );
+}
 
 class _FakeVoqalPlatform extends VoqalFlutterPlatform
     with MockPlatformInterfaceMixin {
@@ -96,5 +108,44 @@ void main() {
       ).toMap()['headerTitle'],
       'Rabbit',
     );
+  });
+
+  test('action button keys are omitted when disabled', () {
+    final Map<String, Object?> map = const VoqalConfig(apiKey: 'pk').toMap();
+    expect(map.containsKey('actionButtonEnabled'), isFalse);
+    expect(map.containsKey('actionButtonDismissOnTap'), isFalse);
+  });
+
+  test('action button keys are serialized when enabled', () {
+    final Map<String, Object?> map = const VoqalConfig(
+      apiKey: 'pk',
+      actionButtonEnabled: true,
+      actionButtonDismissOnTap: false,
+    ).toMap();
+    expect(map['actionButtonEnabled'], true);
+    expect(map['actionButtonDismissOnTap'], false);
+  });
+
+  test('native onActionButtonTapped call routes to the Dart handler', () async {
+    TestWidgetsFlutterBinding.ensureInitialized();
+    final MethodChannelVoqalFlutter platform = MethodChannelVoqalFlutter();
+    VoqalFlutterPlatform.instance = platform;
+    platform.ensureHandlerRegistered();
+
+    int fired = 0;
+    final Voqal voqal = Voqal();
+    voqal.onActionButtonTapped = () => fired++;
+
+    await _sendNativeCall('onActionButtonTapped');
+    expect(fired, 1);
+
+    // Unknown inbound methods are ignored so older Dart keeps working.
+    await _sendNativeCall('someFutureMethod');
+    expect(fired, 1);
+
+    // A null handler is a safe no-op (no throw).
+    voqal.onActionButtonTapped = null;
+    await _sendNativeCall('onActionButtonTapped');
+    expect(fired, 1);
   });
 }

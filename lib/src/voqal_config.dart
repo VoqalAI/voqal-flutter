@@ -166,6 +166,9 @@ class VoqalConfig {
     this.presentationStyle = VoqalPresentationStyle.sheet,
     this.headerTitle,
     this.headerIcon,
+    this.actionButtonEnabled = false,
+    this.actionButtonIcon,
+    this.actionButtonDismissOnTap = true,
   });
 
   /// Default environment-routing request id (production MCP).
@@ -206,6 +209,19 @@ class VoqalConfig {
   /// Resolved to bytes at [Voqal.setup] time, so it is not part of [toMap].
   final VoqalImage? headerIcon;
 
+  /// When true, renders an optional accent-colored action button to the right of
+  /// the voice wave. Tapping it invokes [Voqal.onActionButtonTapped] so the host
+  /// can navigate (e.g. `Navigator.push` to a checkout page). Default false (opt-in).
+  final bool actionButtonEnabled;
+
+  /// Optional glyph for the action button. Null shows a default shopping-bag icon.
+  /// Resolved to bytes at [Voqal.setup] time, so it is not part of [toMap].
+  final VoqalImage? actionButtonIcon;
+
+  /// Whether tapping the action button dismisses the assistant before firing the
+  /// callback (default true), so the host is back on its own screen to navigate.
+  final bool actionButtonDismissOnTap;
+
   /// Serializes to a primitives-only map for the method channel.
   ///
   /// Omits null fields so the native bridges fall back to their own defaults.
@@ -221,5 +237,7 @@ class VoqalConfig {
     if (observability != null) 'observability': observability!.toMap(),
     'presentationStyle': presentationStyle.wireValue,
     if (headerTitle != null) 'headerTitle': headerTitle,
+    if (actionButtonEnabled) 'actionButtonEnabled': true,
+    if (actionButtonEnabled) 'actionButtonDismissOnTap': actionButtonDismissOnTap,
   };
 }

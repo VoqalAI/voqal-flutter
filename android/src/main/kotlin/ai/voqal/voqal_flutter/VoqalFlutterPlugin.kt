@@ -1,5 +1,6 @@
 package ai.voqal.voqal_flutter
 
+import ai.voqal.sdk.VoqalActionButton
 import ai.voqal.sdk.VoqalConfiguration
 import ai.voqal.sdk.VoqalDelegate
 import ai.voqal.sdk.VoqalHome
@@ -9,6 +10,8 @@ import android.app.Activity
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
+import android.os.Handler
+import android.os.Looper
 import android.util.Base64
 import android.util.Log
 import androidx.activity.ComponentActivity
@@ -34,6 +37,7 @@ class VoqalFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
 
     private lateinit var channel: MethodChannel
     private var activity: Activity? = null
+    private val mainHandler = Handler(Looper.getMainLooper())
 
     // Application context, cached for Sentry init (which outlives any Activity).
     private var appContext: Context? = null
@@ -52,6 +56,13 @@ class VoqalFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
         override fun onError(error: Throwable) {
             // Log the Throwable only — never the token or metadata.
             Log.e("VoqalFlutter", "Voqal error", error)
+        }
+
+        override fun onActionButtonTapped() {
+            // Forward to Dart on the main thread so the Flutter app can navigate. A tap can
+            // only follow present()/prewarm(), which follow onAttachedToEngine, so `channel`
+            // is initialized; a tap arriving after detach is a harmless dropped no-op.
+            mainHandler.post { channel.invokeMethod("onActionButtonTapped", null) }
         }
     }
 
@@ -142,6 +153,16 @@ class VoqalFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
             },
             headerTitle = config["headerTitle"] as? String,
             headerIcon = decodeIcon(config["headerIconPngBase64"] as? String),
+            actionButton = actionButton(config),
+        )
+    }
+
+    /** Builds the optional action button from the config map, or null when disabled. */
+    private fun actionButton(config: Map<*, *>): VoqalActionButton? {
+        if (config["actionButtonEnabled"] as? Boolean != true) return null
+        return VoqalActionButton(
+            icon = decodeIcon(config["actionButtonIconPngBase64"] as? String),
+            dismissOnTap = config["actionButtonDismissOnTap"] as? Boolean ?: true,
         )
     }
 

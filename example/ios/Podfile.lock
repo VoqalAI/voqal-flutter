@@ -1,5 +1,7 @@
 PODS:
   - Flutter (1.0.0)
+  - integration_test (0.0.1):
+    - Flutter
   - Sentry (8.58.3):
     - Sentry/Core (= 8.58.3)
   - Sentry/Core (8.58.3)
@@ -9,6 +11,7 @@ PODS:
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
+  - integration_test (from `.symlinks/plugins/integration_test/ios`)
   - voqal_flutter (from `.symlinks/plugins/voqal_flutter/ios`)
 
 SPEC REPOS:
@@ -18,11 +21,14 @@ SPEC REPOS:
 EXTERNAL SOURCES:
   Flutter:
     :path: Flutter
+  integration_test:
+    :path: ".symlinks/plugins/integration_test/ios"
   voqal_flutter:
     :path: ".symlinks/plugins/voqal_flutter/ios"
 
 SPEC CHECKSUMS:
   Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
+  integration_test: 4a889634ef21a45d28d50d622cf412dc6d9f586e
   Sentry: 108fdbb76299c4189af12246bf0308c09c278922
   voqal_flutter: 3a359435d1f02713089316af673a0e0086839fbc
 

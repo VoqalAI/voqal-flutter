@@ -50,6 +50,9 @@ class _RabbitHomeState extends State<RabbitHome> {
     // Brand the sheet header with Rabbit's name + logo (instead of "Voqal").
     headerTitle: 'Rabbit',
     headerIcon: const VoqalImage.asset('assets/rabbit_logo.png'),
+    // Optional action button (v1.5.0): accent CTA right of the voice wave. The
+    // SDK dismisses the sheet on tap, then fires onActionButtonTapped (below).
+    actionButtonEnabled: true,
   );
 
   @override
@@ -59,6 +62,13 @@ class _RabbitHomeState extends State<RabbitHome> {
   }
 
   Future<void> _bootstrap() async {
+    // The host owns navigation: the SDK dismissed its sheet, now we route to our page.
+    _voqal.onActionButtonTapped = () {
+      if (!mounted) return;
+      Navigator.of(context).push(
+        MaterialPageRoute<void>(builder: (_) => const CheckoutPage()),
+      );
+    };
     try {
       await _voqal.setup(_config(VoqalPresentationStyle.sheet));
       // A demo bearer the Rabbit mock MCP accepts. A real integration pushes a
@@ -159,6 +169,34 @@ class _RabbitHomeState extends State<RabbitHome> {
               ),
             ),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+/// A stand-in host page the example routes to when the assistant's action button is
+/// tapped — proves the SDK hands control back to Flutter to navigate anywhere.
+class CheckoutPage extends StatelessWidget {
+  const CheckoutPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: const Color(0xFF0B0B0D),
+      appBar: AppBar(
+        backgroundColor: const Color(0xFF0B0B0D),
+        foregroundColor: Colors.white,
+        title: const Text('Checkout'),
+      ),
+      body: const Center(
+        child: Text(
+          '🛍  Checkout Page',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 28,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
     );

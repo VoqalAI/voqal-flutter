@@ -81,6 +81,10 @@ public protocol VocalButtonDelegate : AnyObject {
   func getViewController() -> UIKit.UIViewController
   func voqalButton(didUploadRecording result: Swift.String)
   func voqalButton(didFailWith error: any Swift.Error)
+  func voqalDidTapActionButton()
+}
+extension VoqalSDK.VocalButtonDelegate {
+  public func voqalDidTapActionButton()
 }
 public enum HTTPMethod : Swift.String {
   case get
@@ -152,6 +156,13 @@ public struct VoqalSDKConfiguration {
   public var conversationTimeout: Swift.Double
   public var hapticsEnabled: Swift.Bool
   public var observability: VoqalSDK.VoqalObservabilityOptions
+  public var actionButton: VoqalSDK.VoqalActionButton?
+}
+public struct VoqalActionButton {
+  public init(icon: UIKit.UIImage? = nil, dismissOnTap: Swift.Bool = true, accessibilityLabel: Swift.String = "Open")
+  public var icon: UIKit.UIImage?
+  public var dismissOnTap: Swift.Bool
+  public var accessibilityLabel: Swift.String
 }
 public struct VoqalHome {
   public init(userName: Swift.String? = nil, pinnedCTAs: [Swift.String] = [], showAgentGlance: Swift.Bool = true)

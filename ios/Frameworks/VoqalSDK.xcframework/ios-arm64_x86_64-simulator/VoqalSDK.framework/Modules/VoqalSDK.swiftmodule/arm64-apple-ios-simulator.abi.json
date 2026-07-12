@@ -2472,6 +2472,53 @@
             "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "voqalDidTapActionButton",
+            "printedName": "voqalDidTapActionButton()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8VoqalSDK19VocalButtonDelegateP017voqalDidTapActionD0yyF",
+            "mangledName": "$s8VoqalSDK19VocalButtonDelegateP017voqalDidTapActionD0yyF",
+            "moduleName": "VoqalSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : VoqalSDK.VocalButtonDelegate>",
+            "sugared_genericSig": "<Self where Self : VoqalSDK.VocalButtonDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "voqalDidTapActionButton",
+            "printedName": "voqalDidTapActionButton()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8VoqalSDK19VocalButtonDelegatePAAE017voqalDidTapActionD0yyF",
+            "mangledName": "$s8VoqalSDK19VocalButtonDelegatePAAE017voqalDidTapActionD0yyF",
+            "moduleName": "VoqalSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : VoqalSDK.VocalButtonDelegate>",
+            "sugared_genericSig": "<Self where Self : VoqalSDK.VocalButtonDelegate>",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -5714,6 +5761,117 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "actionButton",
+            "printedName": "actionButton",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "VoqalSDK.VoqalActionButton?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "VoqalActionButton",
+                    "printedName": "VoqalSDK.VoqalActionButton",
+                    "usr": "s:8VoqalSDK0A12ActionButtonV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8VoqalSDK0A16SDKConfigurationV12actionButtonAA0a6ActionE0VSgvp",
+            "mangledName": "$s8VoqalSDK0A16SDKConfigurationV12actionButtonAA0a6ActionE0VSgvp",
+            "moduleName": "VoqalSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "VoqalSDK.VoqalActionButton?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VoqalActionButton",
+                        "printedName": "VoqalSDK.VoqalActionButton",
+                        "usr": "s:8VoqalSDK0A12ActionButtonV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8VoqalSDK0A16SDKConfigurationV12actionButtonAA0a6ActionE0VSgvg",
+                "mangledName": "$s8VoqalSDK0A16SDKConfigurationV12actionButtonAA0a6ActionE0VSgvg",
+                "moduleName": "VoqalSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "VoqalSDK.VoqalActionButton?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "VoqalActionButton",
+                        "printedName": "VoqalSDK.VoqalActionButton",
+                        "usr": "s:8VoqalSDK0A12ActionButtonV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8VoqalSDK0A16SDKConfigurationV12actionButtonAA0a6ActionE0VSgvs",
+                "mangledName": "$s8VoqalSDK0A16SDKConfigurationV12actionButtonAA0a6ActionE0VSgvs",
+                "moduleName": "VoqalSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8VoqalSDK0A16SDKConfigurationV12actionButtonAA0a6ActionE0VSgvM",
+                "mangledName": "$s8VoqalSDK0A16SDKConfigurationV12actionButtonAA0a6ActionE0VSgvM",
+                "moduleName": "VoqalSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
           }
         ],
         "declKind": "Struct",
@@ -5722,6 +5880,370 @@
         "moduleName": "VoqalSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "VoqalActionButton",
+        "printedName": "VoqalActionButton",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(icon:dismissOnTap:accessibilityLabel:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "VoqalActionButton",
+                "printedName": "VoqalSDK.VoqalActionButton",
+                "usr": "s:8VoqalSDK0A12ActionButtonV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8VoqalSDK0A12ActionButtonV4icon12dismissOnTap18accessibilityLabelACSo7UIImageCSg_SbSStcfc",
+            "mangledName": "$s8VoqalSDK0A12ActionButtonV4icon12dismissOnTap18accessibilityLabelACSo7UIImageCSg_SbSStcfc",
+            "moduleName": "VoqalSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "icon",
+            "printedName": "icon",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8VoqalSDK0A12ActionButtonV4iconSo7UIImageCSgvp",
+            "mangledName": "$s8VoqalSDK0A12ActionButtonV4iconSo7UIImageCSgvp",
+            "moduleName": "VoqalSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8VoqalSDK0A12ActionButtonV4iconSo7UIImageCSgvg",
+                "mangledName": "$s8VoqalSDK0A12ActionButtonV4iconSo7UIImageCSgvg",
+                "moduleName": "VoqalSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8VoqalSDK0A12ActionButtonV4iconSo7UIImageCSgvs",
+                "mangledName": "$s8VoqalSDK0A12ActionButtonV4iconSo7UIImageCSgvs",
+                "moduleName": "VoqalSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8VoqalSDK0A12ActionButtonV4iconSo7UIImageCSgvM",
+                "mangledName": "$s8VoqalSDK0A12ActionButtonV4iconSo7UIImageCSgvM",
+                "moduleName": "VoqalSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dismissOnTap",
+            "printedName": "dismissOnTap",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8VoqalSDK0A12ActionButtonV12dismissOnTapSbvp",
+            "mangledName": "$s8VoqalSDK0A12ActionButtonV12dismissOnTapSbvp",
+            "moduleName": "VoqalSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8VoqalSDK0A12ActionButtonV12dismissOnTapSbvg",
+                "mangledName": "$s8VoqalSDK0A12ActionButtonV12dismissOnTapSbvg",
+                "moduleName": "VoqalSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8VoqalSDK0A12ActionButtonV12dismissOnTapSbvs",
+                "mangledName": "$s8VoqalSDK0A12ActionButtonV12dismissOnTapSbvs",
+                "moduleName": "VoqalSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8VoqalSDK0A12ActionButtonV12dismissOnTapSbvM",
+                "mangledName": "$s8VoqalSDK0A12ActionButtonV12dismissOnTapSbvM",
+                "moduleName": "VoqalSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accessibilityLabel",
+            "printedName": "accessibilityLabel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8VoqalSDK0A12ActionButtonV18accessibilityLabelSSvp",
+            "mangledName": "$s8VoqalSDK0A12ActionButtonV18accessibilityLabelSSvp",
+            "moduleName": "VoqalSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8VoqalSDK0A12ActionButtonV18accessibilityLabelSSvg",
+                "mangledName": "$s8VoqalSDK0A12ActionButtonV18accessibilityLabelSSvg",
+                "moduleName": "VoqalSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8VoqalSDK0A12ActionButtonV18accessibilityLabelSSvs",
+                "mangledName": "$s8VoqalSDK0A12ActionButtonV18accessibilityLabelSSvs",
+                "moduleName": "VoqalSDK",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8VoqalSDK0A12ActionButtonV18accessibilityLabelSSvM",
+                "mangledName": "$s8VoqalSDK0A12ActionButtonV18accessibilityLabelSSvM",
+                "moduleName": "VoqalSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:8VoqalSDK0A12ActionButtonV",
+        "mangledName": "$s8VoqalSDK0A12ActionButtonV",
+        "moduleName": "VoqalSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -26842,7 +27364,7 @@
       "kind": "StringLiteral",
       "offset": 147,
       "length": 7,
-      "value": "\"1.4.0\""
+      "value": "\"1.5.0\""
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Constants.swift",
@@ -27406,85 +27928,99 @@
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4375,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 4426,
+      "length": 6,
+      "value": "\"Open\""
+    },
+    {
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "Array",
-      "offset": 3919,
+      "offset": 5359,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 3947,
+      "offset": 5387,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 4531,
+      "offset": 5971,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 4618,
+      "offset": 6058,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 4687,
+      "offset": 6127,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 4775,
+      "offset": 6215,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 4846,
+      "offset": 6286,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 5127,
+      "offset": 6567,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 5212,
+      "offset": 6652,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 5279,
+      "offset": 6719,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 5365,
+      "offset": 6805,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 5434,
+      "offset": 6874,
       "length": 2,
       "value": "16"
     },
@@ -28072,28 +28608,28 @@
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 2822,
+      "offset": 3168,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3620,
+      "offset": 3966,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "Array",
-      "offset": 6459,
+      "offset": 6805,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "Array",
-      "offset": 12151,
+      "offset": 12497,
       "length": 2,
       "value": "[]"
     },

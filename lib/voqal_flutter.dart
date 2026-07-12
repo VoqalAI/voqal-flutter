@@ -39,8 +39,28 @@ class Voqal {
     if (icon != null) {
       map['headerIconPngBase64'] = await icon.resolveBase64();
     }
+    final VoqalImage? actionIcon = config.actionButtonIcon;
+    if (config.actionButtonEnabled && actionIcon != null) {
+      map['actionButtonIconPngBase64'] = await actionIcon.resolveBase64();
+    }
     await _platform.setup(map);
   }
+
+  /// Called when the user taps the native action button (enabled via
+  /// [VoqalConfig.actionButtonEnabled]). Set this to navigate from your Flutter app
+  /// — e.g. `Navigator.push(...)` to a checkout page. When the button's
+  /// `actionButtonDismissOnTap` is true (the default), the native sheet has already
+  /// been dismissed by the time this fires.
+  ///
+  /// Note: this handler is stored **process-globally** (all [Voqal] instances share it),
+  /// so setting it twice replaces the previous handler. If you capture a `BuildContext`
+  /// or `State` in the closure, clear it (`voqal.onActionButtonTapped = null`) in your
+  /// widget's `dispose()` to avoid retaining a disposed subtree for the process lifetime.
+  set onActionButtonTapped(void Function()? handler) =>
+      _platform.onActionButtonTapped = handler;
+
+  /// The current action-button tap handler, if any.
+  void Function()? get onActionButtonTapped => _platform.onActionButtonTapped;
 
   /// Pushes the live auth [token] (and optional [metadataJson], a JSON string
   /// such as `{"country_code":"EGY","user_id":"123"}`) into the native cache.
