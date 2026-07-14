@@ -1,3 +1,18 @@
+## 1.5.0+rabbit.1 (Rabbit custom build)
+
+Rabbit-only build on top of 1.5.0 — consume via the `rabbit-1.5.0` git tag.
+
+* **Rabbit brand fonts baked in.** Lota Grotesque (Latin) and Janna LT (Arabic) ship
+  inside the native SDKs and register automatically; every piece of SDK text uses them,
+  resolved per string (Arabic → Janna, Latin → Lota). `VoqalTheme.fontName` is now
+  ignored — no host font setup needed or honored.
+* **Product card matches Rabbit's in-app AutoCompleteCard.** 96pt image (radius 8,
+  hairline border, inner padding, fit — not cropped), stacked name/unit/price column,
+  14pt regular name (#1F1F1F), 14pt unit (#7B7B7B), price with the currency token at
+  10pt in Rabbit green. Stepper + Add-to-cart behavior unchanged.
+* Android dependency is `ai.voqal:voqal-sdk-rabbit:1.5.0`; iOS vendored framework is
+  `1.5.0-rabbit.1`. The 1.5.0 action button (checkout redirect) is unchanged.
+
 ## 1.5.0
 
 Bundles native VoqalSDK **iOS 1.5.0** + **Android 1.5.0**.

@@ -8,6 +8,7 @@ import AdSupport
 import AppTrackingTransparency
 import Combine
 import CoreGraphics
+import CoreText
 import CryptoKit
 import DeveloperToolsSupport
 import Foundation
