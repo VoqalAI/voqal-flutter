@@ -1,3 +1,13 @@
+## 1.5.2
+
+Bundles native **Android 1.5.2** (iOS unchanged at 1.5.0 — not affected).
+
+* **Fix: Android conversation history.** The Android SDK never attached prior turns
+  to a request, so the agent could forget earlier questions/answers whenever the
+  engine's stored session history wasn't available (session rotation, DB fallback).
+  Android now threads history on every text turn exactly like iOS always has.
+  All Android versions up to 1.5.1 carry the latent bug — upgrading is recommended.
+
 ## 1.5.0
 
 Bundles native VoqalSDK **iOS 1.5.0** + **Android 1.5.0**.
