@@ -17,7 +17,7 @@ class RabbitDemoApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         useMaterial3: true,
-        colorSchemeSeed: const Color(0xFF1F7A4D),
+        colorSchemeSeed: const Color(0xFF00573F),
       ),
       home: const RabbitHome(),
     );
@@ -41,7 +41,7 @@ class _RabbitHomeState extends State<RabbitHome> {
     apiKey: demoApiKey,
     requestId: 'prod-rabbit-demo',
     agentUrl: demoAgentUrl,
-    theme: const VoqalTheme(accent: '#1F7A4D', accent2: '#C7ED4A'),
+    theme: const VoqalTheme(accent: '#00573F', accent2: '#C7ED4A'),
     home: const VoqalHome(
       userName: 'Yaseen',
       pinnedCTAs: <String>["Where's my order?", 'Find milk and eggs'],
@@ -141,7 +141,7 @@ class _RabbitHomeState extends State<RabbitHome> {
             FilledButton.icon(
               onPressed: _ready ? _present : null,
               style: FilledButton.styleFrom(
-                backgroundColor: const Color(0xFF1F7A4D),
+                backgroundColor: const Color(0xFF00573F),
                 padding: const EdgeInsets.symmetric(
                   horizontal: 28,
                   vertical: 16,
