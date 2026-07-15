@@ -1,3 +1,12 @@
+## 1.5.1 (Rabbit custom build)
+
+Consume via the `rabbit-1.5.1` git tag.
+
+* **Exact Rabbit brand colors.** `primaryColor` `#00573F` is now the baked accent
+  (Add button, price amount, orb) and `darkPrimaryColor` `#003D2C` colors the
+  currency token — both straight from Rabbit's `MyThemeData`, replacing the
+  placeholder green. Android artifact is `ai.voqal:voqal-sdk-rabbit:1.5.1`.
+
 ## 1.5.0+rabbit.1 (Rabbit custom build)
 
 Rabbit-only build on top of 1.5.0 — consume via the `rabbit-1.5.0` git tag.
