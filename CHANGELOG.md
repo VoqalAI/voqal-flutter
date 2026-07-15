@@ -1,3 +1,12 @@
+## 1.5.2 (Rabbit custom build)
+
+Consume via the `rabbit-1.5.2` git tag. Bundles native Android
+`voqal-sdk-rabbit:1.5.2` (iOS unchanged — not affected).
+
+* **Fix: Android conversation history.** Prior turns are now attached to every
+  request, so follow-up questions keep their context even when the engine's
+  stored session history isn't available. Same fix as mainline 1.5.2.
+
 ## 1.5.1 (Rabbit custom build)
 
 Consume via the `rabbit-1.5.1` git tag.
