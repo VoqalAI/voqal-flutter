@@ -51,7 +51,7 @@ android {
 
     defaultConfig {
         // Voqal native SDK floor (Android 9). The host app must use minSdk >= 28.
-        minSdk = 28
+        minSdk = 27
     }
 
     testOptions {
@@ -80,7 +80,7 @@ project.extensions.configure(org.jetbrains.kotlin.gradle.dsl.KotlinAndroidProjec
 }
 
 dependencies {
-    implementation("ai.voqal:voqal-sdk-rabbit:1.5.4") // Rabbit-custom native Android SDK (paired with the Rabbit iOS VoqalSDK vendored under ios/Frameworks)
+    implementation("ai.voqal:voqal-sdk-rabbit:1.5.5") // Rabbit-custom native Android SDK (paired with the Rabbit iOS VoqalSDK vendored under ios/Frameworks)
     // sentry-android (not the SDK-only artifact) so we get Android lifecycle/ANR/crash handlers.
     implementation("io.sentry:sentry-android:7.22.6")
     testImplementation("org.jetbrains.kotlin:kotlin-test")

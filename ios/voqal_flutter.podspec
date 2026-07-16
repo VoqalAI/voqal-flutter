@@ -23,7 +23,7 @@ per-request DPoP proof, in-memory session token) lives in the native SDK.
   # turns observability on by default: the core SDK discovers VoqalSentryAutoStart
   # via the ObjC runtime at setup() and starts Sentry with the baked Voqal DSN.
   s.dependency 'Sentry', '~> 8.0'
-  s.platform = :ios, '16.0'
+  s.platform = :ios, '15.0'
 
   # The native SDK ships inside the plugin — pod install needs no network.
   s.vendored_frameworks = 'Frameworks/VoqalSDK.xcframework'

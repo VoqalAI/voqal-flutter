@@ -1,3 +1,16 @@
+## 1.5.5 (Rabbit custom build)
+
+Consume via the `rabbit-1.5.5` git tag. Bundles native iOS `1.5.0-rabbit.5` +
+Android `voqal-sdk-rabbit:1.5.5`.
+
+* **Floors lowered for Rabbit's app: iOS 15 and Android API 27.** The plugin
+  podspec now targets iOS 15.0 and the Android module minSdk 27, matching
+  Rabbit's app so it embeds without build errors. iOS-16-only APIs are
+  availability-gated with graceful iOS 15 fallbacks (the word-by-word answer
+  reveal becomes a single fade-in; letter-spacing routes through kerning).
+  Android needed no behavior changes (lint-verified) — plus VIBRATE is now
+  declared in the SDK manifest.
+
 ## 1.5.4 (Rabbit custom build)
 
 Consume via the `rabbit-1.5.4` git tag. Bundles native iOS `1.5.0-rabbit.4` +

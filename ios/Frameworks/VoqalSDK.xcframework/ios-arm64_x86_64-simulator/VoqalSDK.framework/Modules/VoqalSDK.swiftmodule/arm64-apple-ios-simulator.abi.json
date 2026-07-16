@@ -27381,7 +27381,7 @@
       "kind": "StringLiteral",
       "offset": 147,
       "length": 16,
-      "value": "\"1.5.0-rabbit.4\""
+      "value": "\"1.5.0-rabbit.5\""
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Constants.swift",
@@ -28723,196 +28723,196 @@
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "StringLiteral",
-      "offset": 6636,
+      "offset": 6641,
       "length": 9,
       "value": "\"#1F1F1F\""
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "StringLiteral",
-      "offset": 6686,
+      "offset": 6691,
       "length": 9,
       "value": "\"#7B7B7B\""
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "StringLiteral",
-      "offset": 6915,
+      "offset": 6920,
       "length": 9,
       "value": "\"#003D2C\""
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "FloatLiteral",
-      "offset": 6982,
+      "offset": 6987,
       "length": 4,
       "value": "0.10"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "IntegerLiteral",
-      "offset": 7025,
+      "offset": 7030,
       "length": 2,
       "value": "96"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "IntegerLiteral",
-      "offset": 7066,
+      "offset": 7071,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "IntegerLiteral",
-      "offset": 7107,
+      "offset": 7112,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "IntegerLiteral",
-      "offset": 7144,
+      "offset": 7149,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "IntegerLiteral",
-      "offset": 7182,
+      "offset": 7187,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "IntegerLiteral",
-      "offset": 7224,
+      "offset": 7229,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "IntegerLiteral",
-      "offset": 7266,
+      "offset": 7271,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "IntegerLiteral",
-      "offset": 7313,
+      "offset": 7318,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "IntegerLiteral",
-      "offset": 7594,
+      "offset": 7599,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "StringLiteral",
-      "offset": 7763,
+      "offset": 7768,
       "length": 9,
       "value": "\"#E0FF16\""
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "StringLiteral",
-      "offset": 7860,
+      "offset": 7865,
       "length": 9,
       "value": "\"#000000\""
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "StringLiteral",
-      "offset": 7944,
+      "offset": 7949,
       "length": 9,
       "value": "\"#7A1FA2\""
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "StringLiteral",
-      "offset": 8027,
+      "offset": 8032,
       "length": 9,
       "value": "\"#FFFFFF\""
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "IntegerLiteral",
-      "offset": 8106,
+      "offset": 8111,
       "length": 2,
       "value": "36"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "IntegerLiteral",
-      "offset": 8147,
+      "offset": 8152,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "IntegerLiteral",
-      "offset": 8197,
+      "offset": 8202,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "IntegerLiteral",
-      "offset": 8238,
+      "offset": 8243,
       "length": 2,
       "value": "96"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "IntegerLiteral",
-      "offset": 8281,
+      "offset": 8286,
       "length": 2,
       "value": "36"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "IntegerLiteral",
-      "offset": 8328,
+      "offset": 8333,
       "length": 2,
       "value": "34"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "IntegerLiteral",
-      "offset": 8373,
+      "offset": 8378,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "IntegerLiteral",
-      "offset": 8420,
+      "offset": 8425,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "IntegerLiteral",
-      "offset": 8465,
+      "offset": 8470,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "FloatLiteral",
-      "offset": 8514,
+      "offset": 8519,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "IntegerLiteral",
-      "offset": 13779,
+      "offset": 13784,
       "length": 1,
       "value": "0"
     },
@@ -28989,28 +28989,28 @@
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/RevealText.swift",
       "kind": "IntegerLiteral",
-      "offset": 2388,
+      "offset": 3133,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/RevealText.swift",
       "kind": "IntegerLiteral",
-      "offset": 2459,
+      "offset": 3204,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/StageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9750,
+      "offset": 9760,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/StageView.swift",
       "kind": "BooleanLiteral",
-      "offset": 11600,
+      "offset": 11610,
       "length": 5,
       "value": "false"
     },

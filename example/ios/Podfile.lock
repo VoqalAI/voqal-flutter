@@ -30,7 +30,7 @@ SPEC CHECKSUMS:
   Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
   integration_test: 4a889634ef21a45d28d50d622cf412dc6d9f586e
   Sentry: 108fdbb76299c4189af12246bf0308c09c278922
-  voqal_flutter: 3a359435d1f02713089316af673a0e0086839fbc
+  voqal_flutter: 1f8ddb62065211cfc9396f7844bda4d7506be75c
 
 PODFILE CHECKSUM: 0f3738e3a1f9c88dffef5585fe9d23c498cf099f
 
