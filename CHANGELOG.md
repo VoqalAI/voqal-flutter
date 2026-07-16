@@ -1,3 +1,18 @@
+## 1.5.4 (Rabbit custom build)
+
+Consume via the `rabbit-1.5.4` git tag. Bundles native iOS `1.5.0-rabbit.4` +
+Android `voqal-sdk-rabbit:1.5.4`.
+
+* **Deep-investigation hardening.** Cart control: product rows re-key their
+  count by product id (a reshuffled list can no longer show another product's
+  count on iOS); the 300ms cross-fade window is tap-guarded on both platforms
+  (no stray server increments/decrements); the outgoing pill never displays 0;
+  VoiceOver/TalkBack announce the control and quantity changes.
+* **Coverage:** +18 iOS unit tests (proof-of-possession crypto, per-script font
+  table, currency splitter, streamed-delta accumulation) and +16 Android tests
+  (barge-in, currency splitter, font routing, cart guards). iOS 84/84,
+  Android 197/197; voice verified end-to-end over both transports incl. Arabic.
+
 ## 1.5.3 (Rabbit custom build)
 
 Consume via the `rabbit-1.5.3` git tag. Bundles native iOS `1.5.0-rabbit.3` +
