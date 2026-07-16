@@ -1,3 +1,15 @@
+## 1.5.3 (Rabbit custom build)
+
+Consume via the `rabbit-1.5.3` git tag. Bundles native iOS `1.5.0-rabbit.3` +
+Android `voqal-sdk-rabbit:1.5.3`.
+
+* **Rabbit's exact add-to-cart control.** The product card's stepper + Add button
+  is replaced with Rabbit's own `RMAddToCartButton` (style-for-style): a lime
+  (`#E0FF16`) circular "+" that cross-fades (300ms) into the counter pill
+  (`#7A1FA2`, lime −/+ icons, white count) once a product is in the cart.
+  Cart semantics are now per-unit: every + / − silently fires one
+  `add_to_cart` increment/decrement — no chat bubbles, no agent turns.
+
 ## 1.5.2 (Rabbit custom build)
 
 Consume via the `rabbit-1.5.2` git tag. Bundles native Android
