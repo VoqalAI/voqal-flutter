@@ -1,3 +1,16 @@
+## 1.5.6 (Rabbit custom build)
+
+Consume via the `rabbit-1.5.6` git tag. Bundles native iOS `1.5.0-rabbit.5` (unchanged)
++ Android `voqal-sdk-rabbit:1.5.6`.
+
+* **Android: never leak a raw exception into the chat.** A client-side network/TLS
+  failure previously surfaced a raw JVM string (e.g.
+  `java.security.cert.CertPathValidatorException: Trust anchor for certification path not
+  found`) as the assistant's reply. The native Android SDK now shows a friendly, localized
+  (AR/EN, MSA) connection message instead; the raw throwable still reaches the integrator's
+  error callback for logging. iOS was already safe (it resolves transport failures to a
+  spoken fallback), so the vendored iOS framework is unchanged.
+
 ## 1.5.5 (Rabbit custom build)
 
 Consume via the `rabbit-1.5.5` git tag. Bundles native iOS `1.5.0-rabbit.5` +
