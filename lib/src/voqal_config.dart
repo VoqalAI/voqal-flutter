@@ -169,6 +169,7 @@ class VoqalConfig {
     this.actionButtonEnabled = false,
     this.actionButtonIcon,
     this.actionButtonDismissOnTap = true,
+    this.forwardedHeaders,
   });
 
   /// Default environment-routing request id (production MCP).
@@ -221,6 +222,23 @@ class VoqalConfig {
   /// Whether tapping the action button dismisses the assistant before firing the
   /// callback (default true), so the host is back on its own screen to navigate.
   final bool actionButtonDismissOnTap;
+
+  /// Optional provider of developer headers to forward to your own backend on
+  /// every turn-serving request. Return a **fresh** map each call — it is read
+  /// live, so a rotating value (e.g. a short-lived `Authorization`) always sends
+  /// its current value. Each entry reaches the engine namespaced as
+  /// `X-Voqal-Forward-<name>: <value>`; the engine strips the prefix and forwards
+  /// it to your tenant's backend(s).
+  ///
+  /// Null (the default) forwards nothing, so existing integrations are unaffected.
+  /// Reserved Voqal control headers (`X-Token`, `X-Voqal-Key`, `X-Request-Id`,
+  /// `X-Client-Metadata`, `Content-Type`, `Accept`) are dropped if supplied — they
+  /// can never override the SDK's own headers — while `Authorization` **is**
+  /// forwarded. At most 32 headers are sent.
+  ///
+  /// This provider is a function, so it is not part of [toMap]; the SDK reads it,
+  /// namespaces its output, and pushes the result to the native layer separately.
+  final Map<String, String> Function()? forwardedHeaders;
 
   /// Serializes to a primitives-only map for the method channel.
   ///

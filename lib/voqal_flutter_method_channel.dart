@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart' show visibleForTesting;
 import 'package:flutter/services.dart';
 
+import 'src/voqal_forwarded_headers.dart';
 import 'voqal_flutter_platform_interface.dart';
 
 /// [MethodChannel]-based implementation of [VoqalFlutterPlatform].
@@ -37,29 +38,55 @@ class MethodChannelVoqalFlutter extends VoqalFlutterPlatform {
   }
 
   @override
-  Future<void> setup(Map<String, Object?> config) {
+  Future<void> setup(Map<String, Object?> config) async {
     ensureHandlerRegistered();
-    return methodChannel.invokeMethod<void>('setup', config);
+    await methodChannel.invokeMethod<void>('setup', config);
+    await _syncForwardedHeaders();
   }
 
   @override
-  Future<void> setCredentials(String token, String? metadataJson) {
+  Future<void> setCredentials(String token, String? metadataJson) async {
     ensureHandlerRegistered();
-    return methodChannel.invokeMethod<void>('setCredentials', <String, Object?>{
+    await methodChannel.invokeMethod<void>('setCredentials', <String, Object?>{
       'token': token,
       'metadata': metadataJson,
     });
+    await _syncForwardedHeaders();
   }
 
   @override
-  Future<void> prewarm() {
+  Future<void> setForwardedHeaders(Map<String, String> headers) {
     ensureHandlerRegistered();
-    return methodChannel.invokeMethod<void>('prewarm');
+    return methodChannel.invokeMethod<void>(
+      'setForwardedHeaders',
+      <String, Object?>{'headers': headers},
+    );
   }
 
   @override
-  Future<void> present() {
+  Future<void> prewarm() async {
     ensureHandlerRegistered();
-    return methodChannel.invokeMethod<void>('present');
+    await _syncForwardedHeaders();
+    await methodChannel.invokeMethod<void>('prewarm');
+  }
+
+  @override
+  Future<void> present() async {
+    ensureHandlerRegistered();
+    await _syncForwardedHeaders();
+    await methodChannel.invokeMethod<void>('present');
+  }
+
+  /// Reads the live [forwardedHeaders] provider, namespaces its output, and pushes
+  /// the result to native so the next turn carries the current set. It runs before
+  /// warming (`prewarm`/`present`) and after each `setup`/`setCredentials`, so a
+  /// rotating header is captured at every touchpoint that precedes a turn.
+  ///
+  /// A no-op when no provider is set, so integrations that never opt in issue no
+  /// extra channel traffic and behave byte-identically to the pre-2.0 plugin.
+  Future<void> _syncForwardedHeaders() {
+    final Map<String, String> Function()? provider = forwardedHeaders;
+    if (provider == null) return Future<void>.value();
+    return setForwardedHeaders(VoqalForwardedHeaders.namespaced(provider()));
   }
 }

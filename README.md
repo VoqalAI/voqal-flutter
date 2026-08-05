@@ -141,6 +141,32 @@ assets:` in your pubspec) or `VoqalImage.bytes(...)`. The bytes are resolved at
 greeting `userName` + `pinnedCTAs`; plus `hapticsEnabled` and
 `conversationTimeoutSeconds`.
 
+### Forwarding your own headers to your backend (v2.0.0)
+
+Need your backend to receive an extra header on every turn — a rotating
+`Authorization`, a tenant id, anything? Return them from `forwardedHeaders`:
+
+```dart
+await voqal.setup(VoqalConfig(
+  apiKey: 'pk_live_…',
+  forwardedHeaders: () => {
+    'Authorization': 'Bearer ${myAuth.currentAccessToken}',
+    'X-Tenant-Id': myTenantId,
+  },
+));
+```
+
+The provider is **read live** — return a fresh map so a rotating value always
+sends its current value. Each entry reaches the engine namespaced as
+`X-Voqal-Forward-<name>`, and the engine strips the prefix and forwards it to your
+own backend(s) on every turn. **No dashboard configuration.**
+
+Reserved Voqal control headers (`X-Token`, `X-Voqal-Key`, `X-Request-Id`,
+`X-Client-Metadata`, `Content-Type`, `Accept`) are dropped if you supply them — they
+can never override the SDK's own headers — while `Authorization` **is** forwarded.
+At most 32 headers are sent. Omit `forwardedHeaders` (the default) and nothing
+changes: no header is forwarded and no extra work is done.
+
 ## Security
 
 This wrapper preserves the native SDK's security model and adds nothing:

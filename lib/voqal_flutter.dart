@@ -3,6 +3,7 @@ import 'src/voqal_image.dart';
 import 'voqal_flutter_platform_interface.dart';
 
 export 'src/voqal_config.dart';
+export 'src/voqal_forwarded_headers.dart';
 export 'src/voqal_image.dart';
 
 /// Entry point for the Voqal voice assistant.
@@ -34,6 +35,9 @@ class Voqal {
   /// A [VoqalConfig.headerIcon] is resolved to bytes here (it may read from the
   /// asset bundle) and sent alongside the config map as base64.
   Future<void> setup(VoqalConfig config) async {
+    // Wire the live forwarded-header provider before the platform's setup runs, so
+    // the setup call can capture and push the host's current headers immediately.
+    _platform.forwardedHeaders = config.forwardedHeaders;
     final Map<String, Object?> map = config.toMap();
     final VoqalImage? icon = config.headerIcon;
     if (icon != null) {

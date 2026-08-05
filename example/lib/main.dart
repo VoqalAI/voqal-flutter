@@ -53,6 +53,11 @@ class _RabbitHomeState extends State<RabbitHome> {
     // Optional action button (v1.5.0): accent CTA right of the voice wave. The
     // SDK dismisses the sheet on tap, then fires onActionButtonTapped (below).
     actionButtonEnabled: true,
+    // Optional header passthrough (v2.0.0): headers returned here are read live
+    // and sent to the engine namespaced as `X-Voqal-Forward-<name>`, which
+    // forwards them to your own backend on every turn. Return a fresh map so a
+    // rotating value always sends its current value.
+    forwardedHeaders: () => <String, String>{'X-Demo-Tenant': 'rabbit'},
   );
 
   @override

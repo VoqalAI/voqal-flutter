@@ -46,6 +46,13 @@ class VoqalFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
     @Volatile private var cachedToken: String = ""
     @Volatile private var cachedMetadata: String? = null
 
+    // Latest forwarded headers pushed from Dart, already namespaced as
+    // "X-Voqal-Forward-<name>". In-memory only. The delegate serves these per
+    // request once voqal-sdk 2.0.0's forwarded-headers hook is available (see the
+    // cross-platform PROTOCOL.md); until then this is the receiving half that keeps
+    // the Dart push from failing.
+    @Volatile private var cachedForwardedHeaders: Map<String, String> = emptyMap()
+
     private val delegate = object : VoqalDelegate {
         override fun getToken(): String = cachedToken
         override fun getMetadata(): String? = cachedMetadata
@@ -91,6 +98,13 @@ class VoqalFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
                     ?: return result.error("bad_args", "setCredentials expects a token", null)
                 cachedToken = token
                 cachedMetadata = call.argument<String>("metadata")
+                result.success(null)
+            }
+
+            "setForwardedHeaders" -> {
+                @Suppress("UNCHECKED_CAST")
+                cachedForwardedHeaders =
+                    (call.argument<Map<String, String>>("headers")) ?: emptyMap()
                 result.success(null)
             }
 

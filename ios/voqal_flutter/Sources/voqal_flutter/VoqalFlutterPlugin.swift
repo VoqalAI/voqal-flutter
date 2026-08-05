@@ -32,11 +32,30 @@ public class VoqalFlutterPlugin: NSObject, FlutterPlugin {
   private static var cachedToken = ""
   private static var cachedMetadata: String?
 
+  /// Latest forwarded headers pushed from Dart, already namespaced as
+  /// `X-Voqal-Forward-<name>`. In-memory only, guarded like the credential cache.
+  /// The native delegate serves these per request once VoqalSDK 2.0.0's
+  /// forwarded-headers hook is vendored (see the cross-platform PROTOCOL.md); until
+  /// then this is the receiving half that keeps the Dart push from failing.
+  private static var cachedForwardedHeaders: [String: String] = [:]
+
   private static func cacheCredentials(token: String, metadata: String?) {
     cacheLock.lock()
     cachedToken = token
     cachedMetadata = metadata
     cacheLock.unlock()
+  }
+
+  private static func cacheForwardedHeaders(_ headers: [String: String]) {
+    cacheLock.lock()
+    cachedForwardedHeaders = headers
+    cacheLock.unlock()
+  }
+
+  private static func currentForwardedHeaders() -> [String: String] {
+    cacheLock.lock()
+    defer { cacheLock.unlock() }
+    return cachedForwardedHeaders
   }
 
   private static func currentToken() -> String {
@@ -74,6 +93,11 @@ public class VoqalFlutterPlugin: NSObject, FlutterPlugin {
         return
       }
       Self.cacheCredentials(token: token, metadata: args["metadata"] as? String)
+      result(nil)
+
+    case "setForwardedHeaders":
+      let headers = (call.arguments as? [String: Any])?["headers"] as? [String: String]
+      Self.cacheForwardedHeaders(headers ?? [:])
       result(nil)
 
     case "prewarm":

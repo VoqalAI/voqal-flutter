@@ -1,3 +1,21 @@
+## 2.0.0
+
+Header passthrough — send your own headers straight through Voqal to your backend.
+
+* **`VoqalConfig.forwardedHeaders`.** An optional provider — `Map<String, String>
+  Function()?` — of developer headers to forward to your own backend on every
+  turn-serving request. Return a fresh map each call; it is read live, so a
+  rotating value (e.g. a short-lived `Authorization`) always sends its current
+  value. Each entry reaches the engine namespaced as `X-Voqal-Forward-<name>`, and
+  the engine strips the prefix and forwards it to your tenant's backend(s) — zero
+  dashboard configuration. Reserved Voqal control headers (`X-Token`,
+  `X-Voqal-Key`, `X-Request-Id`, `X-Client-Metadata`, `Content-Type`, `Accept`)
+  are dropped if supplied so they can never override the SDK's own headers, while
+  `Authorization` is forwarded; at most 32 headers are sent. Opt-in and fully
+  backward compatible — integrations that set no provider are unaffected and issue
+  no extra native traffic. Ships the send side of the cross-platform SDK 2.0.0
+  header-passthrough protocol, matching iOS, Android, and React Native.
+
 ## 1.5.2
 
 Bundles native **Android 1.5.2** (iOS unchanged at 1.5.0 — not affected).

@@ -74,6 +74,40 @@ void main() {
     },
   );
 
+  test('setup wires the config forwardedHeaders provider onto the platform', () async {
+    final _FakeVoqalPlatform fake = _FakeVoqalPlatform();
+    VoqalFlutterPlatform.instance = fake;
+    final Voqal voqal = Voqal();
+
+    await voqal.setup(
+      VoqalConfig(
+        apiKey: 'pk',
+        forwardedHeaders: () => <String, String>{'X-Tenant-Id': 't_42'},
+      ),
+    );
+
+    expect(fake.forwardedHeaders, isNotNull);
+    expect(fake.forwardedHeaders!(), <String, String>{'X-Tenant-Id': 't_42'});
+  });
+
+  test('setup leaves forwardedHeaders null when the config omits it', () async {
+    final _FakeVoqalPlatform fake = _FakeVoqalPlatform();
+    VoqalFlutterPlatform.instance = fake;
+    final Voqal voqal = Voqal();
+
+    await voqal.setup(const VoqalConfig(apiKey: 'pk'));
+
+    expect(fake.forwardedHeaders, isNull);
+  });
+
+  test('config never serializes forwardedHeaders (it is a function)', () {
+    final Map<String, Object?> map = VoqalConfig(
+      apiKey: 'pk',
+      forwardedHeaders: () => <String, String>{'X-A': '1'},
+    ).toMap();
+    expect(map.containsKey('forwardedHeaders'), isFalse);
+  });
+
   test('config never serializes a token (push-only surface)', () {
     final Map<String, Object?> map = const VoqalConfig(
       apiKey: 'pk_test',
