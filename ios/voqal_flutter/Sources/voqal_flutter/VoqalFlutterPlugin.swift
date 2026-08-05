@@ -34,9 +34,8 @@ public class VoqalFlutterPlugin: NSObject, FlutterPlugin {
 
   /// Latest forwarded headers pushed from Dart, already namespaced as
   /// `X-Voqal-Forward-<name>`. In-memory only, guarded like the credential cache.
-  /// The native delegate serves these per request once VoqalSDK 2.0.0's
-  /// forwarded-headers hook is vendored (see the cross-platform PROTOCOL.md); until
-  /// then this is the receiving half that keeps the Dart push from failing.
+  /// The `Coordinator.voqalForwardedHeaders()` delegate hook (VoqalSDK 2.0.0) serves
+  /// these to the native SDK per request (see the cross-platform PROTOCOL.md).
   private static var cachedForwardedHeaders: [String: String] = [:]
 
   private static func cacheCredentials(token: String, metadata: String?) {
@@ -225,6 +224,7 @@ public class VoqalFlutterPlugin: NSObject, FlutterPlugin {
         .compactMap { ($0 as? UIWindowScene)?.keyWindow?.rootViewController }
         .first?.voqalTopmost ?? UIViewController()
     }
+    func voqalForwardedHeaders() -> [String: String] { VoqalFlutterPlugin.currentForwardedHeaders() }
     func voqalButton(didUploadRecording result: String) {}
     func voqalButton(didFailWith error: Error) {
       #if DEBUG

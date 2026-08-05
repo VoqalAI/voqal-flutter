@@ -2499,6 +2499,45 @@
           },
           {
             "kind": "Function",
+            "name": "voqalForwardedHeaders",
+            "printedName": "voqalForwardedHeaders()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8VoqalSDK19VocalButtonDelegateP21voqalForwardedHeadersSDyS2SGyF",
+            "mangledName": "$s8VoqalSDK19VocalButtonDelegateP21voqalForwardedHeadersSDyS2SGyF",
+            "moduleName": "VoqalSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : VoqalSDK.VocalButtonDelegate>",
+            "sugared_genericSig": "<Self where Self : VoqalSDK.VocalButtonDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "voqalDidTapActionButton",
             "printedName": "voqalDidTapActionButton()",
             "children": [
@@ -2511,6 +2550,44 @@
             "declKind": "Func",
             "usr": "s:8VoqalSDK19VocalButtonDelegatePAAE017voqalDidTapActionD0yyF",
             "mangledName": "$s8VoqalSDK19VocalButtonDelegatePAAE017voqalDidTapActionD0yyF",
+            "moduleName": "VoqalSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : VoqalSDK.VocalButtonDelegate>",
+            "sugared_genericSig": "<Self where Self : VoqalSDK.VocalButtonDelegate>",
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "voqalForwardedHeaders",
+            "printedName": "voqalForwardedHeaders()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8VoqalSDK19VocalButtonDelegatePAAE21voqalForwardedHeadersSDyS2SGyF",
+            "mangledName": "$s8VoqalSDK19VocalButtonDelegatePAAE21voqalForwardedHeadersSDyS2SGyF",
             "moduleName": "VoqalSDK",
             "genericSig": "<τ_0_0 where τ_0_0 : VoqalSDK.VocalButtonDelegate>",
             "sugared_genericSig": "<Self where Self : VoqalSDK.VocalButtonDelegate>",
@@ -27255,6 +27332,16 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "VoqalSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "VoqalSDK"
       },
       {
@@ -27283,1722 +27370,1750 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/ChatRequest\/ChatResponseModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/ChatRequest\/ChatResponseModel.swift",
       "kind": "StringLiteral",
       "offset": 344,
       "length": 12,
       "value": "\"session_id\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/ChatRequest\/ChatResponseModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/ChatRequest\/ChatResponseModel.swift",
       "kind": "StringLiteral",
       "offset": 607,
       "length": 14,
       "value": "\"chat_message\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalButton.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalButton.swift",
       "kind": "IntegerLiteral",
       "offset": 354,
       "length": 3,
       "value": "110"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalButton.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalButton.swift",
       "kind": "IntegerLiteral",
       "offset": 367,
       "length": 3,
       "value": "110"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalButton.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalButton.swift",
       "kind": "FloatLiteral",
       "offset": 1835,
       "length": 4,
       "value": "0.92"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalButton.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalButton.swift",
       "kind": "FloatLiteral",
       "offset": 1842,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalButton.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalButton.swift",
       "kind": "FloatLiteral",
       "offset": 1887,
       "length": 4,
       "value": "0.15"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalButton.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalButton.swift",
       "kind": "IntegerLiteral",
       "offset": 1900,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalButton.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalButton.swift",
       "kind": "StringLiteral",
       "offset": 2822,
       "length": 19,
       "value": "\"VoqalThreeQuarter\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/RecordingButton.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/RecordingButton.swift",
       "kind": "BooleanLiteral",
       "offset": 1217,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/RecordingButton.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/RecordingButton.swift",
       "kind": "BooleanLiteral",
       "offset": 1257,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Constants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 147,
       "length": 7,
-      "value": "\"1.5.0\""
+      "value": "\"2.0.0\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Constants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Constants.swift",
       "kind": "FloatLiteral",
       "offset": 1717,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBIndicators\/LBIndicator.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBIndicators\/LBIndicator.swift",
       "kind": "BooleanLiteral",
       "offset": 927,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBIndicators\/LBIndicator.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBIndicators\/LBIndicator.swift",
       "kind": "FloatLiteral",
       "offset": 964,
       "length": 4,
       "value": "18.0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBIndicators\/LBIndicator.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBIndicators\/LBIndicator.swift",
       "kind": "FloatLiteral",
       "offset": 1061,
       "length": 4,
       "value": "18.0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBLoadingView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBLoadingView.swift",
       "kind": "BooleanLiteral",
       "offset": 221,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBLoadingView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBLoadingView.swift",
       "kind": "IntegerLiteral",
       "offset": 278,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/ThreeDotsLoadingView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/ThreeDotsLoadingView.swift",
       "kind": "Array",
       "offset": 194,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/ThreeDotsLoadingView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/ThreeDotsLoadingView.swift",
       "kind": "BooleanLiteral",
       "offset": 227,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/WaveformView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/WaveformView.swift",
       "kind": "Array",
       "offset": 308,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/WaveformView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/WaveformView.swift",
       "kind": "IntegerLiteral",
       "offset": 339,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/WaveformView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/WaveformView.swift",
       "kind": "FloatLiteral",
       "offset": 504,
       "length": 3,
       "value": "3.0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/WaveformView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/WaveformView.swift",
       "kind": "FloatLiteral",
       "offset": 581,
       "length": 3,
       "value": "4.0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/WaveformView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/WaveformView.swift",
       "kind": "FloatLiteral",
       "offset": 670,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatViewModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 879,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatViewModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 898,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatViewModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatViewModel.swift",
       "kind": "StringLiteral",
       "offset": 918,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "StringLiteral",
       "offset": 231,
       "length": 18,
       "value": "\"RecordingManager\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "StringLiteral",
       "offset": 282,
       "length": 12,
       "value": "\"Recording-\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "StringLiteral",
       "offset": 326,
       "length": 5,
       "value": "\"wav\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "StringLiteral",
       "offset": 365,
       "length": 17,
       "value": "\"yyyyMMdd-hhmmss\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "StringLiteral",
       "offset": 419,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "StringLiteral",
       "offset": 462,
       "length": 6,
       "value": "\"file\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "StringLiteral",
       "offset": 511,
       "length": 13,
       "value": "\"file_base64\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "FloatLiteral",
       "offset": 672,
       "length": 7,
       "value": "16000.0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 738,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 797,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "BooleanLiteral",
       "offset": 868,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "BooleanLiteral",
       "offset": 949,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 126,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 148,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 170,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 193,
       "length": 7,
       "value": "\"PATCH\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 219,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatNetworkClient\/ChatNetworkClient.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatNetworkClient\/ChatNetworkClient.swift",
       "kind": "BooleanLiteral",
       "offset": 205,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "BooleanLiteral",
       "offset": 707,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 749,
       "length": 2,
       "value": "44"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "FloatLiteral",
       "offset": 865,
       "length": 4,
       "value": "0.35"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 920,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 931,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 970,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "StringLiteral",
       "offset": 1098,
       "length": 14,
       "value": "\"Tap to speak\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "BooleanLiteral",
       "offset": 1338,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "StringLiteral",
       "offset": 1469,
       "length": 19,
       "value": "\"Powered by Voqal.\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "BooleanLiteral",
       "offset": 1714,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "StringLiteral",
       "offset": 1871,
       "length": 14,
       "value": "\"Type instead\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "StringLiteral",
       "offset": 2191,
       "length": 10,
       "value": "\"keyboard\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 2233,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "BooleanLiteral",
       "offset": 2532,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "StringLiteral",
       "offset": 2730,
       "length": 17,
       "value": "\"paperplane.fill\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 2950,
       "length": 2,
       "value": "25"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "BooleanLiteral",
       "offset": 3016,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "StringLiteral",
       "offset": 3189,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "BooleanLiteral",
       "offset": 3475,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 3849,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 3889,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "BooleanLiteral",
       "offset": 3926,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 3988,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 3997,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 4009,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 4019,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 4076,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "BooleanLiteral",
       "offset": 4139,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "BooleanLiteral",
       "offset": 4441,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 4894,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 5139,
       "length": 2,
       "value": "88"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 5207,
       "length": 2,
       "value": "88"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/HeaderView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/HeaderView.swift",
       "kind": "BooleanLiteral",
       "offset": 368,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/HeaderView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/HeaderView.swift",
       "kind": "IntegerLiteral",
       "offset": 408,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/HeaderView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/HeaderView.swift",
       "kind": "IntegerLiteral",
       "offset": 580,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/HeaderView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/HeaderView.swift",
       "kind": "BooleanLiteral",
       "offset": 645,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/HeaderView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/HeaderView.swift",
       "kind": "BooleanLiteral",
       "offset": 680,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/HeaderView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/HeaderView.swift",
       "kind": "BooleanLiteral",
       "offset": 1292,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/HeaderView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/HeaderView.swift",
       "kind": "BooleanLiteral",
       "offset": 1708,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/HeaderView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/HeaderView.swift",
       "kind": "StringLiteral",
       "offset": 1855,
       "length": 4,
       "value": "\"×\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/HeaderView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/HeaderView.swift",
       "kind": "IntegerLiteral",
       "offset": 1936,
       "length": 2,
       "value": "26"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/HeaderView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/HeaderView.swift",
       "kind": "BooleanLiteral",
       "offset": 2100,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBIndicators\/MaterialLoadingIndicator.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBIndicators\/MaterialLoadingIndicator.swift",
       "kind": "IntegerLiteral",
       "offset": 728,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBIndicators\/MaterialLoadingIndicator.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBIndicators\/MaterialLoadingIndicator.swift",
       "kind": "FloatLiteral",
       "offset": 1027,
       "length": 4,
       "value": "18.0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 3111,
       "length": 4,
       "value": "7200"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 3309,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 4375,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 4426,
       "length": 6,
       "value": "\"Open\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "Array",
       "offset": 5359,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 5387,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 5971,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 6058,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 6127,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 6215,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 6286,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 6567,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 6652,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 6719,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 6805,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 6874,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
       "kind": "StringLiteral",
       "offset": 197,
       "length": 7,
       "value": "\"audio\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
       "kind": "StringLiteral",
       "offset": 225,
       "length": 6,
       "value": "\"text\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
       "kind": "StringLiteral",
       "offset": 695,
       "length": 13,
       "value": "\"device_info\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
       "kind": "StringLiteral",
       "offset": 736,
       "length": 14,
       "value": "\"audio_base64\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
       "kind": "StringLiteral",
       "offset": 771,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
       "kind": "StringLiteral",
       "offset": 798,
       "length": 6,
       "value": "\"text\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
       "kind": "StringLiteral",
       "offset": 830,
       "length": 12,
       "value": "\"session_id\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
       "kind": "IntegerLiteral",
       "offset": 465,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
       "kind": "IntegerLiteral",
       "offset": 470,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
       "kind": "IntegerLiteral",
       "offset": 612,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
       "kind": "IntegerLiteral",
       "offset": 617,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
       "kind": "IntegerLiteral",
       "offset": 784,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
       "kind": "IntegerLiteral",
       "offset": 789,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatMessageCell.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatMessageCell.swift",
       "kind": "StringLiteral",
       "offset": 812,
       "length": 17,
       "value": "\"ChatMessageCell\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/DeviceHelper.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/DeviceHelper.swift",
       "kind": "StringLiteral",
       "offset": 216,
       "length": 38,
       "value": "\"00000000-0000-0000-0000-000000000000\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 602,
       "length": 48,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 649,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 672,
       "length": 7,
       "value": "\"Apple\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 701,
       "length": 24,
       "value": "\"deviceNameNotAvailable\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 812,
       "length": 23,
       "value": "\"X-Device-Manufacturer\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 857,
       "length": 16,
       "value": "\"X-Device-Model\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 900,
       "length": 20,
       "value": "\"X-Platform-Version\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 941,
       "length": 12,
       "value": "\"X-Language\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 982,
       "length": 17,
       "value": "\"X-Device-Height\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 1027,
       "length": 16,
       "value": "\"X-Device-Width\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 1070,
       "length": 16,
       "value": "\"X-Platform-SDK\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 1107,
       "length": 18,
       "value": "\"X-Advertising-Id\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 1155,
       "length": 21,
       "value": "\"X-Limit-Ad-Tracking\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 1207,
       "length": 16,
       "value": "\"X-Device-Brand\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 1250,
       "length": 15,
       "value": "\"X-Device-Name\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatMessage.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatMessage.swift",
       "kind": "BooleanLiteral",
       "offset": 544,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/ChatViewController\/ChatMessage.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/ChatViewController\/ChatMessage.swift",
       "kind": "BooleanLiteral",
       "offset": 820,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/VocalSDKManager.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/VocalSDKManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3111,
+      "offset": 3175,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/SessionRequest\/SessionRequest.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/SessionRequest\/SessionRequest.swift",
       "kind": "Dictionary",
       "offset": 346,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/SessionRequest\/SessionResponseModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/SessionRequest\/SessionResponseModel.swift",
       "kind": "StringLiteral",
       "offset": 276,
       "length": 12,
       "value": "\"session_id\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/SessionRequest\/SessionResponseModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/SessionRequest\/SessionResponseModel.swift",
       "kind": "StringLiteral",
       "offset": 314,
       "length": 12,
       "value": "\"created_at\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/V2\/VoqalClient.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/V2\/VoqalClient.swift",
+      "kind": "Dictionary",
+      "offset": 770,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/V2\/VoqalClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 7608,
+      "offset": 7991,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/V2\/VoqalClient.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/V2\/VoqalClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 7647,
+      "offset": 8030,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/V2\/VoqalClient.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/V2\/VoqalClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 7676,
+      "offset": 8059,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/V2\/VoqalEndpoint.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/V2\/VoqalEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 855,
       "length": 25,
       "value": "\"https:\/\/api.voqal.ai\/v2\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
       "kind": "StringLiteral",
       "offset": 963,
       "length": 14,
       "value": "\"audio_base64\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
       "kind": "Dictionary",
       "offset": 1169,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
       "kind": "Array",
       "offset": 1201,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
       "kind": "Dictionary",
       "offset": 1643,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
       "kind": "Array",
       "offset": 1675,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
       "kind": "Dictionary",
       "offset": 2083,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 507,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "StringLiteral",
       "offset": 924,
       "length": 3,
       "value": "\"#\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1133,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1245,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "FloatLiteral",
       "offset": 1253,
       "length": 4,
       "value": "15.0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1273,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1276,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1315,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1340,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1403,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1415,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "FloatLiteral",
       "offset": 1423,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1539,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1559,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1578,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1619,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1632,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1637,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 2272,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 2282,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 2291,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 2327,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 2337,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 2346,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
       "kind": "StringLiteral",
       "offset": 1188,
       "length": 9,
       "value": "\"#2d5bff\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
       "kind": "IntegerLiteral",
       "offset": 1326,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
       "kind": "FloatLiteral",
       "offset": 1974,
       "length": 5,
       "value": "0.176"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
       "kind": "FloatLiteral",
       "offset": 1988,
       "length": 5,
       "value": "0.357"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
       "kind": "FloatLiteral",
       "offset": 2001,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Session\/VoqalSession.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Session\/VoqalSession.swift",
       "kind": "Array",
       "offset": 837,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Session\/VoqalSession.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Session\/VoqalSession.swift",
       "kind": "StringLiteral",
       "offset": 1139,
       "length": 50,
       "value": "\"Sorry, I'm not able to help with that right now.\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Session\/VoqalSession.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Session\/VoqalSession.swift",
       "kind": "Dictionary",
       "offset": 1496,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "Array",
       "offset": 1141,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "StringLiteral",
       "offset": 1179,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "IntegerLiteral",
       "offset": 1303,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "Array",
       "offset": 1566,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "BooleanLiteral",
       "offset": 1695,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "IntegerLiteral",
       "offset": 3168,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "BooleanLiteral",
       "offset": 3966,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "Array",
       "offset": 6805,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "Array",
       "offset": 12497,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/ConfirmWidget.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/ConfirmWidget.swift",
       "kind": "BooleanLiteral",
       "offset": 826,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "IntegerLiteral",
       "offset": 5932,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "BooleanLiteral",
       "offset": 5965,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/SupportWidgets.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/SupportWidgets.swift",
       "kind": "IntegerLiteral",
       "offset": 3459,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/VoqalThemeEnvironment.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/VoqalThemeEnvironment.swift",
       "kind": "BooleanLiteral",
       "offset": 400,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/VoqalThemeEnvironment.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/VoqalThemeEnvironment.swift",
       "kind": "FloatLiteral",
       "offset": 1620,
       "length": 4,
       "value": "10.5"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/RevealText.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/RevealText.swift",
       "kind": "BooleanLiteral",
       "offset": 599,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/RevealText.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/RevealText.swift",
       "kind": "BooleanLiteral",
       "offset": 702,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/RevealText.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/RevealText.swift",
       "kind": "IntegerLiteral",
       "offset": 746,
       "length": 2,
       "value": "27"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/RevealText.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/RevealText.swift",
       "kind": "BooleanLiteral",
       "offset": 924,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/RevealText.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/RevealText.swift",
       "kind": "IntegerLiteral",
       "offset": 2388,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/RevealText.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/RevealText.swift",
       "kind": "IntegerLiteral",
       "offset": 2459,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/StageView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/StageView.swift",
       "kind": "BooleanLiteral",
       "offset": 9656,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/StageView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/StageView.swift",
       "kind": "BooleanLiteral",
       "offset": 11506,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/VoiceDock.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/VoiceDock.swift",
       "kind": "BooleanLiteral",
       "offset": 495,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/VoiceDock.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/VoiceDock.swift",
       "kind": "BooleanLiteral",
       "offset": 536,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/VoiceDock.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/VoiceDock.swift",
       "kind": "FloatLiteral",
       "offset": 939,
       "length": 3,
       "value": "1.2"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
       "kind": "IntegerLiteral",
       "offset": 510,
       "length": 3,
       "value": "132"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
       "kind": "IntegerLiteral",
       "offset": 629,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
       "kind": "FloatLiteral",
       "offset": 999,
       "length": 4,
       "value": "0.25"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
       "kind": "FloatLiteral",
       "offset": 1006,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
       "kind": "FloatLiteral",
       "offset": 1012,
       "length": 4,
       "value": "60.0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
       "kind": "IntegerLiteral",
       "offset": 1100,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
       "kind": "FloatLiteral",
       "offset": 1311,
       "length": 4,
       "value": "1.25"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
       "kind": "IntegerLiteral",
       "offset": 2050,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/VoqalExperienceView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/VoqalExperienceView.swift",
       "kind": "Array",
       "offset": 509,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/V2\/SSEDecoder.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/V2\/SSEDecoder.swift",
       "kind": "StringLiteral",
       "offset": 1063,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/Networking\/V2\/SSEDecoder.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/V2\/SSEDecoder.swift",
       "kind": "StringLiteral",
       "offset": 1089,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Views\/BidiText.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Views\/BidiText.swift",
       "kind": "IntegerLiteral",
       "offset": 698,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "IntegerLiteral",
       "offset": 789,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "IntegerLiteral",
       "offset": 795,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "IntegerLiteral",
       "offset": 804,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "StringLiteral",
       "offset": 2210,
       "length": 14,
       "value": "\"ai.voqal.log\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "Array",
       "offset": 2281,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "Array",
       "offset": 2417,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "IntegerLiteral",
       "offset": 2454,
       "length": 2,
       "value": "40"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "Dictionary",
       "offset": 2976,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "Dictionary",
       "offset": 5149,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "Dictionary",
       "offset": 5306,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "Dictionary",
       "offset": 5465,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "Dictionary",
       "offset": 5646,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Voice\/AudioClipAnalyzer.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Voice\/AudioClipAnalyzer.swift",
       "kind": "IntegerLiteral",
       "offset": 478,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Voice\/AudioClipAnalyzer.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Voice\/AudioClipAnalyzer.swift",
       "kind": "IntegerLiteral",
       "offset": 607,
       "length": 5,
       "value": "2000"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Diagnostics\/VoqalDiagnosticsContext.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Diagnostics\/VoqalDiagnosticsContext.swift",
       "kind": "StringLiteral",
       "offset": 1115,
       "length": 9,
       "value": "\"unknown\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Diagnostics\/VoqalTrace.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Diagnostics\/VoqalTrace.swift",
       "kind": "BooleanLiteral",
       "offset": 1698,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Diagnostics\/VoqalTrace.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Diagnostics\/VoqalTrace.swift",
       "kind": "Dictionary",
       "offset": 2586,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Diagnostics\/VoqalTrace.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Diagnostics\/VoqalTrace.swift",
       "kind": "Dictionary",
       "offset": 3977,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Diagnostics\/VoqalObservability.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Diagnostics\/VoqalObservability.swift",
       "kind": "BooleanLiteral",
       "offset": 620,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Diagnostics\/VoqalObservability.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Diagnostics\/VoqalObservability.swift",
       "kind": "BooleanLiteral",
       "offset": 659,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Diagnostics\/VoqalObservability.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Diagnostics\/VoqalObservability.swift",
       "kind": "FloatLiteral",
       "offset": 708,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Diagnostics\/VoqalObservability.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Diagnostics\/VoqalObservability.swift",
       "kind": "StringLiteral",
       "offset": 2217,
       "length": 97,
       "value": "\"https:\/\/e497e80a89ec061fb167ec2699e72889@o4511559480770560.ingest.de.sentry.io\/4511559486275664\""
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK\/VoqalSDK\/V2\/Diagnostics\/VoqalObservability.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/V2\/Diagnostics\/VoqalObservability.swift",
       "kind": "BooleanLiteral",
       "offset": 2617,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/yaseenahmed\/Library\/Developer\/Xcode\/DerivedData\/VoqalSDK-bjcayiqxorlzgugniklvgwxkibts\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VoqalSDK\/IntermediateBuildFilesPath\/VoqalSDK.build\/Release-iphonesimulator\/VoqalSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/V2\/VoqalForwardedHeaders.swift",
+      "kind": "StringLiteral",
+      "offset": 827,
+      "length": 18,
+      "value": "\"X-Voqal-Forward-\""
+    },
+    {
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/V2\/VoqalForwardedHeaders.swift",
+      "kind": "IntegerLiteral",
+      "offset": 998,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/V2\/VoqalForwardedHeaders.swift",
+      "kind": "Array",
+      "offset": 1278,
+      "length": 112,
+      "value": "[\"x-token\", \"x-voqal-key\", \"x-request-id\", \"x-client-metadata\", \"content-type\", \"accept\"]"
+    },
+    {
+      "filePath": "\/Users\/yaseenahmed\/Library\/Developer\/Xcode\/DerivedData\/VoqalSDK-fkzzhgcvuypbchcrjouzfwywgsea\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VoqalSDK\/IntermediateBuildFilesPath\/VoqalSDK.build\/Release-iphonesimulator\/VoqalSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 731,
       "length": 11,

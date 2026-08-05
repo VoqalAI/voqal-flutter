@@ -47,15 +47,15 @@ class VoqalFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
     @Volatile private var cachedMetadata: String? = null
 
     // Latest forwarded headers pushed from Dart, already namespaced as
-    // "X-Voqal-Forward-<name>". In-memory only. The delegate serves these per
-    // request once voqal-sdk 2.0.0's forwarded-headers hook is available (see the
-    // cross-platform PROTOCOL.md); until then this is the receiving half that keeps
-    // the Dart push from failing.
+    // "X-Voqal-Forward-<name>". In-memory only. The delegate's getForwardedHeaders()
+    // (voqal-sdk 2.0.0) serves these to the native SDK per request (see the
+    // cross-platform PROTOCOL.md).
     @Volatile private var cachedForwardedHeaders: Map<String, String> = emptyMap()
 
     private val delegate = object : VoqalDelegate {
         override fun getToken(): String = cachedToken
         override fun getMetadata(): String? = cachedMetadata
+        override fun getForwardedHeaders(): Map<String, String> = cachedForwardedHeaders
         override fun onUploadResult(result: String) {
             // No-op for v1 (matches iOS). Wire a Dart listener before forwarding.
         }

@@ -82,9 +82,11 @@ public protocol VocalButtonDelegate : AnyObject {
   func voqalButton(didUploadRecording result: Swift.String)
   func voqalButton(didFailWith error: any Swift.Error)
   func voqalDidTapActionButton()
+  func voqalForwardedHeaders() -> [Swift.String : Swift.String]
 }
 extension VoqalSDK.VocalButtonDelegate {
   public func voqalDidTapActionButton()
+  public func voqalForwardedHeaders() -> [Swift.String : Swift.String]
 }
 public enum HTTPMethod : Swift.String {
   case get
