@@ -1,3 +1,13 @@
+## 2.0.1
+
+Routes to the self-serve engine.
+
+* The baked engine URL is now `https://api.voqal.ai/v3`, the deployment that
+  serves assistants configured in the Voqal dashboard. 2.0.0 pointed at `/v2`,
+  which predates self-serve, so a dashboard-published assistant's publishable
+  key resolved against the wrong deployment. No API changes — drop-in over 2.0.0.
+* Native SDKs bumped to iOS 2.0.1 (vendored) and `ai.voqal:voqal-sdk:2.0.1`.
+
 ## 2.0.0
 
 Header passthrough — send your own headers straight through Voqal to your backend.

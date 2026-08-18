@@ -27451,7 +27451,7 @@
       "kind": "StringLiteral",
       "offset": 147,
       "length": 7,
-      "value": "\"2.0.0\""
+      "value": "\"2.0.1\""
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Constants.swift",
@@ -28394,9 +28394,9 @@
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/V2\/VoqalEndpoint.swift",
       "kind": "StringLiteral",
-      "offset": 855,
+      "offset": 944,
       "length": 25,
-      "value": "\"https:\/\/api.voqal.ai\/v2\""
+      "value": "\"https:\/\/api.voqal.ai\/v3\""
     },
     {
       "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/voqalsdk-2.0.0\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",

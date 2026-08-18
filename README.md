@@ -182,7 +182,7 @@ This wrapper preserves the native SDK's security model and adds nothing:
   persisted (no Keychain / `UserDefaults` / `SharedPreferences` / disk), never
   logged, and never returned across the method channel to Dart.
 - **HTTPS only.** Requests go to the baked production endpoint
-  (`https://api.voqal.ai/v2`); the plugin ships no cleartext exception.
+  (`https://api.voqal.ai/v3`); the plugin ships no cleartext exception.
 
 ## Status
 

@@ -80,7 +80,7 @@ project.extensions.configure(org.jetbrains.kotlin.gradle.dsl.KotlinAndroidProjec
 }
 
 dependencies {
-    implementation("ai.voqal:voqal-sdk:2.0.0") // native Android SDK 2.0.0 (header passthrough); paired with iOS VoqalSDK 2.0.0 vendored under ios/Frameworks. Maven artifact must be published to voqal-android-maven at release (#206).
+    implementation("ai.voqal:voqal-sdk:2.0.1") // native Android SDK 2.0.1 (engine URL -> api.voqal.ai/v3); paired with iOS VoqalSDK 2.0.1 vendored under ios/Frameworks. Maven artifact must be published to voqal-android-maven at release (#206).
     // sentry-android (not the SDK-only artifact) so we get Android lifecycle/ANR/crash handlers.
     implementation("io.sentry:sentry-android:7.22.6")
     testImplementation("org.jetbrains.kotlin:kotlin-test")
