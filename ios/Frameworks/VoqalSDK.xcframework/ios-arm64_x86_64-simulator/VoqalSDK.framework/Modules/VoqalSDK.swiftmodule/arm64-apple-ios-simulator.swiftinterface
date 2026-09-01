@@ -377,6 +377,24 @@ public struct ListWidget : Swift.Codable, Swift.Equatable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct ActionListRow : Swift.Codable, Swift.Equatable {
+  public let title: Swift.String
+  public let meta: Swift.String?
+  public let trailing: Swift.String?
+  public let media: Swift.String?
+  public let icon: Swift.String?
+  public let tap: Swift.String
+  public static func == (a: VoqalSDK.ActionListRow, b: VoqalSDK.ActionListRow) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ActionList : Swift.Codable, Swift.Equatable {
+  public let title: Swift.String?
+  public let rows: [VoqalSDK.ActionListRow]
+  public static func == (a: VoqalSDK.ActionList, b: VoqalSDK.ActionList) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct Badge : Swift.Codable, Swift.Equatable {
   public let text: Swift.String
   public let tone: Swift.String?
@@ -483,6 +501,7 @@ public enum Widget : Swift.Decodable, Swift.Equatable {
   case stat(VoqalSDK.Stat)
   case progress(VoqalSDK.Progress)
   case list(VoqalSDK.ListWidget)
+  case actionList(VoqalSDK.ActionList)
   case card(VoqalSDK.Card)
   case chart(VoqalSDK.Chart)
   case confirm(VoqalSDK.Confirm)

@@ -1,3 +1,27 @@
+## 2.1.0
+
+Bundles native **iOS 2.1.0** + **Android 2.1.0** — the tappable `action_list` widget.
+
+* **Tappable option lists.** The agent can now answer with a list whose rows are
+  tap targets: tapping a row sends that row's utterance as your next message, so a
+  user picks an offered option ("here are the free slots") instead of retyping it.
+  Rows render exactly like the existing `list` widget plus a trailing chevron and
+  press feedback. Taps route through the same guarded path as the suggestion chips,
+  so they are inert while a turn is in flight, count as a text turn (no speech), and
+  stay live in scroll-back.
+* **No Flutter API change and no app code to write.** The plugin is a wrapper — the
+  native SDK owns every pixel and decodes the render spec itself — so this is a
+  version bump only. `VoqalConfig`, `Voqal`, and the method channel are unchanged;
+  2.1.0 is a drop-in over 2.0.1.
+* **Android also starts reporting `meta.platform` on every turn.** The native Android
+  2.1.0 artifact carries one fix beyond the widget: Android turns previously reached the
+  engine with no channel set, so those conversations were not attributable on the Voqal
+  dashboard. Nothing in your app changes — but Android conversations that were invisible
+  will start appearing. iOS already reported this.
+* The widget is additive on the wire: apps still on 2.0.x decode an unknown kind and
+  leave it unrendered, so the engine can emit `action_list` without gating on the
+  installed SDK version.
+
 ## 2.0.1
 
 Routes to the self-serve engine.
