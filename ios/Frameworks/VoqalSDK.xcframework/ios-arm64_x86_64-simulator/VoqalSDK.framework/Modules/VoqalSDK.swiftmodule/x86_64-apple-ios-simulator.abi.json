@@ -32207,1946 +32207,1946 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/ChatRequest\/ChatResponseModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/ChatRequest\/ChatResponseModel.swift",
       "kind": "StringLiteral",
       "offset": 344,
       "length": 12,
       "value": "\"session_id\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/ChatRequest\/ChatResponseModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/ChatRequest\/ChatResponseModel.swift",
       "kind": "StringLiteral",
       "offset": 607,
       "length": 14,
       "value": "\"chat_message\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalButton.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalButton.swift",
       "kind": "IntegerLiteral",
       "offset": 354,
       "length": 3,
       "value": "110"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalButton.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalButton.swift",
       "kind": "IntegerLiteral",
       "offset": 367,
       "length": 3,
       "value": "110"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalButton.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalButton.swift",
       "kind": "FloatLiteral",
       "offset": 1835,
       "length": 4,
       "value": "0.92"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalButton.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalButton.swift",
       "kind": "FloatLiteral",
       "offset": 1842,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalButton.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalButton.swift",
       "kind": "FloatLiteral",
       "offset": 1887,
       "length": 4,
       "value": "0.15"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalButton.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalButton.swift",
       "kind": "IntegerLiteral",
       "offset": 1900,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalButton.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalButton.swift",
       "kind": "StringLiteral",
       "offset": 2822,
       "length": 19,
       "value": "\"VoqalThreeQuarter\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/RecordingButton.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/RecordingButton.swift",
       "kind": "BooleanLiteral",
       "offset": 1217,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/RecordingButton.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/RecordingButton.swift",
       "kind": "BooleanLiteral",
       "offset": 1257,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Constants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 147,
       "length": 7,
       "value": "\"2.2.0\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Constants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Constants.swift",
       "kind": "FloatLiteral",
       "offset": 1717,
       "length": 3,
       "value": "0.5"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBIndicators\/LBIndicator.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBIndicators\/LBIndicator.swift",
       "kind": "BooleanLiteral",
       "offset": 927,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBIndicators\/LBIndicator.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBIndicators\/LBIndicator.swift",
       "kind": "FloatLiteral",
       "offset": 964,
       "length": 4,
       "value": "18.0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBIndicators\/LBIndicator.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBIndicators\/LBIndicator.swift",
       "kind": "FloatLiteral",
       "offset": 1061,
       "length": 4,
       "value": "18.0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBLoadingView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBLoadingView.swift",
       "kind": "BooleanLiteral",
       "offset": 221,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBLoadingView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBLoadingView.swift",
       "kind": "IntegerLiteral",
       "offset": 278,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/ThreeDotsLoadingView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/ThreeDotsLoadingView.swift",
       "kind": "Array",
       "offset": 194,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/ThreeDotsLoadingView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/ThreeDotsLoadingView.swift",
       "kind": "BooleanLiteral",
       "offset": 227,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/WaveformView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/WaveformView.swift",
       "kind": "Array",
       "offset": 308,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/WaveformView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/WaveformView.swift",
       "kind": "IntegerLiteral",
       "offset": 339,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/WaveformView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/WaveformView.swift",
       "kind": "FloatLiteral",
       "offset": 504,
       "length": 3,
       "value": "3.0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/WaveformView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/WaveformView.swift",
       "kind": "FloatLiteral",
       "offset": 581,
       "length": 3,
       "value": "4.0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/WaveformView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/WaveformView.swift",
       "kind": "FloatLiteral",
       "offset": 670,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatViewModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 879,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatViewModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 898,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatViewModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatViewModel.swift",
       "kind": "StringLiteral",
       "offset": 918,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "StringLiteral",
       "offset": 231,
       "length": 18,
       "value": "\"RecordingManager\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "StringLiteral",
       "offset": 282,
       "length": 12,
       "value": "\"Recording-\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "StringLiteral",
       "offset": 326,
       "length": 5,
       "value": "\"wav\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "StringLiteral",
       "offset": 365,
       "length": 17,
       "value": "\"yyyyMMdd-hhmmss\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "StringLiteral",
       "offset": 419,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "StringLiteral",
       "offset": 462,
       "length": 6,
       "value": "\"file\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "StringLiteral",
       "offset": 511,
       "length": 13,
       "value": "\"file_base64\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "FloatLiteral",
       "offset": 672,
       "length": 7,
       "value": "16000.0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 738,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 797,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "BooleanLiteral",
       "offset": 868,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/RecordingManager\/RecordingConstants.swift",
       "kind": "BooleanLiteral",
       "offset": 949,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 126,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 148,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 170,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 193,
       "length": 7,
       "value": "\"PATCH\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/HTTPMethod.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 219,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatNetworkClient\/ChatNetworkClient.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatNetworkClient\/ChatNetworkClient.swift",
       "kind": "BooleanLiteral",
       "offset": 205,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "BooleanLiteral",
       "offset": 707,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 749,
       "length": 2,
       "value": "44"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "FloatLiteral",
       "offset": 865,
       "length": 4,
       "value": "0.35"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 920,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 931,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 970,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "StringLiteral",
       "offset": 1098,
       "length": 14,
       "value": "\"Tap to speak\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "BooleanLiteral",
       "offset": 1338,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "StringLiteral",
       "offset": 1469,
       "length": 19,
       "value": "\"Powered by Voqal.\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "BooleanLiteral",
       "offset": 1714,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "StringLiteral",
       "offset": 1871,
       "length": 14,
       "value": "\"Type instead\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "StringLiteral",
       "offset": 2191,
       "length": 10,
       "value": "\"keyboard\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 2233,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "BooleanLiteral",
       "offset": 2532,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "StringLiteral",
       "offset": 2730,
       "length": 17,
       "value": "\"paperplane.fill\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 2950,
       "length": 2,
       "value": "25"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "BooleanLiteral",
       "offset": 3016,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "StringLiteral",
       "offset": 3189,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "BooleanLiteral",
       "offset": 3475,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 3849,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 3889,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "BooleanLiteral",
       "offset": 3926,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 3988,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 3997,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 4009,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 4019,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 4076,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "BooleanLiteral",
       "offset": 4139,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "BooleanLiteral",
       "offset": 4441,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 4894,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 5139,
       "length": 2,
       "value": "88"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatInputSwitcherView.swift",
       "kind": "IntegerLiteral",
       "offset": 5207,
       "length": 2,
       "value": "88"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/HeaderView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/HeaderView.swift",
       "kind": "BooleanLiteral",
       "offset": 368,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/HeaderView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/HeaderView.swift",
       "kind": "IntegerLiteral",
       "offset": 408,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/HeaderView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/HeaderView.swift",
       "kind": "IntegerLiteral",
       "offset": 580,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/HeaderView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/HeaderView.swift",
       "kind": "BooleanLiteral",
       "offset": 645,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/HeaderView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/HeaderView.swift",
       "kind": "BooleanLiteral",
       "offset": 680,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/HeaderView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/HeaderView.swift",
       "kind": "BooleanLiteral",
       "offset": 1292,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/HeaderView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/HeaderView.swift",
       "kind": "BooleanLiteral",
       "offset": 1708,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/HeaderView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/HeaderView.swift",
       "kind": "StringLiteral",
       "offset": 1855,
       "length": 4,
       "value": "\"×\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/HeaderView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/HeaderView.swift",
       "kind": "IntegerLiteral",
       "offset": 1936,
       "length": 2,
       "value": "26"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/HeaderView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/HeaderView.swift",
       "kind": "BooleanLiteral",
       "offset": 2100,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBIndicators\/MaterialLoadingIndicator.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBIndicators\/MaterialLoadingIndicator.swift",
       "kind": "IntegerLiteral",
       "offset": 728,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBIndicators\/MaterialLoadingIndicator.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/LoadingAnimation\/LoadingAnimationViews\/LBIndicators\/MaterialLoadingIndicator.swift",
       "kind": "FloatLiteral",
       "offset": 1027,
       "length": 4,
       "value": "18.0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 3111,
       "length": 4,
       "value": "7200"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 3309,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 4733,
       "length": 11,
       "value": "\"Add funds\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 4750,
       "length": 21,
       "value": "\"إضافة رصيد\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 4961,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 5893,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 5944,
       "length": 6,
       "value": "\"Open\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "Array",
       "offset": 6877,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 6905,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 7489,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 7576,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 7645,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 7733,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 7804,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 8085,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 8170,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 8237,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 8323,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VoqalSDKConfiguration.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VoqalSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 8392,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
       "kind": "StringLiteral",
       "offset": 197,
       "length": 7,
       "value": "\"audio\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
       "kind": "StringLiteral",
       "offset": 225,
       "length": 6,
       "value": "\"text\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
       "kind": "StringLiteral",
       "offset": 695,
       "length": 13,
       "value": "\"device_info\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
       "kind": "StringLiteral",
       "offset": 736,
       "length": 14,
       "value": "\"audio_base64\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
       "kind": "StringLiteral",
       "offset": 771,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
       "kind": "StringLiteral",
       "offset": 798,
       "length": 6,
       "value": "\"text\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/ChatRequest\/ChatNetworkRequestModel.swift",
       "kind": "StringLiteral",
       "offset": 830,
       "length": 12,
       "value": "\"session_id\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
       "kind": "IntegerLiteral",
       "offset": 465,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
       "kind": "IntegerLiteral",
       "offset": 470,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
       "kind": "IntegerLiteral",
       "offset": 612,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
       "kind": "IntegerLiteral",
       "offset": 617,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
       "kind": "IntegerLiteral",
       "offset": 784,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/RecordingButton\/RecordingEnums&helpers\/RecordingInteractionMode.swift",
       "kind": "IntegerLiteral",
       "offset": 789,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatMessageCell.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatMessageCell.swift",
       "kind": "StringLiteral",
       "offset": 812,
       "length": 17,
       "value": "\"ChatMessageCell\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/DeviceHelper.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/DeviceHelper.swift",
       "kind": "StringLiteral",
       "offset": 216,
       "length": 38,
       "value": "\"00000000-0000-0000-0000-000000000000\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 602,
       "length": 48,
       "value": "\"\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 649,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 672,
       "length": 7,
       "value": "\"Apple\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 701,
       "length": 24,
       "value": "\"deviceNameNotAvailable\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 812,
       "length": 23,
       "value": "\"X-Device-Manufacturer\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 857,
       "length": 16,
       "value": "\"X-Device-Model\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 900,
       "length": 20,
       "value": "\"X-Platform-Version\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 941,
       "length": 12,
       "value": "\"X-Language\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 982,
       "length": 17,
       "value": "\"X-Device-Height\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 1027,
       "length": 16,
       "value": "\"X-Device-Width\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 1070,
       "length": 16,
       "value": "\"X-Platform-SDK\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 1107,
       "length": 18,
       "value": "\"X-Advertising-Id\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 1155,
       "length": 21,
       "value": "\"X-Limit-Ad-Tracking\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 1207,
       "length": 16,
       "value": "\"X-Device-Brand\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/DeviceInfo.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/DeviceInfo.swift",
       "kind": "StringLiteral",
       "offset": 1250,
       "length": 15,
       "value": "\"X-Device-Name\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatMessage.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatMessage.swift",
       "kind": "BooleanLiteral",
       "offset": 544,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/ChatViewController\/ChatMessage.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/ChatViewController\/ChatMessage.swift",
       "kind": "BooleanLiteral",
       "offset": 820,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/VocalSDKManager.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/VocalSDKManager.swift",
       "kind": "BooleanLiteral",
       "offset": 3239,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/SessionRequest\/SessionRequest.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/SessionRequest\/SessionRequest.swift",
       "kind": "Dictionary",
       "offset": 346,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/SessionRequest\/SessionResponseModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/SessionRequest\/SessionResponseModel.swift",
       "kind": "StringLiteral",
       "offset": 276,
       "length": 12,
       "value": "\"session_id\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/SessionRequest\/SessionResponseModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/SessionRequest\/SessionResponseModel.swift",
       "kind": "StringLiteral",
       "offset": 314,
       "length": 12,
       "value": "\"created_at\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/RenderSpec.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/RenderSpec.swift",
       "kind": "StringLiteral",
       "offset": 1708,
       "length": 20,
       "value": "\"insufficient_funds\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/VoqalClient.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/VoqalClient.swift",
       "kind": "Dictionary",
       "offset": 770,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/VoqalClient.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/VoqalClient.swift",
       "kind": "BooleanLiteral",
       "offset": 8463,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/VoqalClient.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/VoqalClient.swift",
       "kind": "IntegerLiteral",
       "offset": 8502,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/VoqalClient.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/VoqalClient.swift",
       "kind": "BooleanLiteral",
       "offset": 8531,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/VoqalEndpoint.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/VoqalEndpoint.swift",
       "kind": "StringLiteral",
       "offset": 944,
       "length": 25,
       "value": "\"https:\/\/api.voqal.ai\/v3\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
       "kind": "StringLiteral",
       "offset": 963,
       "length": 14,
       "value": "\"audio_base64\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
       "kind": "Dictionary",
       "offset": 1169,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
       "kind": "Array",
       "offset": 1201,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
       "kind": "Dictionary",
       "offset": 1643,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
       "kind": "Array",
       "offset": 1675,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/VoqalRequest.swift",
       "kind": "Dictionary",
       "offset": 2083,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 507,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "StringLiteral",
       "offset": 924,
       "length": 3,
       "value": "\"#\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1133,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1245,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "FloatLiteral",
       "offset": 1253,
       "length": 4,
       "value": "15.0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1273,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1276,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1315,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1340,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1403,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1415,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "FloatLiteral",
       "offset": 1423,
       "length": 5,
       "value": "255.0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1539,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1559,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1578,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1619,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1632,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 1637,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 2272,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 2282,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 2291,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 2327,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 2337,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/RGBA.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/RGBA.swift",
       "kind": "IntegerLiteral",
       "offset": 2346,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
       "kind": "StringLiteral",
       "offset": 1188,
       "length": 9,
       "value": "\"#2d5bff\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
       "kind": "IntegerLiteral",
       "offset": 1326,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
       "kind": "FloatLiteral",
       "offset": 1974,
       "length": 5,
       "value": "0.176"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
       "kind": "FloatLiteral",
       "offset": 1988,
       "length": 5,
       "value": "0.357"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Theme\/VoqalTheme.swift",
       "kind": "FloatLiteral",
       "offset": 2001,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Session\/VoqalSession.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Session\/VoqalSession.swift",
       "kind": "Array",
       "offset": 837,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Session\/VoqalSession.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Session\/VoqalSession.swift",
       "kind": "StringLiteral",
       "offset": 1139,
       "length": 50,
       "value": "\"Sorry, I'm not able to help with that right now.\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Session\/VoqalSession.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Session\/VoqalSession.swift",
       "kind": "Dictionary",
       "offset": 1496,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "Array",
       "offset": 450,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "StringLiteral",
       "offset": 488,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "IntegerLiteral",
       "offset": 612,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "Array",
       "offset": 875,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "BooleanLiteral",
       "offset": 1004,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "Array",
       "offset": 1239,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "BooleanLiteral",
       "offset": 1452,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "IntegerLiteral",
       "offset": 3198,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "Array",
       "offset": 4103,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel.swift",
       "kind": "Array",
       "offset": 11462,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/ConfirmWidget.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/ConfirmWidget.swift",
       "kind": "BooleanLiteral",
       "offset": 625,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/ConfirmWidget.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/ConfirmWidget.swift",
       "kind": "BooleanLiteral",
       "offset": 767,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/ConfirmWidget.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/ConfirmWidget.swift",
       "kind": "BooleanLiteral",
       "offset": 926,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/ConfirmWidget.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/ConfirmWidget.swift",
       "kind": "BooleanLiteral",
       "offset": 4723,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "IntegerLiteral",
       "offset": 8614,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/DataWidgets.swift",
       "kind": "BooleanLiteral",
       "offset": 8647,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/SupportWidgets.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/SupportWidgets.swift",
       "kind": "IntegerLiteral",
       "offset": 3459,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/VoqalThemeEnvironment.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/VoqalThemeEnvironment.swift",
       "kind": "BooleanLiteral",
       "offset": 400,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/VoqalThemeEnvironment.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/VoqalThemeEnvironment.swift",
       "kind": "FloatLiteral",
       "offset": 1620,
       "length": 4,
       "value": "10.5"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/WidgetView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/WidgetView.swift",
       "kind": "BooleanLiteral",
       "offset": 372,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/WidgetView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/WidgetView.swift",
       "kind": "BooleanLiteral",
       "offset": 474,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/WidgetView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/WidgetView.swift",
       "kind": "BooleanLiteral",
       "offset": 2234,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/RevealText.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/RevealText.swift",
       "kind": "BooleanLiteral",
       "offset": 599,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/RevealText.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/RevealText.swift",
       "kind": "BooleanLiteral",
       "offset": 702,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/RevealText.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/RevealText.swift",
       "kind": "IntegerLiteral",
       "offset": 746,
       "length": 2,
       "value": "27"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/RevealText.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/RevealText.swift",
       "kind": "BooleanLiteral",
       "offset": 924,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/RevealText.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/RevealText.swift",
       "kind": "IntegerLiteral",
       "offset": 2388,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/RevealText.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/RevealText.swift",
       "kind": "IntegerLiteral",
       "offset": 2459,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/StageView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/StageView.swift",
       "kind": "Array",
       "offset": 2489,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/StageView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/StageView.swift",
       "kind": "BooleanLiteral",
       "offset": 10609,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/StageView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/StageView.swift",
       "kind": "BooleanLiteral",
       "offset": 12459,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/VoiceDock.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/VoiceDock.swift",
       "kind": "BooleanLiteral",
       "offset": 495,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/VoiceDock.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/VoiceDock.swift",
       "kind": "BooleanLiteral",
       "offset": 536,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/VoiceDock.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/VoiceDock.swift",
       "kind": "FloatLiteral",
       "offset": 939,
       "length": 3,
       "value": "1.2"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
       "kind": "IntegerLiteral",
       "offset": 510,
       "length": 3,
       "value": "132"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
       "kind": "IntegerLiteral",
       "offset": 629,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
       "kind": "FloatLiteral",
       "offset": 999,
       "length": 4,
       "value": "0.25"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
       "kind": "FloatLiteral",
       "offset": 1006,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
       "kind": "FloatLiteral",
       "offset": 1012,
       "length": 4,
       "value": "60.0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
       "kind": "IntegerLiteral",
       "offset": 1100,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
       "kind": "FloatLiteral",
       "offset": 1311,
       "length": 4,
       "value": "1.25"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/VoiceOrb.swift",
       "kind": "IntegerLiteral",
       "offset": 2050,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/VoqalExperienceView.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/VoqalExperienceView.swift",
       "kind": "Array",
       "offset": 509,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/SSEDecoder.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/SSEDecoder.swift",
       "kind": "StringLiteral",
       "offset": 1063,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/SSEDecoder.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/SSEDecoder.swift",
       "kind": "StringLiteral",
       "offset": 1089,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/BidiText.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/BidiText.swift",
       "kind": "IntegerLiteral",
       "offset": 698,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Views\/BidiText.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Views\/BidiText.swift",
       "kind": "BooleanLiteral",
       "offset": 868,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "IntegerLiteral",
       "offset": 789,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "IntegerLiteral",
       "offset": 795,
       "length": 7,
       "value": "2"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "IntegerLiteral",
       "offset": 804,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "StringLiteral",
       "offset": 2210,
       "length": 14,
       "value": "\"ai.voqal.log\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "Array",
       "offset": 2281,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "Array",
       "offset": 2417,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "IntegerLiteral",
       "offset": 2454,
       "length": 2,
       "value": "40"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "Dictionary",
       "offset": 2976,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "Dictionary",
       "offset": 5149,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "Dictionary",
       "offset": 5306,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "Dictionary",
       "offset": 5465,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Diagnostics\/VoqalLog.swift",
       "kind": "Dictionary",
       "offset": 5646,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Voice\/AudioClipAnalyzer.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Voice\/AudioClipAnalyzer.swift",
       "kind": "IntegerLiteral",
       "offset": 478,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Voice\/AudioClipAnalyzer.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Voice\/AudioClipAnalyzer.swift",
       "kind": "IntegerLiteral",
       "offset": 607,
       "length": 5,
       "value": "2000"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Diagnostics\/VoqalDiagnosticsContext.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Diagnostics\/VoqalDiagnosticsContext.swift",
       "kind": "StringLiteral",
       "offset": 1115,
       "length": 9,
       "value": "\"unknown\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Diagnostics\/VoqalTrace.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Diagnostics\/VoqalTrace.swift",
       "kind": "BooleanLiteral",
       "offset": 1698,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Diagnostics\/VoqalTrace.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Diagnostics\/VoqalTrace.swift",
       "kind": "Dictionary",
       "offset": 2586,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Diagnostics\/VoqalTrace.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Diagnostics\/VoqalTrace.swift",
       "kind": "Dictionary",
       "offset": 3977,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Diagnostics\/VoqalObservability.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Diagnostics\/VoqalObservability.swift",
       "kind": "BooleanLiteral",
       "offset": 620,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Diagnostics\/VoqalObservability.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Diagnostics\/VoqalObservability.swift",
       "kind": "BooleanLiteral",
       "offset": 659,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Diagnostics\/VoqalObservability.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Diagnostics\/VoqalObservability.swift",
       "kind": "FloatLiteral",
       "offset": 708,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Diagnostics\/VoqalObservability.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Diagnostics\/VoqalObservability.swift",
       "kind": "StringLiteral",
       "offset": 2217,
       "length": 97,
       "value": "\"https:\/\/e497e80a89ec061fb167ec2699e72889@o4511559480770560.ingest.de.sentry.io\/4511559486275664\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Diagnostics\/VoqalObservability.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Diagnostics\/VoqalObservability.swift",
       "kind": "BooleanLiteral",
       "offset": 2617,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/VoqalForwardedHeaders.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/VoqalForwardedHeaders.swift",
       "kind": "StringLiteral",
       "offset": 827,
       "length": 18,
       "value": "\"X-Voqal-Forward-\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/VoqalForwardedHeaders.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/VoqalForwardedHeaders.swift",
       "kind": "IntegerLiteral",
       "offset": 998,
       "length": 2,
       "value": "32"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/VoqalForwardedHeaders.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/VoqalForwardedHeaders.swift",
       "kind": "Array",
       "offset": 1278,
       "length": 112,
       "value": "[\"x-token\", \"x-voqal-key\", \"x-request-id\", \"x-client-metadata\", \"content-type\", \"accept\"]"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/VoqalClientIdentity.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/VoqalClientIdentity.swift",
       "kind": "StringLiteral",
       "offset": 1197,
       "length": 21,
       "value": "\"X-Voqal-SDK-Version\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/VoqalClientIdentity.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/VoqalClientIdentity.swift",
       "kind": "StringLiteral",
       "offset": 1251,
       "length": 18,
       "value": "\"X-Voqal-Platform\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/VoqalClientIdentity.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/VoqalClientIdentity.swift",
       "kind": "StringLiteral",
       "offset": 1304,
       "length": 21,
       "value": "\"X-Voqal-App-Version\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/VoqalClientIdentity.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/VoqalClientIdentity.swift",
       "kind": "StringLiteral",
       "offset": 1367,
       "length": 5,
       "value": "\"ios\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/Networking\/V2\/VoqalClientIdentity.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/Networking\/V2\/VoqalClientIdentity.swift",
       "kind": "IntegerLiteral",
       "offset": 1419,
       "length": 2,
       "value": "64"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Booking\/VoqalBooking.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Booking\/VoqalBooking.swift",
       "kind": "IntegerLiteral",
       "offset": 742,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Booking\/VoqalBooking.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Booking\/VoqalBooking.swift",
       "kind": "StringLiteral",
       "offset": 5081,
       "length": 14,
       "value": "\"host_timeout\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Booking\/VoqalBooking.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Booking\/VoqalBooking.swift",
       "kind": "StringLiteral",
       "offset": 5127,
       "length": 12,
       "value": "\"host_error\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Booking\/VoqalBooking.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Booking\/VoqalBooking.swift",
       "kind": "StringLiteral",
       "offset": 5174,
       "length": 16,
       "value": "\"host_no_result\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Booking\/VoqalBooking.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Booking\/VoqalBooking.swift",
       "kind": "StringLiteral",
       "offset": 5520,
       "length": 12,
       "value": "\"confirm_id\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Booking\/VoqalBooking.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Booking\/VoqalBooking.swift",
       "kind": "StringLiteral",
       "offset": 6786,
       "length": 9,
       "value": "\"unknown\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Booking\/VoqalBooking.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Booking\/VoqalBooking.swift",
       "kind": "FloatLiteral",
       "offset": 7013,
       "length": 4,
       "value": "1e15"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Booking\/HostCallTimeout.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Booking\/HostCallTimeout.swift",
       "kind": "IntegerLiteral",
       "offset": 1852,
       "length": 4,
       "value": "3600"
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel+Confirm.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel+Confirm.swift",
       "kind": "StringLiteral",
       "offset": 1767,
       "length": 11,
       "value": "\"Add funds\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/src\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel+Confirm.swift",
+      "filePath": "\/Users\/yaseenahmed\/Workspace\/100 Million\/Voqal\/SDK\/VoqalSDK-wt-2.2.0\/VoqalSDK\/V2\/Experience\/VoqalExperienceModel+Confirm.swift",
       "kind": "StringLiteral",
       "offset": 1784,
       "length": 21,
       "value": "\"إضافة رصيد\""
     },
     {
-      "filePath": "\/tmp\/claude-501\/-Users-yaseenahmed-Workspace-100-Million-Voqal-SDK-VoqalSDK\/40d1626b-dff8-4c26-b524-6065412aa88e\/scratchpad\/flutter220-ios-2250c57\/dd-iphonesimulator\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VoqalSDK\/IntermediateBuildFilesPath\/VoqalSDK.build\/Release-iphonesimulator\/VoqalSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/yaseenahmed\/Library\/Developer\/Xcode\/DerivedData\/VoqalSDK-fhhrvruviyohthfggjipboprsdem\/Build\/Intermediates.noindex\/ArchiveIntermediates\/VoqalSDK\/IntermediateBuildFilesPath\/VoqalSDK.build\/Release-iphonesimulator\/VoqalSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 731,
       "length": 11,

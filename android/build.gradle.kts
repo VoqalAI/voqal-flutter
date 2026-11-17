@@ -80,9 +80,8 @@ project.extensions.configure(org.jetbrains.kotlin.gradle.dsl.KotlinAndroidProjec
 }
 
 dependencies {
-    // Native Android SDK 2.2.0 (booking modes, Add-funds card, version headers); paired with
-    // iOS VoqalSDK 2.2.0 vendored under ios/Frameworks. RELEASE: publish ai.voqal:voqal-sdk:2.2.0
-    // to voqal-android-maven BEFORE tagging this plugin (see RELEASE-2.2.0.md).
+    // Native Android SDK 2.2.0 (booking modes, Add-funds card, version headers), published on
+    // voqal-android-maven; paired with the published iOS VoqalSDK 2.2.0 under ios/Frameworks.
     implementation("ai.voqal:voqal-sdk:2.2.0")
     // The booking bridge suspends cancellably so the SDK's host timeout can end the wait.
     // Same version the SDK already brings at runtime.
