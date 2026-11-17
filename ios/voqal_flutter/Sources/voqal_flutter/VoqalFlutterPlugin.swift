@@ -169,7 +169,35 @@ public class VoqalFlutterPlugin: NSObject, FlutterPlugin {
       }
       configuration.actionButton = button
     }
+    if let version = config["wrapperVersion"] as? String {
+      configuration.wrapper = VoqalWrapper(name: wrapperName, version: version)
+    }
+    applyBooking(from: config, to: &configuration)
     return configuration
+  }
+
+  /// The platform name the engine records for requests from this plugin.
+  private static let wrapperName = "flutter"
+
+  /// Maps the 2.2.0 booking keys. Missing or invalid values keep the SDK defaults.
+  private static func applyBooking(
+    from config: [String: Any], to configuration: inout VoqalSDKConfiguration
+  ) {
+    if let mode = (config["bookingMode"] as? String).flatMap(VoqalBookingMode.init(rawValue:)) {
+      configuration.bookingMode = mode
+    }
+    if let title = config["addFundsButtonTitle"] as? [String: Any],
+      let english = title["en"] as? String, !english.isEmpty,
+      let arabic = title["ar"] as? String, !arabic.isEmpty
+    {
+      configuration.addFundsButtonTitle = VoqalLocalizedText(en: english, ar: arabic)
+    }
+    if let dismiss = config["dismissOnAddFunds"] as? Bool {
+      configuration.dismissOnAddFunds = dismiss
+    }
+    if let timeout = (config["hostActionTimeoutSeconds"] as? NSNumber)?.doubleValue, timeout > 0 {
+      configuration.hostActionTimeoutSeconds = timeout
+    }
   }
 
   private static func theme(from dictionary: [String: Any]?) -> VoqalTheme {
@@ -237,6 +265,62 @@ public class VoqalFlutterPlugin: NSObject, FlutterPlugin {
         VoqalFlutterPlugin.channel?.invokeMethod("onActionButtonTapped", arguments: nil)
       }
     }
+
+    /// Hands the booking to Dart's `Voqal.onBookingConfirmed` and awaits its reply.
+    /// The SDK bounds the wait (`hostActionTimeoutSeconds`), so this never times out itself.
+    func voqalDidConfirmBooking(_ details: VoqalBookingDetails) async throws -> VoqalBookingResult? {
+      let arguments = details.dictionary
+      let reply: Any? = await withCheckedContinuation { continuation in
+        DispatchQueue.main.async {
+          guard let channel = VoqalFlutterPlugin.channel else {
+            continuation.resume(returning: nil)
+            return
+          }
+          channel.invokeMethod("onBookingConfirmed", arguments: arguments) { reply in
+            continuation.resume(returning: reply)
+          }
+        }
+      }
+      return try BookingReply.result(from: reply)
+    }
+
+    func voqalDidTapAddFunds(amount: Double?, currency: String?) {
+      let arguments: [String: Any] = [
+        "amount": amount.map { $0 as Any } ?? NSNull(),
+        "currency": currency.map { $0 as Any } ?? NSNull(),
+      ]
+      DispatchQueue.main.async {
+        VoqalFlutterPlugin.channel?.invokeMethod("onAddFundsTapped", arguments: arguments)
+      }
+    }
+  }
+}
+
+/// Decodes Dart's reply to `onBookingConfirmed` into the SDK's result type.
+enum BookingReply {
+  /// Why a reply could not become a booking result. The SDK reports any of these
+  /// to the engine as a failed booking (`host_error`).
+  enum Failure: Error, Equatable {
+    /// The Dart handler threw; carries the error code Dart sent.
+    case hostError(code: String)
+    /// The reply was not a result map, or its `status` was not success/failed.
+    case malformedReply
+  }
+
+  /// nil (Dart had no handler or declined) or `FlutterMethodNotImplemented` (an
+  /// older Dart side) both mean "book it server-side".
+  static func result(from reply: Any?) throws -> VoqalBookingResult? {
+    guard let reply, !(reply is NSNull) else { return nil }
+    if (reply as AnyObject) === FlutterMethodNotImplemented { return nil }
+    if let error = reply as? FlutterError { throw Failure.hostError(code: error.code) }
+    guard let map = reply as? [String: Any],
+      let status = (map["status"] as? String).flatMap(VoqalBookingStatus.init(rawValue:))
+    else { throw Failure.malformedReply }
+    return VoqalBookingResult(
+      status: status,
+      message: map["message"] as? String,
+      code: map["code"] as? String,
+      reference: map["reference"] as? String)
   }
 }
 

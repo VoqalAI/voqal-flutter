@@ -80,7 +80,13 @@ project.extensions.configure(org.jetbrains.kotlin.gradle.dsl.KotlinAndroidProjec
 }
 
 dependencies {
-    implementation("ai.voqal:voqal-sdk:2.1.0") // native Android SDK 2.1.0 (tappable action_list widget); paired with iOS VoqalSDK 2.1.0 vendored under ios/Frameworks. Maven artifact must be published to voqal-android-maven at release.
+    // Native Android SDK 2.2.0 (booking modes, Add-funds card, version headers); paired with
+    // iOS VoqalSDK 2.2.0 vendored under ios/Frameworks. RELEASE: publish ai.voqal:voqal-sdk:2.2.0
+    // to voqal-android-maven BEFORE tagging this plugin (see RELEASE-2.2.0.md).
+    implementation("ai.voqal:voqal-sdk:2.2.0")
+    // The booking bridge suspends cancellably so the SDK's host timeout can end the wait.
+    // Same version the SDK already brings at runtime.
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0")
     // sentry-android (not the SDK-only artifact) so we get Android lifecycle/ANR/crash handlers.
     implementation("io.sentry:sentry-android:7.22.6")
     testImplementation("org.jetbrains.kotlin:kotlin-test")

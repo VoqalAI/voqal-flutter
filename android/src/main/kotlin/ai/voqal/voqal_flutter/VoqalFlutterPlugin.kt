@@ -1,11 +1,14 @@
 package ai.voqal.voqal_flutter
 
 import ai.voqal.sdk.VoqalActionButton
+import ai.voqal.sdk.VoqalBookingDetails
+import ai.voqal.sdk.VoqalBookingResult
 import ai.voqal.sdk.VoqalConfiguration
 import ai.voqal.sdk.VoqalDelegate
 import ai.voqal.sdk.VoqalHome
 import ai.voqal.sdk.VoqalSDK
 import ai.voqal.sdk.VoqalTheme
+import ai.voqal.sdk.VoqalWrapper
 import android.app.Activity
 import android.content.Context
 import android.graphics.Bitmap
@@ -22,6 +25,7 @@ import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
+import kotlinx.coroutines.suspendCancellableCoroutine
 
 /**
  * Thin Flutter bridge over the native Voqal Android SDK.
@@ -37,7 +41,8 @@ class VoqalFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
 
     private lateinit var channel: MethodChannel
     private var activity: Activity? = null
-    private val mainHandler = Handler(Looper.getMainLooper())
+    // Lazy so the plugin can be constructed in JVM unit tests (no main Looper there).
+    private val mainHandler by lazy { Handler(Looper.getMainLooper()) }
 
     // Application context, cached for Sentry init (which outlives any Activity).
     private var appContext: Context? = null
@@ -70,6 +75,24 @@ class VoqalFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
             // only follow present()/prewarm(), which follow onAttachedToEngine, so `channel`
             // is initialized; a tap arriving after detach is a harmless dropped no-op.
             mainHandler.post { channel.invokeMethod("onActionButtonTapped", null) }
+        }
+
+        // Hands the booking to Dart's Voqal.onBookingConfirmed and suspends until it replies.
+        // Cancellable, so the SDK's hostActionTimeoutSeconds (withTimeout) can end the wait.
+        override suspend fun onBookingConfirmed(details: VoqalBookingDetails): VoqalBookingResult? =
+            suspendCancellableCoroutine { continuation ->
+                mainHandler.post {
+                    channel.invokeMethod(
+                        "onBookingConfirmed",
+                        details.fields,
+                        BookingReplyCallback(continuation),
+                    )
+                }
+            }
+
+        override fun onAddFundsTapped(amount: Double?, currency: String?) {
+            val arguments = BookingBridge.addFundsArguments(amount, currency)
+            mainHandler.post { channel.invokeMethod("onAddFundsTapped", arguments) }
         }
     }
 
@@ -153,8 +176,9 @@ class VoqalFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
     }
 
     private fun configuration(config: Map<*, *>): VoqalConfiguration {
+        val defaults = VoqalConfiguration(requestId = DEFAULT_REQUEST_ID)
         return VoqalConfiguration(
-            requestId = config["requestId"] as? String ?: "prod-flutter",
+            requestId = config["requestId"] as? String ?: DEFAULT_REQUEST_ID,
             apiKey = config["apiKey"] as? String,
             agentUrl = config["agentUrl"] as? String,
             theme = theme(config["theme"] as? Map<*, *>),
@@ -168,6 +192,13 @@ class VoqalFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
             headerTitle = config["headerTitle"] as? String,
             headerIcon = decodeIcon(config["headerIconPngBase64"] as? String),
             actionButton = actionButton(config),
+            bookingMode = BookingBridge.bookingMode(config["bookingMode"]),
+            addFundsButtonTitle = BookingBridge.localizedText(config["addFundsButtonTitle"])
+                ?: defaults.addFundsButtonTitle,
+            dismissOnAddFunds = config["dismissOnAddFunds"] as? Boolean ?: defaults.dismissOnAddFunds,
+            hostActionTimeoutSeconds = BookingBridge.timeoutSeconds(config["hostActionTimeoutSeconds"])
+                ?: defaults.hostActionTimeoutSeconds,
+            wrapper = (config["wrapperVersion"] as? String)?.let { VoqalWrapper(VoqalWrapper.FLUTTER, it) },
         )
     }
 
@@ -233,5 +264,9 @@ class VoqalFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
 
     override fun onDetachedFromActivity() {
         activity = null
+    }
+
+    private companion object {
+        const val DEFAULT_REQUEST_ID = "prod-flutter"
     }
 }
