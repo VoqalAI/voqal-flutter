@@ -83,14 +83,10 @@ public protocol VocalButtonDelegate : AnyObject {
   func voqalButton(didFailWith error: any Swift.Error)
   func voqalDidTapActionButton()
   func voqalForwardedHeaders() -> [Swift.String : Swift.String]
-  func voqalDidConfirmBooking(_ details: VoqalSDK.VoqalBookingDetails) async throws -> VoqalSDK.VoqalBookingResult?
-  func voqalDidTapAddFunds(amount: Swift.Double?, currency: Swift.String?)
 }
 extension VoqalSDK.VocalButtonDelegate {
   public func voqalDidTapActionButton()
   public func voqalForwardedHeaders() -> [Swift.String : Swift.String]
-  public func voqalDidConfirmBooking(_ details: VoqalSDK.VoqalBookingDetails) async throws -> VoqalSDK.VoqalBookingResult?
-  public func voqalDidTapAddFunds(amount: Swift.Double?, currency: Swift.String?)
 }
 public enum HTTPMethod : Swift.String {
   case get
@@ -302,6 +298,9 @@ public struct DoneSpec : Swift.Decodable, Swift.Equatable {
 public struct ExecuteResponse : Swift.Decodable, Swift.Equatable {
   public let done: VoqalSDK.DoneSpec
   public let speak: Swift.String?
+  public var errorCode: Swift.String? {
+    get
+  }
   public static func == (a: VoqalSDK.ExecuteResponse, b: VoqalSDK.ExecuteResponse) -> Swift.Bool
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -594,26 +593,6 @@ public struct VoqalTheme : Swift.Equatable {
   public init(accent: Swift.String = "#2d5bff", accent2: Swift.String? = nil, appearance: VoqalSDK.VoqalTheme.Appearance = .auto, font: UIKit.UIFont? = nil, radius: CoreFoundation.CGFloat = 20)
   public static func == (lhs: VoqalSDK.VoqalTheme, rhs: VoqalSDK.VoqalTheme) -> Swift.Bool
 }
-public enum VoqalPhase : Swift.Equatable {
-  case idle
-  case listening
-  case transcribing
-  case thinking
-  case speaking
-  public static func == (a: VoqalSDK.VoqalPhase, b: VoqalSDK.VoqalPhase) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public struct VoqalExchange : Swift.Identifiable, Swift.Equatable {
-  public let id: Foundation.UUID
-  public var question: Swift.String
-  public let isVoice: Swift.Bool
-  public var answer: VoqalSDK.RenderSpec?
-  public static func == (a: VoqalSDK.VoqalExchange, b: VoqalSDK.VoqalExchange) -> Swift.Bool
-  public typealias ID = Foundation.UUID
-}
 public enum VoqalLogLevel : Swift.Int, Swift.Comparable {
   case debug, info, warning, error
   public static func < (lhs: VoqalSDK.VoqalLogLevel, rhs: VoqalSDK.VoqalLogLevel) -> Swift.Bool
@@ -785,6 +764,38 @@ public struct VoqalBookingResult : Swift.Equatable {
   public init(status: VoqalSDK.VoqalBookingStatus, message: Swift.String? = nil, code: Swift.String? = nil, reference: Swift.String? = nil)
   public static func == (a: VoqalSDK.VoqalBookingResult, b: VoqalSDK.VoqalBookingResult) -> Swift.Bool
 }
+public struct VoqalOutcomeReportError : Swift.Error, Swift.Equatable {
+  public let outcomeStatus: Swift.String
+  public let code: Swift.String
+  public let confirmId: Swift.String?
+  public static func == (a: VoqalSDK.VoqalOutcomeReportError, b: VoqalSDK.VoqalOutcomeReportError) -> Swift.Bool
+}
+public protocol VoqalBookingHandler : AnyObject {
+  @_Concurrency.MainActor func voqalDidConfirmBooking(_ details: VoqalSDK.VoqalBookingDetails) async throws -> VoqalSDK.VoqalBookingResult
+}
+public protocol VoqalAddFundsHandler : AnyObject {
+  @_Concurrency.MainActor func voqalDidTapAddFunds(amount: Swift.Double?, currency: Swift.String?)
+}
+public enum VoqalPhase : Swift.Equatable {
+  case idle
+  case listening
+  case transcribing
+  case thinking
+  case speaking
+  public static func == (a: VoqalSDK.VoqalPhase, b: VoqalSDK.VoqalPhase) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct VoqalExchange : Swift.Identifiable, Swift.Equatable {
+  public let id: Foundation.UUID
+  public var question: Swift.String
+  public let isVoice: Swift.Bool
+  public var answer: VoqalSDK.RenderSpec?
+  public static func == (a: VoqalSDK.VoqalExchange, b: VoqalSDK.VoqalExchange) -> Swift.Bool
+  public typealias ID = Foundation.UUID
+}
 extension VoqalSDK.RecordingError : Swift.Equatable {}
 extension VoqalSDK.RecordingError : Swift.Hashable {}
 extension VoqalSDK.HTTPMethod : Swift.Equatable {}
@@ -793,7 +804,6 @@ extension VoqalSDK.HTTPMethod : Swift.RawRepresentable {}
 extension VoqalSDK.VoqalPresentationStyle : Swift.Equatable {}
 extension VoqalSDK.VoqalPresentationStyle : Swift.Hashable {}
 extension VoqalSDK.VoqalTheme.Appearance : Swift.Hashable {}
-extension VoqalSDK.VoqalPhase : Swift.Hashable {}
 extension VoqalSDK.VoqalLogLevel : Swift.Hashable {}
 extension VoqalSDK.VoqalLogLevel : Swift.RawRepresentable {}
 extension VoqalSDK.VoqalSpanStatus : Swift.Equatable {}
@@ -806,3 +816,4 @@ extension VoqalSDK.VoqalBookingMode : Swift.Hashable {}
 extension VoqalSDK.VoqalBookingMode : Swift.RawRepresentable {}
 extension VoqalSDK.VoqalBookingStatus : Swift.Hashable {}
 extension VoqalSDK.VoqalBookingStatus : Swift.RawRepresentable {}
+extension VoqalSDK.VoqalPhase : Swift.Hashable {}
