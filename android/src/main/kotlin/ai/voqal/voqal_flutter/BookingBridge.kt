@@ -20,6 +20,9 @@ internal class HostBookingException(val code: String) :
     companion object {
         /** Code used when Dart's reply isn't a `{status, ...}` map. */
         const val MALFORMED_REPLY: String = "malformed_reply"
+
+        /** Code used when the Flutter engine detached before Dart replied. */
+        const val ENGINE_DETACHED: String = "engine_detached"
     }
 }
 
@@ -72,28 +75,55 @@ internal object BookingBridge {
 }
 
 /**
- * Resumes the SDK's suspended `onBookingConfirmed` with Dart's reply. Ignores a reply that
+ * The booking calls still waiting for Dart. If the Flutter engine detaches, Dart can never reply,
+ * so [failAll] ends each wait instead of leaving it until the SDK's timeout. Main thread only.
+ */
+internal class PendingBookingReplies {
+    private val callbacks = mutableSetOf<BookingReplyCallback>()
+
+    /** True when no booking call is waiting for Dart. */
+    val isEmpty: Boolean get() = callbacks.isEmpty()
+
+    /** Creates the reply callback for [continuation] and tracks it until it settles. */
+    fun track(continuation: CancellableContinuation<VoqalBookingResult?>): BookingReplyCallback =
+        BookingReplyCallback(continuation) { callbacks.remove(it) }.also { callbacks += it }
+
+    /** Fails every waiting call with [HostBookingException.ENGINE_DETACHED]. */
+    fun failAll() {
+        callbacks.toList().forEach { it.error(HostBookingException.ENGINE_DETACHED, null, null) }
+    }
+}
+
+/**
+ * Resumes the SDK's suspended `onBookingConfirmed` with Dart's reply, once. Ignores a reply that
  * arrives after the SDK gave up (timeout or barge-in cancelled the continuation).
  */
 internal class BookingReplyCallback(
     private val continuation: CancellableContinuation<VoqalBookingResult?>,
+    private val onSettled: (BookingReplyCallback) -> Unit,
 ) : MethodChannel.Result {
 
     override fun success(result: Any?) {
-        if (!continuation.isActive) return
-        try {
-            continuation.resume(BookingBridge.resultFrom(result))
-        } catch (error: HostBookingException) {
-            continuation.resumeWithException(error)
+        settle {
+            try {
+                continuation.resume(BookingBridge.resultFrom(result))
+            } catch (error: HostBookingException) {
+                continuation.resumeWithException(error)
+            }
         }
     }
 
     override fun error(errorCode: String, errorMessage: String?, errorDetails: Any?) {
-        if (continuation.isActive) continuation.resumeWithException(HostBookingException(errorCode))
+        settle { continuation.resumeWithException(HostBookingException(errorCode)) }
     }
 
     override fun notImplemented() {
         // An older Dart side with no booking handler: no result (the SDK reports host_no_result).
-        if (continuation.isActive) continuation.resume(null)
+        settle { continuation.resume(null) }
+    }
+
+    private fun settle(resume: () -> Unit) {
+        onSettled(this)
+        if (continuation.isActive) resume()
     }
 }

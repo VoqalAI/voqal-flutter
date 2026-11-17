@@ -57,6 +57,9 @@ class VoqalFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
     // cross-platform PROTOCOL.md).
     @Volatile private var cachedForwardedHeaders: Map<String, String> = emptyMap()
 
+    // Booking calls waiting for Dart; failed on engine detach. Touched on the main thread only.
+    private val pendingBookingReplies = PendingBookingReplies()
+
     private val delegate = object : VoqalDelegate {
         override fun getToken(): String = cachedToken
         override fun getMetadata(): String? = cachedMetadata
@@ -82,10 +85,12 @@ class VoqalFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
         override suspend fun onBookingConfirmed(details: VoqalBookingDetails): VoqalBookingResult? =
             suspendCancellableCoroutine { continuation ->
                 mainHandler.post {
+                    // The SDK may have stopped waiting (timeout, barge-in) before this ran.
+                    if (!continuation.isActive) return@post
                     channel.invokeMethod(
                         "onBookingConfirmed",
                         details.fields,
-                        BookingReplyCallback(continuation),
+                        pendingBookingReplies.track(continuation),
                     )
                 }
             }
@@ -103,6 +108,7 @@ class VoqalFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
     }
 
     override fun onDetachedFromEngine(binding: FlutterPlugin.FlutterPluginBinding) {
+        pendingBookingReplies.failAll()
         channel.setMethodCallHandler(null)
     }
 
