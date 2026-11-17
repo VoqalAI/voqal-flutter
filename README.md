@@ -188,14 +188,16 @@ await voqal.setup(const VoqalConfig(
   bookingMode: VoqalBookingMode.host, // or .server (default)
   addFundsButtonTitle: VoqalLocalizedText(en: 'Add funds', ar: 'إضافة رصيد'),
   dismissOnAddFunds: true,            // close the assistant before the callback
-  hostActionTimeoutSeconds: 300,      // then report the booking as failed
+  hostActionTimeoutSeconds: 300,      // then report the outcome as unknown
 ));
 
 // Host mode: book it yourself and report the outcome.
 voqal.onBookingConfirmed = (VoqalBookingDetails booking) async {
   // booking.providerId / spaceId / areaId, booking.date ("2026-11-17"),
   // booking.start / end ("21:00", venue-local wall-clock), booking.durationMinutes,
-  // booking.price / deposit / currency (nullable). booking.fields has the raw map.
+  // booking.price / deposit / currency (nullable). booking.fields has the raw map;
+  // its numbers may arrive as int or double depending on the platform, so prefer
+  // the typed getters or read them as `num`.
   // booking.confirmId is unique per card and single-use: pass it as your
   // idempotency key so a retry never books twice.
   final response = await myApi.createBooking(
@@ -220,7 +222,8 @@ voqal.onBookingConfirmed = (VoqalBookingDetails booking) async {
   );
 };
 
-// Both modes: the Add-funds card's button. The assistant has already closed.
+// Server mode only: the Add-funds card's button (the card appears when Voqal
+// books and the wallet is short). The assistant has already closed.
 voqal.onAddFundsTapped = (double? amount, String? currency) {
   navigatorKey.currentState?.pushNamed('/wallet', arguments: amount);
 };

@@ -135,6 +135,10 @@ class VoqalBookingDetails {
   final String? currency;
 
   /// The complete `details` object as sent by the engine.
+  ///
+  /// Numbers keep the platform's channel type: iOS delivers every JSON number
+  /// as a `double` (`206.0`), Android as `int` or `double`. Prefer the typed
+  /// getters above, or read numeric values as `num`.
   final Map<String, Object?> fields;
 }
 
