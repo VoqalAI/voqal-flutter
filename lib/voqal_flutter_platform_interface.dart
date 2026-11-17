@@ -1,5 +1,6 @@
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
+import 'src/voqal_booking.dart';
 import 'voqal_flutter_method_channel.dart';
 
 /// The interface every `voqal_flutter` platform implementation conforms to.
@@ -37,6 +38,16 @@ abstract class VoqalFlutterPlatform extends PlatformInterface {
   /// default) forwards nothing, so existing integrations are unaffected. Stored
   /// process-globally like [onActionButtonTapped].
   Map<String, String> Function()? forwardedHeaders;
+
+  /// Books a confirmed booking in the host app when the config's `bookingMode` is
+  /// `host`. Returning null (or leaving this unset) lets Voqal book it
+  /// server-side. Stored process-globally like [onActionButtonTapped].
+  Future<VoqalBookingResult?> Function(VoqalBookingDetails details)?
+  onBookingConfirmed;
+
+  /// Invoked when the user taps the Add-funds card's button, with the shortfall
+  /// when known. Stored process-globally like [onActionButtonTapped].
+  void Function(double? amount, String? currency)? onAddFundsTapped;
 
   /// Configures the SDK once at launch. [config] is a primitives-only map.
   Future<void> setup(Map<String, Object?> config) {

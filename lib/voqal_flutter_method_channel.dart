@@ -1,6 +1,8 @@
-import 'package:flutter/foundation.dart' show visibleForTesting;
+import 'package:flutter/foundation.dart'
+    show ErrorDescription, FlutterError, FlutterErrorDetails, visibleForTesting;
 import 'package:flutter/services.dart';
 
+import 'src/voqal_booking.dart';
 import 'src/voqal_forwarded_headers.dart';
 import 'voqal_flutter_platform_interface.dart';
 
@@ -28,13 +30,71 @@ class MethodChannelVoqalFlutter extends VoqalFlutterPlatform {
     methodChannel.setMethodCallHandler(_handleNativeCall);
   }
 
-  /// Routes native-initiated calls to the matching Dart handler. Currently only
-  /// `onActionButtonTapped`; unknown methods are ignored so older Dart keeps working.
+  /// Error code native receives when the host's booking handler throws. The
+  /// native SDK reports it to the engine as a failed booking (`host_error`).
+  @visibleForTesting
+  static const String hostErrorCode = 'host_error';
+
+  /// Routes native-initiated calls to the matching Dart handler. Unknown methods
+  /// return null so a newer native SDK keeps working with older Dart.
   Future<Object?> _handleNativeCall(MethodCall call) async {
-    if (call.method == 'onActionButtonTapped') {
-      onActionButtonTapped?.call();
+    switch (call.method) {
+      case 'onActionButtonTapped':
+        onActionButtonTapped?.call();
+        return null;
+      case 'onBookingConfirmed':
+        return _confirmBooking(call.arguments);
+      case 'onAddFundsTapped':
+        _tapAddFunds(call.arguments);
+        return null;
     }
     return null;
+  }
+
+  /// Runs the host's booking handler and returns its result as a map, or null
+  /// (book server-side) when no handler is set or it declines.
+  ///
+  /// A throwing handler is reported in Dart with its full stack, then surfaces
+  /// to native as [hostErrorCode] carrying only the error's type, so nothing the
+  /// host's error message contains reaches native logs or telemetry.
+  Future<Map<String, Object?>?> _confirmBooking(Object? arguments) async {
+    final Future<VoqalBookingResult?> Function(VoqalBookingDetails)? handler =
+        onBookingConfirmed;
+    if (handler == null) return null;
+    final Map<Object?, Object?> details = arguments is Map
+        ? arguments.cast<Object?, Object?>()
+        : const <Object?, Object?>{};
+    try {
+      final VoqalBookingResult? result = await handler(
+        VoqalBookingDetails.fromMap(details),
+      );
+      return result?.toMap();
+    } catch (error, stack) {
+      FlutterError.reportError(
+        FlutterErrorDetails(
+          exception: error,
+          stack: stack,
+          library: 'voqal_flutter',
+          context: ErrorDescription('while running Voqal.onBookingConfirmed'),
+        ),
+      );
+      throw PlatformException(
+        code: hostErrorCode,
+        message: '${error.runtimeType}',
+      );
+    }
+  }
+
+  void _tapAddFunds(Object? arguments) {
+    final Map<Object?, Object?> args = arguments is Map
+        ? arguments.cast<Object?, Object?>()
+        : const <Object?, Object?>{};
+    final Object? amount = args['amount'];
+    final Object? currency = args['currency'];
+    onAddFundsTapped?.call(
+      amount is num ? amount.toDouble() : null,
+      currency is String ? currency : null,
+    );
   }
 
   @override

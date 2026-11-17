@@ -6,6 +6,7 @@
 /// separately through `Voqal.setCredentials` and held in a native cache only.
 library;
 
+import 'voqal_booking.dart';
 import 'voqal_image.dart';
 
 /// Requested color scheme for the assistant surface.
@@ -170,10 +171,25 @@ class VoqalConfig {
     this.actionButtonIcon,
     this.actionButtonDismissOnTap = true,
     this.forwardedHeaders,
-  });
+    this.bookingMode = VoqalBookingMode.server,
+    this.addFundsButtonTitle = defaultAddFundsButtonTitle,
+    this.dismissOnAddFunds = true,
+    this.hostActionTimeoutSeconds = defaultHostActionTimeoutSeconds,
+  }) : assert(
+         hostActionTimeoutSeconds > 0,
+         'VoqalConfig.hostActionTimeoutSeconds must be positive',
+       );
 
   /// Default environment-routing request id (production MCP).
   static const String defaultRequestId = 'prod-flutter';
+
+  /// Default Add-funds button title.
+  static const VoqalLocalizedText defaultAddFundsButtonTitle =
+      VoqalLocalizedText(en: 'Add funds', ar: 'إضافة رصيد');
+
+  /// Default wait for `Voqal.onBookingConfirmed` before the booking is reported
+  /// as failed. Generous because the user may top up their wallet meanwhile.
+  static const int defaultHostActionTimeoutSeconds = 300;
 
   /// Publishable tenant key (`pk_live_...`), sent as `X-Voqal-Key`.
   final String apiKey;
@@ -240,6 +256,23 @@ class VoqalConfig {
   /// namespaces its output, and pushes the result to the native layer separately.
   final Map<String, String> Function()? forwardedHeaders;
 
+  /// Who completes a confirmed booking. [VoqalBookingMode.server] (the default)
+  /// lets Voqal book it, showing an Add-funds card when the wallet is short.
+  /// [VoqalBookingMode.host] hands it to `Voqal.onBookingConfirmed`; with no
+  /// handler set, Voqal still books it server-side.
+  final VoqalBookingMode bookingMode;
+
+  /// Title of the Add-funds card's button, in English and Arabic.
+  final VoqalLocalizedText addFundsButtonTitle;
+
+  /// Whether the assistant closes before `Voqal.onAddFundsTapped` fires (default
+  /// true), so a wallet screen you open there stays in front.
+  final bool dismissOnAddFunds;
+
+  /// How long the SDK waits for `Voqal.onBookingConfirmed` before reporting the
+  /// booking as failed (`host_timeout`). Must be positive. Default 300.
+  final int hostActionTimeoutSeconds;
+
   /// Serializes to a primitives-only map for the method channel.
   ///
   /// Omits null fields so the native bridges fall back to their own defaults.
@@ -256,6 +289,11 @@ class VoqalConfig {
     'presentationStyle': presentationStyle.wireValue,
     if (headerTitle != null) 'headerTitle': headerTitle,
     if (actionButtonEnabled) 'actionButtonEnabled': true,
-    if (actionButtonEnabled) 'actionButtonDismissOnTap': actionButtonDismissOnTap,
+    if (actionButtonEnabled)
+      'actionButtonDismissOnTap': actionButtonDismissOnTap,
+    'bookingMode': bookingMode.wireValue,
+    'addFundsButtonTitle': addFundsButtonTitle.toMap(),
+    'dismissOnAddFunds': dismissOnAddFunds,
+    'hostActionTimeoutSeconds': hostActionTimeoutSeconds,
   };
 }

@@ -1,8 +1,12 @@
+import 'src/voqal_booking.dart';
 import 'src/voqal_config.dart';
+import 'src/voqal_flutter_version.dart';
 import 'src/voqal_image.dart';
 import 'voqal_flutter_platform_interface.dart';
 
+export 'src/voqal_booking.dart';
 export 'src/voqal_config.dart';
+export 'src/voqal_flutter_version.dart';
 export 'src/voqal_forwarded_headers.dart';
 export 'src/voqal_image.dart';
 
@@ -38,7 +42,8 @@ class Voqal {
     // Wire the live forwarded-header provider before the platform's setup runs, so
     // the setup call can capture and push the host's current headers immediately.
     _platform.forwardedHeaders = config.forwardedHeaders;
-    final Map<String, Object?> map = config.toMap();
+    final Map<String, Object?> map = config.toMap()
+      ..['wrapperVersion'] = voqalFlutterVersion;
     final VoqalImage? icon = config.headerIcon;
     if (icon != null) {
       map['headerIconPngBase64'] = await icon.resolveBase64();
@@ -65,6 +70,41 @@ class Voqal {
 
   /// The current action-button tap handler, if any.
   void Function()? get onActionButtonTapped => _platform.onActionButtonTapped;
+
+  /// Books a confirmed booking in your app (2.2.0). Called when the user taps
+  /// Confirm on a booking card and [VoqalConfig.bookingMode] is
+  /// [VoqalBookingMode.host].
+  ///
+  /// Book it with your own API and return the outcome; Voqal reports it to the
+  /// assistant so the conversation continues with it in context. Return null to
+  /// let Voqal book it server-side instead (also what happens when this is
+  /// unset). A thrown error, or no answer within
+  /// [VoqalConfig.hostActionTimeoutSeconds], is reported as a failed booking.
+  ///
+  /// Stored process-globally like [onActionButtonTapped]; clear it in
+  /// `dispose()` if the closure captures widget state.
+  set onBookingConfirmed(
+    Future<VoqalBookingResult?> Function(VoqalBookingDetails details)? handler,
+  ) => _platform.onBookingConfirmed = handler;
+
+  /// The current booking handler, if any.
+  Future<VoqalBookingResult?> Function(VoqalBookingDetails details)?
+  get onBookingConfirmed => _platform.onBookingConfirmed;
+
+  /// Called when the user taps the Add-funds card's button, shown when a
+  /// booking needs more wallet balance. Open your wallet / top-up screen here.
+  /// [amount] and [currency] are the shortfall, when known. With
+  /// [VoqalConfig.dismissOnAddFunds] (the default) the assistant has already
+  /// closed, so a screen you push stays in front.
+  ///
+  /// Stored process-globally like [onActionButtonTapped].
+  set onAddFundsTapped(
+    void Function(double? amount, String? currency)? handler,
+  ) => _platform.onAddFundsTapped = handler;
+
+  /// The current Add-funds tap handler, if any.
+  void Function(double? amount, String? currency)? get onAddFundsTapped =>
+      _platform.onAddFundsTapped;
 
   /// Pushes the live auth [token] (and optional [metadataJson], a JSON string
   /// such as `{"country_code":"EGY","user_id":"123"}`) into the native cache.
