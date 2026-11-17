@@ -133,14 +133,15 @@ class _RabbitHomeState extends State<RabbitHome> {
   }
 
   /// Stands in for the host's own booking API: a real app calls its backend
-  /// with the ids and local times in [details], then reports the outcome.
+  /// with the ids and local times in [details] (and [VoqalBookingDetails.confirmId]
+  /// as the idempotency key), then reports the outcome. Required in host mode.
   Future<VoqalBookingResult?> _bookWithStubBackend(
     VoqalBookingDetails details,
   ) async {
     await Future<void>.delayed(const Duration(milliseconds: 600));
     debugPrint(
       'Stub host booked space ${details.spaceId} on ${details.date} '
-      '${details.start}-${details.end}',
+      '${details.start}-${details.end} (confirm ${details.confirmId})',
     );
     return const VoqalBookingResult(
       status: VoqalBookingStatus.success,
