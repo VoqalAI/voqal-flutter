@@ -90,3 +90,39 @@ final class PendingBookingRepliesTests: XCTestCase {
     XCTAssertTrue(pending.isEmpty)
   }
 }
+
+/// What the plugin forwards to Dart's `Voqal.onError`.
+final class ErrorReportTests: XCTestCase {
+
+  private struct SampleError: Error {}
+
+  // VoqalOutcomeReportError has no public initializer, so the payload builder it
+  // maps through is tested directly.
+  func testOutcomeReportPayloadCarriesStatusCodeAndConfirmId() {
+    let arguments = ErrorReport.outcomeReportArguments(
+      outcomeStatus: "success", code: "confirm_not_found", confirmId: "c-1")
+
+    XCTAssertEqual(arguments["type"] as? String, "outcome_report")
+    XCTAssertEqual(arguments["outcomeStatus"] as? String, "success")
+    XCTAssertEqual(arguments["code"] as? String, "confirm_not_found")
+    XCTAssertEqual(arguments["confirmId"] as? String, "c-1")
+  }
+
+  func testOutcomeReportPayloadSendsNullForAMissingConfirmId() {
+    let arguments = ErrorReport.outcomeReportArguments(
+      outcomeStatus: "unknown", code: "transport", confirmId: nil)
+
+    XCTAssertTrue(arguments["confirmId"] is NSNull)
+  }
+
+  func testOtherErrorSendsOnlyTheTypeName() throws {
+    let arguments = try XCTUnwrap(ErrorReport.arguments(for: SampleError()))
+
+    XCTAssertEqual(arguments.count, 2)
+    XCTAssertEqual(arguments["detail"] as? String, "SampleError")
+  }
+
+  func testBridgeBookingErrorIsNotForwarded() {
+    XCTAssertNil(ErrorReport.arguments(for: BookingReply.Failure.hostError(code: "host_error")))
+  }
+}

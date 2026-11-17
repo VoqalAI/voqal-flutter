@@ -245,6 +245,29 @@ voqal.onAddFundsTapped = (double? amount, String? currency) {
   widget state.
 * Set `onAddFundsTapped` whenever you can get a server-mode booking. Without it,
   the Add-funds button closes the assistant and nothing else happens.
+* **Reconcile with `onError`.** Your app can book successfully and Voqal can
+  still fail to record it, for example on a network drop or an expired card.
+  The assistant then doesn't know about the booking, so check yours by its
+  confirm id:
+
+  ```dart
+  voqal.onError = (VoqalError e) {
+    switch (e.type) {
+      case VoqalErrorType.outcomeReport:
+        // e.outcomeStatus = what you returned (success | failed | unknown),
+        // e.code = why it wasn't recorded (transport, confirm_not_found, ...),
+        // e.confirmId = the card. Look up your booking by it.
+        myBookings.reconcile(confirmId: e.confirmId, reported: e.outcomeStatus);
+      case VoqalErrorType.bookingHandler:
+        // onBookingConfirmed threw (also reported to FlutterError.onError).
+        log('booking handler failed: ${e.detail} for ${e.confirmId}');
+      case VoqalErrorType.sdk:
+        log('voqal error: ${e.detail}');
+    }
+  };
+  ```
+
+  Errors carry codes, ids and type names only, never user data.
 * **Tell Voqal before you ship host mode.** We enable it for your assistant. Until
   then Voqal rejects the outcome your app reports, so the user would see an error
   even though your app made the booking.

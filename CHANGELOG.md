@@ -21,6 +21,11 @@ be completed by your app, and a short wallet gets an Add-funds button.
   `VoqalConfig.addFundsButtonTitle` (English + Arabic). Tapping it calls
   **`Voqal.onAddFundsTapped(amount, currency)`**. With `dismissOnAddFunds` (default
   true) the assistant closes first, so the screen you open stays in front.
+* **`Voqal.onError`.** A Dart error callback carrying a `VoqalError`:
+  `outcomeReport` when your booking result couldn't be recorded by Voqal (with
+  `outcomeStatus`, `code` and `confirmId`, so you can reconcile), `bookingHandler`
+  when `onBookingConfirmed` threw, and `sdk` for other SDK errors (type name
+  only). Errors carry no user data.
 * **SDK version reporting.** Every request now carries `X-Voqal-SDK-Version`
   (`flutter-2.2.0/ios-2.2.0` or `flutter-2.2.0/android-2.2.0`), `X-Voqal-Platform:
   flutter` and `X-Voqal-App-Version`, so Voqal can see which build each app runs.

@@ -267,6 +267,10 @@ public class VoqalFlutterPlugin: NSObject, FlutterPlugin {
       #if DEBUG
         NSLog("[VoqalFlutter] error: \(error)")
       #endif
+      guard let arguments = ErrorReport.arguments(for: error) else { return }
+      DispatchQueue.main.async {
+        VoqalFlutterPlugin.channel?.invokeMethod("onError", arguments: arguments)
+      }
     }
     func voqalDidTapActionButton() {
       // Forward to Dart so the Flutter app can navigate (Navigator.push).

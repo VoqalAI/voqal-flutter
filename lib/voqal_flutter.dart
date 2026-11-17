@@ -1,11 +1,13 @@
 import 'src/voqal_booking.dart';
 import 'src/voqal_config.dart';
+import 'src/voqal_error.dart';
 import 'src/voqal_flutter_version.dart';
 import 'src/voqal_image.dart';
 import 'voqal_flutter_platform_interface.dart';
 
 export 'src/voqal_booking.dart';
 export 'src/voqal_config.dart';
+export 'src/voqal_error.dart';
 export 'src/voqal_flutter_version.dart';
 export 'src/voqal_forwarded_headers.dart';
 export 'src/voqal_image.dart';
@@ -110,6 +112,24 @@ class Voqal {
   /// The current Add-funds tap handler, if any.
   void Function(double? amount, String? currency)? get onAddFundsTapped =>
       _platform.onAddFundsTapped;
+
+  /// Called when the SDK reports an error (2.2.0). See [VoqalErrorType]:
+  ///
+  /// * [VoqalErrorType.outcomeReport]: your booking result could not be
+  ///   reported to Voqal (e.g. the request failed, or the card expired). Your
+  ///   booking may exist while the assistant doesn't know it, so reconcile it
+  ///   by [VoqalError.confirmId] (the same id as [VoqalBookingDetails.confirmId]).
+  /// * [VoqalErrorType.bookingHandler]: your [onBookingConfirmed] threw.
+  /// * [VoqalErrorType.sdk]: any other SDK error, by type name only.
+  ///
+  /// Errors carry codes and ids only, never user data. Stored process-globally
+  /// like [onActionButtonTapped]; a throwing handler is reported to
+  /// `FlutterError.onError` and otherwise ignored.
+  set onError(void Function(VoqalError error)? handler) =>
+      _platform.onError = handler;
+
+  /// The current error handler, if any.
+  void Function(VoqalError error)? get onError => _platform.onError;
 
   /// Pushes the live auth [token] (and optional [metadataJson], a JSON string
   /// such as `{"country_code":"EGY","user_id":"123"}`) into the native cache.

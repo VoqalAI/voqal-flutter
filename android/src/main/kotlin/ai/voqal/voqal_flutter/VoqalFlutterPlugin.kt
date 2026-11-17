@@ -71,6 +71,8 @@ class VoqalFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
         override fun onError(error: Throwable) {
             // Log the Throwable only — never the token or metadata.
             Log.e("VoqalFlutter", "Voqal error", error)
+            val arguments = ErrorReport.arguments(error) ?: return
+            mainHandler.post { channel.invokeMethod("onError", arguments) }
         }
 
         override fun onActionButtonTapped() {

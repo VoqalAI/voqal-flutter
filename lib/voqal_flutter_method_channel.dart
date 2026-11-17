@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart'
 import 'package:flutter/services.dart';
 
 import 'src/voqal_booking.dart';
+import 'src/voqal_error.dart';
 import 'src/voqal_forwarded_headers.dart';
 import 'voqal_flutter_platform_interface.dart';
 
@@ -47,6 +48,10 @@ class MethodChannelVoqalFlutter extends VoqalFlutterPlatform {
       case 'onAddFundsTapped':
         _tapAddFunds(call.arguments);
         return null;
+      case 'onError':
+        final Object? arguments = call.arguments;
+        if (arguments is Map) _emitError(VoqalError.fromMap(arguments));
+        return null;
     }
     return null;
   }
@@ -62,13 +67,13 @@ class MethodChannelVoqalFlutter extends VoqalFlutterPlatform {
     final Future<VoqalBookingResult?> Function(VoqalBookingDetails)? handler =
         onBookingConfirmed;
     if (handler == null) return null;
-    final Map<Object?, Object?> details = arguments is Map
-        ? arguments.cast<Object?, Object?>()
-        : const <Object?, Object?>{};
+    final VoqalBookingDetails details = VoqalBookingDetails.fromMap(
+      arguments is Map
+          ? arguments.cast<Object?, Object?>()
+          : const <Object?, Object?>{},
+    );
     try {
-      final VoqalBookingResult? result = await handler(
-        VoqalBookingDetails.fromMap(details),
-      );
+      final VoqalBookingResult? result = await handler(details);
       return result?.toMap();
     } catch (error, stack) {
       FlutterError.reportError(
@@ -79,9 +84,37 @@ class MethodChannelVoqalFlutter extends VoqalFlutterPlatform {
           context: ErrorDescription('while running Voqal.onBookingConfirmed'),
         ),
       );
+      _emitError(
+        VoqalError(
+          type: VoqalErrorType.bookingHandler,
+          code: hostErrorCode,
+          confirmId: details.confirmId,
+          detail: '${error.runtimeType}',
+        ),
+      );
       throw PlatformException(
         code: hostErrorCode,
         message: '${error.runtimeType}',
+      );
+    }
+  }
+
+  /// Delivers [error] to the host's [onError]. A throwing handler is reported
+  /// to [FlutterError] rather than propagated, so it can never break the
+  /// native call that triggered it.
+  void _emitError(VoqalError error) {
+    final void Function(VoqalError)? handler = onError;
+    if (handler == null) return;
+    try {
+      handler(error);
+    } catch (handlerError, stack) {
+      FlutterError.reportError(
+        FlutterErrorDetails(
+          exception: handlerError,
+          stack: stack,
+          library: 'voqal_flutter',
+          context: ErrorDescription('while running Voqal.onError'),
+        ),
       );
     }
   }

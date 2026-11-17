@@ -1,6 +1,7 @@
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 import 'src/voqal_booking.dart';
+import 'src/voqal_error.dart';
 import 'voqal_flutter_method_channel.dart';
 
 /// The interface every `voqal_flutter` platform implementation conforms to.
@@ -48,6 +49,10 @@ abstract class VoqalFlutterPlatform extends PlatformInterface {
   /// Invoked when the user taps the Add-funds card's button, with the shortfall
   /// when known. Stored process-globally like [onActionButtonTapped].
   void Function(double? amount, String? currency)? onAddFundsTapped;
+
+  /// Invoked for SDK errors, failed outcome reports, and booking-handler throws.
+  /// Stored process-globally like [onActionButtonTapped].
+  void Function(VoqalError error)? onError;
 
   /// Configures the SDK once at launch. [config] is a primitives-only map.
   Future<void> setup(Map<String, Object?> config) {
