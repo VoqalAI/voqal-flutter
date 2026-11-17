@@ -84,6 +84,9 @@ class _RabbitHomeState extends State<RabbitHome> {
       );
     };
     _voqal.onBookingConfirmed = _bookWithStubBackend;
+    // A real app reconciles an outcomeReport error against its own booking by
+    // confirmId; the example just logs every error (codes and ids only).
+    _voqal.onError = (VoqalError error) => debugPrint('Voqal error: $error');
     _voqal.onAddFundsTapped = (double? amount, String? currency) {
       if (!mounted) return;
       Navigator.of(context).push(
@@ -155,6 +158,7 @@ class _RabbitHomeState extends State<RabbitHome> {
     _voqal.onActionButtonTapped = null;
     _voqal.onBookingConfirmed = null;
     _voqal.onAddFundsTapped = null;
+    _voqal.onError = null;
     super.dispose();
   }
 
