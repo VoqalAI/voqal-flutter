@@ -309,7 +309,8 @@ enum BookingReply {
   }
 
   /// nil (Dart had no handler or declined) or `FlutterMethodNotImplemented` (an
-  /// older Dart side) both mean "book it server-side".
+  /// older Dart side) both mean "no result"; the SDK reports that as a failed
+  /// booking (`host_no_result`) in host mode.
   static func result(from reply: Any?) throws -> VoqalBookingResult? {
     guard let reply, !(reply is NSNull) else { return nil }
     if (reply as AnyObject) === FlutterMethodNotImplemented { return nil }

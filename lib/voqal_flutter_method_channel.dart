@@ -52,7 +52,8 @@ class MethodChannelVoqalFlutter extends VoqalFlutterPlatform {
   }
 
   /// Runs the host's booking handler and returns its result as a map, or null
-  /// (book server-side) when no handler is set or it declines.
+  /// when no handler is set or it declines; native reports null as a failed
+  /// booking (`host_no_result`).
   ///
   /// A throwing handler is reported in Dart with its full stack, then surfaces
   /// to native as [hostErrorCode] carrying only the error's type, so nothing the

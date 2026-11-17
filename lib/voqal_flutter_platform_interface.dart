@@ -40,8 +40,8 @@ abstract class VoqalFlutterPlatform extends PlatformInterface {
   Map<String, String> Function()? forwardedHeaders;
 
   /// Books a confirmed booking in the host app when the config's `bookingMode` is
-  /// `host`. Returning null (or leaving this unset) lets Voqal book it
-  /// server-side. Stored process-globally like [onActionButtonTapped].
+  /// `host`. Required in that mode: returning null (or leaving this unset) is
+  /// reported by native as a failed booking (`host_no_result`). Stored process-globally like [onActionButtonTapped].
   Future<VoqalBookingResult?> Function(VoqalBookingDetails details)?
   onBookingConfirmed;
 

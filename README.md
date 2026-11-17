@@ -175,9 +175,10 @@ choose who completes it with `bookingMode`:
 * **`VoqalBookingMode.server`** (default): Voqal books it, as in 2.1.0. If the
   user's wallet is short, Voqal shows an **Add funds** card instead. Its button
   calls `onAddFundsTapped` so you can open your wallet screen.
-* **`VoqalBookingMode.host`**: Voqal hands the booking to `onBookingConfirmed`.
-  You book it with your own API and return the outcome. Voqal reports it to the
-  assistant, so the conversation continues with it ("you're booked, ref 8812").
+* **`VoqalBookingMode.host`**: Voqal hands the booking to `onBookingConfirmed`,
+  which you **must** set in this mode. You book it with your own API and return
+  the outcome. Voqal reports it to the assistant, so the conversation continues
+  with it ("you're booked, ref 8812"). Voqal never books it for you in this mode.
 
 ```dart
 final voqal = Voqal();
@@ -195,7 +196,10 @@ voqal.onBookingConfirmed = (VoqalBookingDetails booking) async {
   // booking.providerId / spaceId / areaId, booking.date ("2026-11-17"),
   // booking.start / end ("21:00", venue-local wall-clock), booking.durationMinutes,
   // booking.price / deposit / currency (nullable). booking.fields has the raw map.
+  // booking.confirmId is unique per card and single-use: pass it as your
+  // idempotency key so a retry never books twice.
   final response = await myApi.createBooking(
+    idempotencyKey: booking.confirmId,
     providerId: booking.providerId!,
     spaceId: booking.spaceId!,
     date: booking.date!,
@@ -222,12 +226,14 @@ voqal.onAddFundsTapped = (double? amount, String? currency) {
 };
 ```
 
-* Return **`null`** from `onBookingConfirmed` to let Voqal book that one
-  server-side. Leaving the handler unset does the same.
-* A handler that **throws**, or doesn't answer within `hostActionTimeoutSeconds`,
-  is reported as a failed booking (`host_error` / `host_timeout`), and the
-  assistant tells the user it didn't go through. The thrown error is reported to
-  `FlutterError.onError` with its stack. Only its type crosses to native.
+* In host mode, returning **`null`** or leaving the handler unset is reported as
+  a failed booking (`host_no_result`). That is a bug in the app, not a fallback.
+* A handler that **throws** is reported as failed (`host_error`). The thrown
+  error goes to `FlutterError.onError` with its stack; only its type crosses to
+  native.
+* A handler that doesn't answer within `hostActionTimeoutSeconds` is reported
+  as **unknown** (`host_timeout`), because the booking may still have gone
+  through. The assistant asks the user to check their bookings.
 * Both handlers are process-global. Clear them in `dispose()` if they capture
   widget state.
 * Set the booking options once at launch. A conversation already open keeps the

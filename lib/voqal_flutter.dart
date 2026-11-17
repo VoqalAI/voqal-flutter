@@ -71,15 +71,17 @@ class Voqal {
   /// The current action-button tap handler, if any.
   void Function()? get onActionButtonTapped => _platform.onActionButtonTapped;
 
-  /// Books a confirmed booking in your app (2.2.0). Called when the user taps
-  /// Confirm on a booking card and [VoqalConfig.bookingMode] is
-  /// [VoqalBookingMode.host].
+  /// Books a confirmed booking in your app (2.2.0). **Required** when
+  /// [VoqalConfig.bookingMode] is [VoqalBookingMode.host]: called when the user
+  /// taps Confirm on a booking card.
   ///
   /// Book it with your own API and return the outcome; Voqal reports it to the
-  /// assistant so the conversation continues with it in context. Return null to
-  /// let Voqal book it server-side instead (also what happens when this is
-  /// unset). A thrown error, or no answer within
-  /// [VoqalConfig.hostActionTimeoutSeconds], is reported as a failed booking.
+  /// assistant so the conversation continues with it in context. In host mode
+  /// Voqal never books it for you: returning null, or leaving this unset, is
+  /// reported as a failed booking (`host_no_result`). A thrown error is reported
+  /// as failed (`host_error`); no answer within
+  /// [VoqalConfig.hostActionTimeoutSeconds] is reported as unknown
+  /// (`host_timeout`), and the assistant asks the user to check their bookings.
   ///
   /// Stored process-globally like [onActionButtonTapped]; clear it in
   /// `dispose()` if the closure captures widget state.

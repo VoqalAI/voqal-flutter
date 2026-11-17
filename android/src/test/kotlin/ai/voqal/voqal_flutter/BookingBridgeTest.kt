@@ -43,7 +43,7 @@ internal class BookingBridgeTest {
     }
 
     @Test
-    fun resultFrom_null_returnsNullSoTheSdkBooksServerSide() {
+    fun resultFrom_null_returnsNullForTheSdkToReportNoResult() {
         assertNull(BookingBridge.resultFrom(null))
     }
 

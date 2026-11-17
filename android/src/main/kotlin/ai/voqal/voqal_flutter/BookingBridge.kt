@@ -49,8 +49,8 @@ internal object BookingBridge {
         mapOf("amount" to amount, "currency" to currency)
 
     /**
-     * Decodes Dart's reply to `onBookingConfirmed`. Null means Dart had no handler or declined,
-     * so the SDK books server-side.
+     * Decodes Dart's reply to `onBookingConfirmed`. Null means Dart had no handler or declined;
+     * the SDK reports that as a failed booking (`host_no_result`).
      *
      * @throws HostBookingException when the reply isn't a result map with a known status.
      */
@@ -93,7 +93,7 @@ internal class BookingReplyCallback(
     }
 
     override fun notImplemented() {
-        // An older Dart side with no booking handler: book server-side.
+        // An older Dart side with no booking handler: no result (the SDK reports host_no_result).
         if (continuation.isActive) continuation.resume(null)
     }
 }

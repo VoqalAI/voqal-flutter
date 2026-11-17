@@ -10,8 +10,9 @@ enum VoqalBookingMode {
   /// the SDK shows an Add-funds card instead. This is the default.
   server,
 
-  /// Your app books it in `Voqal.onBookingConfirmed`, and Voqal reports the
-  /// result to the assistant so the conversation continues with it.
+  /// Your app books it in `Voqal.onBookingConfirmed` (required in this mode),
+  /// and Voqal reports the result to the assistant so the conversation
+  /// continues with it. Voqal never books it server-side in this mode.
   host;
 
   /// The wire value the native bridges expect (`server` | `host`).
@@ -45,6 +46,7 @@ class VoqalLocalizedText {
 class VoqalBookingDetails {
   /// Creates booking details. Prefer [VoqalBookingDetails.fromMap].
   const VoqalBookingDetails({
+    this.confirmId,
     this.action,
     this.venue,
     this.court,
@@ -69,6 +71,7 @@ class VoqalBookingDetails {
         if (entry.key is String) entry.key! as String: entry.value,
     };
     return VoqalBookingDetails(
+      confirmId: _readString(fields['confirm_id']),
       action: _readString(fields['action']),
       venue: _readString(fields['venue']),
       court: _readString(fields['court']),
@@ -85,6 +88,12 @@ class VoqalBookingDetails {
       fields: Map<String, Object?>.unmodifiable(fields),
     );
   }
+
+  /// The id of the confirm card the user tapped. Unique per card and
+  /// single-use, so it works as an idempotency key for your booking API (a
+  /// retried call with the same id should not book twice). Voqal echoes it
+  /// with your result automatically.
+  final String? confirmId;
 
   /// The tool the card confirms, e.g. `create_booking`.
   final String? action;

@@ -187,8 +187,8 @@ class VoqalConfig {
   static const VoqalLocalizedText defaultAddFundsButtonTitle =
       VoqalLocalizedText(en: 'Add funds', ar: 'إضافة رصيد');
 
-  /// Default wait for `Voqal.onBookingConfirmed` before the booking is reported
-  /// as failed. Generous because the user may top up their wallet meanwhile.
+  /// Default wait for `Voqal.onBookingConfirmed` before the booking's outcome
+  /// is reported as unknown. Generous because the user may top up their wallet meanwhile.
   static const int defaultHostActionTimeoutSeconds = 300;
 
   /// Publishable tenant key (`pk_live_...`), sent as `X-Voqal-Key`.
@@ -258,8 +258,9 @@ class VoqalConfig {
 
   /// Who completes a confirmed booking. [VoqalBookingMode.server] (the default)
   /// lets Voqal book it, showing an Add-funds card when the wallet is short.
-  /// [VoqalBookingMode.host] hands it to `Voqal.onBookingConfirmed`; with no
-  /// handler set, Voqal still books it server-side.
+  /// [VoqalBookingMode.host] hands it to `Voqal.onBookingConfirmed`, which you
+  /// must then set: in host mode Voqal never books it, so a missing handler is
+  /// reported as a failed booking.
   final VoqalBookingMode bookingMode;
 
   /// Title of the Add-funds card's button, in English and Arabic.
@@ -270,7 +271,7 @@ class VoqalConfig {
   final bool dismissOnAddFunds;
 
   /// How long the SDK waits for `Voqal.onBookingConfirmed` before reporting the
-  /// booking as failed (`host_timeout`). Must be positive. Default 300.
+  /// booking's outcome as unknown (`host_timeout`). Must be positive. Default 300.
   final int hostActionTimeoutSeconds;
 
   /// Serializes to a primitives-only map for the method channel.

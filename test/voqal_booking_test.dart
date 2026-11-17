@@ -25,6 +25,7 @@ Future<Object?> _callFromNative(String method, [Object? arguments]) async {
 /// The details map as the iOS bridge sends it: every JSON number is a double.
 const Map<String, Object?> _iosDetails = <String, Object?>{
   'action': 'create_booking',
+  'confirm_id': '3f2b8c1e-5d4a-4e6b-9c7d-1a2b3c4d5e6f',
   'venue': 'Zamalek',
   'court': 'Court B',
   'provider_id': 206.0,
@@ -139,6 +140,14 @@ void main() {
       );
     });
 
+    test('reads the confirm id the engine binds the outcome to', () {
+      final VoqalBookingDetails details = VoqalBookingDetails.fromMap(
+        _iosDetails,
+      );
+
+      expect(details.confirmId, '3f2b8c1e-5d4a-4e6b-9c7d-1a2b3c4d5e6f');
+    });
+
     test('accepts numeric strings and rejects fractional ids', () {
       final VoqalBookingDetails details = VoqalBookingDetails.fromMap(
         <Object?, Object?>{'provider_id': '206', 'space_id': 13.5},
@@ -182,7 +191,7 @@ void main() {
   group('native onBookingConfirmed', () {
     tearDown(() => voqal.onBookingConfirmed = null);
 
-    test('with no handler replies null so Voqal books server-side', () async {
+    test('with no handler replies null (native reports host_no_result)', () async {
       final Object? reply = await _callFromNative(
         'onBookingConfirmed',
         _iosDetails,
