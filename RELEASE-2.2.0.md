@@ -12,7 +12,7 @@ native SDKs ship first; this plugin is tagged last.
    lists `mavenLocal()` first (pre-existing), so verify against the published
    artifact with `~/.m2/repository/ai/voqal/voqal-sdk/2.2.0` moved aside.
 2. **iOS native published, then re-vendored.** `ios/Frameworks/VoqalSDK.xcframework`
-   on this branch is a **DEV build** from VoqalAI/iOS-SDK `release/2.2.0` @ `00d9b03`.
+   on this branch is a **DEV build** from VoqalAI/iOS-SDK `release/2.2.0` @ `3821c7f`.
    Replace it with the contents of the published `VoqalSDK-2.2.0.zip` from
    `s3://voqal-sdk-releases-eu/` (the same zip `VoqalAI/voqal-ios` 2.2.0 points at),
    then confirm `shasum -a 256` on that zip equals the `Package.swift` checksum. If
@@ -22,6 +22,11 @@ native SDKs ship first; this plugin is tagged last.
    `./gradlew :voqal_flutter:testDebugUnitTest` (from `example/android`, JDK 17).
    Keep the 3.35.7-resolved `example/pubspec.lock`.
 4. Commit, then `git tag 2.2.0` (bare, no `v`) and push the branch and tag. Merge to `main`.
+
+## Native heads this branch was verified against
+iOS `release/2.2.0` @ `3821c7f` (booking callbacks on `VoqalBookingHandler` /
+`VoqalAddFundsHandler`, which the plugin's Coordinator adopts) and Android
+`release/2.2.0` @ `9a08eef`. If either moves before publishing, re-run step 3.
 
 ## Versions already bumped
 `pubspec.yaml` 2.2.0, `lib/src/voqal_flutter_version.dart` 2.2.0 (a test asserts they

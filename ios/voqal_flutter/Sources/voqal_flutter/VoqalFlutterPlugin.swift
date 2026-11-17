@@ -245,7 +245,7 @@ public class VoqalFlutterPlugin: NSObject, FlutterPlugin {
 
   /// Serves the pushed credentials synchronously and resolves the on-screen
   /// view controller. Logs errors only — never the token.
-  final class Coordinator: NSObject, VocalButtonDelegate {
+  final class Coordinator: NSObject, VocalButtonDelegate, VoqalBookingHandler, VoqalAddFundsHandler {
     func getToken() -> String { VoqalFlutterPlugin.currentToken() }
     func getMetaData() -> String? { VoqalFlutterPlugin.currentMetadata() }
     func getViewController() -> UIViewController {
@@ -268,37 +268,42 @@ public class VoqalFlutterPlugin: NSObject, FlutterPlugin {
     }
 
     /// Hands the booking to Dart's `Voqal.onBookingConfirmed` and awaits its reply.
-    /// The SDK bounds the wait (`hostActionTimeoutSeconds`), so this never times out itself.
-    func voqalDidConfirmBooking(_ details: VoqalBookingDetails) async throws -> VoqalBookingResult? {
+    /// The SDK bounds the wait (`hostActionTimeoutSeconds`) and cancels this task on
+    /// timeout; a reply that arrives later is ignored by the SDK. No Dart handler
+    /// (or a null reply) is a failed booking, the same outcome Android reports.
+    @MainActor
+    func voqalDidConfirmBooking(_ details: VoqalBookingDetails) async throws -> VoqalBookingResult {
       let arguments = details.dictionary
       let reply: Any? = await withCheckedContinuation { continuation in
-        DispatchQueue.main.async {
-          guard let channel = VoqalFlutterPlugin.channel else {
-            continuation.resume(returning: nil)
-            return
-          }
-          channel.invokeMethod("onBookingConfirmed", arguments: arguments) { reply in
-            continuation.resume(returning: reply)
-          }
+        guard let channel = VoqalFlutterPlugin.channel else {
+          continuation.resume(returning: nil)
+          return
+        }
+        channel.invokeMethod("onBookingConfirmed", arguments: arguments) { reply in
+          continuation.resume(returning: reply)
         }
       }
       return try BookingReply.result(from: reply)
+        ?? VoqalBookingResult(status: .failed, code: BookingReply.noResultCode)
     }
 
+    @MainActor
     func voqalDidTapAddFunds(amount: Double?, currency: String?) {
       let arguments: [String: Any] = [
         "amount": amount.map { $0 as Any } ?? NSNull(),
         "currency": currency.map { $0 as Any } ?? NSNull(),
       ]
-      DispatchQueue.main.async {
-        VoqalFlutterPlugin.channel?.invokeMethod("onAddFundsTapped", arguments: arguments)
-      }
+      VoqalFlutterPlugin.channel?.invokeMethod("onAddFundsTapped", arguments: arguments)
     }
   }
 }
 
 /// Decodes Dart's reply to `onBookingConfirmed` into the SDK's result type.
 enum BookingReply {
+  /// Outcome code when Dart has no booking handler or it returned null. Matches
+  /// the code the native SDKs use for a missing host result.
+  static let noResultCode = "host_no_result"
+
   /// Why a reply could not become a booking result. The SDK reports any of these
   /// to the engine as a failed booking (`host_error`).
   enum Failure: Error, Equatable {

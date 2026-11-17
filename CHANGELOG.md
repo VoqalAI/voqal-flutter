@@ -12,8 +12,10 @@ be completed by your app, and a short wallet gets an Add-funds button.
   with the outcome. The handler is **required** in host mode, and Voqal never books
   it for you: `null` or no handler is reported as failed (`host_no_result`), a throw
   as failed (`host_error`), and a timeout (`hostActionTimeoutSeconds`, default 300)
-  as unknown (`host_timeout`). `VoqalBookingDetails.confirmId` identifies the card
-  (single-use); use it as your booking API's idempotency key.
+  as unknown (`host_timeout`), and the assistant asks the user to check their
+  bookings. Voqal stops waiting after the timeout and ignores a late result.
+  `VoqalBookingDetails.confirmId` identifies the card (single-use); use it as your
+  booking API's idempotency key so a retry never books twice.
 * **Add-funds card.** When Voqal books a booking server-side and the wallet is short,
   the assistant shows the amount due and a button titled by
   `VoqalConfig.addFundsButtonTitle` (English + Arabic). Tapping it calls

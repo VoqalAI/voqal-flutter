@@ -82,6 +82,9 @@ class Voqal {
   /// as failed (`host_error`); no answer within
   /// [VoqalConfig.hostActionTimeoutSeconds] is reported as unknown
   /// (`host_timeout`), and the assistant asks the user to check their bookings.
+  /// Voqal stops waiting at that point, but a Dart `Future` keeps running and its
+  /// late result is ignored: send [VoqalBookingDetails.confirmId] as your booking
+  /// API's idempotency key so a retry never books twice.
   ///
   /// Stored process-globally like [onActionButtonTapped]; clear it in
   /// `dispose()` if the closure captures widget state.

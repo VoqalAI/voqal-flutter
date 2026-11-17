@@ -234,10 +234,14 @@ voqal.onAddFundsTapped = (double? amount, String? currency) {
 * A handler that doesn't answer within `hostActionTimeoutSeconds` is reported
   as **unknown** (`host_timeout`), because the booking may still have gone
   through. The assistant asks the user to check their bookings.
+* **Expect to be abandoned.** After the timeout, Voqal stops waiting. A Dart
+  `Future` can't be cancelled, so your handler keeps running, and its result is
+  ignored when it arrives. Keep bookings safe to retry by sending `confirmId`
+  as your idempotency key, and don't open UI from a result that arrives late.
 * Both handlers are process-global. Clear them in `dispose()` if they capture
   widget state.
-* Set the booking options once at launch. A conversation already open keeps the
-  mode it started with.
+* Set `onAddFundsTapped` whenever you can get a server-mode booking. Without it,
+  the Add-funds button closes the assistant and nothing else happens.
 * **Tell Voqal before you ship host mode.** We enable it for your assistant. Until
   then Voqal rejects the outcome your app reports, so the user would see an error
   even though your app made the booking.
