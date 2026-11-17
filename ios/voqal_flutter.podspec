@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'voqal_flutter'
-  s.version          = '0.0.1'
+  s.version          = '2.2.0'
   s.summary          = 'Voqal — voice-first assistant SDK for Flutter.'
   s.description      = <<-DESC
 Thin Flutter bridge over the native VoqalSDK. The SDK presents its own full-screen

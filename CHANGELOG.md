@@ -1,3 +1,30 @@
+## 2.2.0
+
+Bundles native **iOS 2.2.0** + **Android 2.2.0**. Booking confirmations can now
+be completed by your app, and a short wallet gets an Add-funds button.
+
+* **`VoqalConfig.bookingMode`**: `server` (default, unchanged from 2.1.0) or
+  `host`. In host mode, tapping **Confirm** on a booking card calls
+  **`Voqal.onBookingConfirmed`** with a `VoqalBookingDetails` (venue, court,
+  provider/space/area ids, venue-local date and times, duration, price/deposit/currency).
+  Your handler books it and returns a `VoqalBookingResult` (success/failed, message,
+  code, reference). Voqal reports it to the assistant, so the conversation continues
+  with the outcome. Return `null` (or leave the handler unset) to let Voqal book it.
+  A throw or a timeout (`hostActionTimeoutSeconds`, default 300) is reported as a
+  failed booking.
+* **Add-funds card.** When Voqal books a booking server-side and the wallet is short,
+  the assistant shows the amount due and a button titled by
+  `VoqalConfig.addFundsButtonTitle` (English + Arabic). Tapping it calls
+  **`Voqal.onAddFundsTapped(amount, currency)`**. With `dismissOnAddFunds` (default
+  true) the assistant closes first, so the screen you open stays in front.
+* **SDK version reporting.** Every request now carries `X-Voqal-SDK-Version`
+  (`flutter-2.2.0/ios-2.2.0` or `flutter-2.2.0/android-2.2.0`), `X-Voqal-Platform:
+  flutter` and `X-Voqal-App-Version`, so Voqal can see which build each app runs.
+* **Opt-in and drop-in.** With no booking options set, 2.2.0 behaves exactly like
+  2.1.0 (every 2.1.0 widget, including the tappable `action_list`, is carried over).
+* Android plugin: fixes a unit test that failed since 1.5.0 (the plugin could not be
+  constructed off-device).
+
 ## 2.1.0
 
 Bundles native **iOS 2.1.0** + **Android 2.1.0** — the tappable `action_list` widget.

@@ -15,7 +15,7 @@ dependencies:
   voqal_flutter:
     git:
       url: https://github.com/VoqalAI/voqal-flutter.git
-      ref: 2.1.0
+      ref: 2.2.0
 ```
 
 ### iOS
@@ -166,6 +166,75 @@ Reserved Voqal control headers (`X-Token`, `X-Voqal-Key`, `X-Request-Id`,
 can never override the SDK's own headers — while `Authorization` **is** forwarded.
 At most 32 headers are sent. Omit `forwardedHeaders` (the default) and nothing
 changes: no header is forwarded and no extra work is done.
+
+### Booking confirmations: book in your app, or top up a wallet (v2.2.0)
+
+When the assistant offers a booking, the user taps **Confirm** on its card. You
+choose who completes it with `bookingMode`:
+
+* **`VoqalBookingMode.server`** (default): Voqal books it, as in 2.1.0. If the
+  user's wallet is short, Voqal shows an **Add funds** card instead. Its button
+  calls `onAddFundsTapped` so you can open your wallet screen.
+* **`VoqalBookingMode.host`**: Voqal hands the booking to `onBookingConfirmed`.
+  You book it with your own API and return the outcome. Voqal reports it to the
+  assistant, so the conversation continues with it ("you're booked, ref 8812").
+
+```dart
+final voqal = Voqal();
+
+await voqal.setup(const VoqalConfig(
+  apiKey: 'pk_live_…',
+  bookingMode: VoqalBookingMode.host, // or .server (default)
+  addFundsButtonTitle: VoqalLocalizedText(en: 'Add funds', ar: 'إضافة رصيد'),
+  dismissOnAddFunds: true,            // close the assistant before the callback
+  hostActionTimeoutSeconds: 300,      // then report the booking as failed
+));
+
+// Host mode: book it yourself and report the outcome.
+voqal.onBookingConfirmed = (VoqalBookingDetails booking) async {
+  // booking.providerId / spaceId / areaId, booking.date ("2026-11-17"),
+  // booking.start / end ("21:00", venue-local wall-clock), booking.durationMinutes,
+  // booking.price / deposit / currency (nullable). booking.fields has the raw map.
+  final response = await myApi.createBooking(
+    providerId: booking.providerId!,
+    spaceId: booking.spaceId!,
+    date: booking.date!,
+    start: booking.start!,
+    end: booking.end!,
+  );
+  if (response.ok) {
+    return VoqalBookingResult(
+      status: VoqalBookingStatus.success,
+      message: response.messageEn,      // English or Arabic, whichever you have
+      reference: '${response.bookingId}',
+    );
+  }
+  return VoqalBookingResult(
+    status: VoqalBookingStatus.failed,
+    code: response.errorCode,           // e.g. DEPOSIT_REQUIRED
+    message: response.messageEn,
+  );
+};
+
+// Both modes: the Add-funds card's button. The assistant has already closed.
+voqal.onAddFundsTapped = (double? amount, String? currency) {
+  navigatorKey.currentState?.pushNamed('/wallet', arguments: amount);
+};
+```
+
+* Return **`null`** from `onBookingConfirmed` to let Voqal book that one
+  server-side. Leaving the handler unset does the same.
+* A handler that **throws**, or doesn't answer within `hostActionTimeoutSeconds`,
+  is reported as a failed booking (`host_error` / `host_timeout`), and the
+  assistant tells the user it didn't go through. The thrown error is reported to
+  `FlutterError.onError` with its stack. Only its type crosses to native.
+* Both handlers are process-global. Clear them in `dispose()` if they capture
+  widget state.
+* Set the booking options once at launch. A conversation already open keeps the
+  mode it started with.
+* **Tell Voqal before you ship host mode.** We enable it for your assistant. Until
+  then Voqal rejects the outcome your app reports, so the user would see an error
+  even though your app made the booking.
 
 ## Security
 
