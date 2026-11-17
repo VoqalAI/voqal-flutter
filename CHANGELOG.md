@@ -20,8 +20,15 @@ be completed by your app, and a short wallet gets an Add-funds button.
 * **SDK version reporting.** Every request now carries `X-Voqal-SDK-Version`
   (`flutter-2.2.0/ios-2.2.0` or `flutter-2.2.0/android-2.2.0`), `X-Voqal-Platform:
   flutter` and `X-Voqal-App-Version`, so Voqal can see which build each app runs.
-* **Opt-in and drop-in.** With no booking options set, 2.2.0 behaves exactly like
-  2.1.0 (every 2.1.0 widget, including the tappable `action_list`, is carried over).
+* **Behaviour change: forwarded headers now arrive under their own name.** Since
+  2.0.0 the plugin prefixed `forwardedHeaders` with `X-Voqal-Forward-` and the native
+  SDK prefixed them again, so your backend received `X-Voqal-Forward-<name>` instead of
+  the documented `<name>`. 2.2.0 prefixes once: an `X-Tenant-Id` you return now reaches
+  your backend as `X-Tenant-Id`. **If your backend compensated for the bug by reading
+  `X-Voqal-Forward-<name>`, switch it to `<name>` when you upgrade.**
+  `VoqalForwardedHeaders.filtered()` is new; `namespaced()` still returns the wire form.
+* **Opt-in and drop-in.** Apart from the forwarded-header fix above, with no booking
+  options set 2.2.0 behaves exactly like 2.1.0 (every 2.1.0 widget, including the tappable `action_list`, is carried over).
 * Android plugin: fixes a unit test that failed since 1.5.0 (the plugin could not be
   constructed off-device).
 

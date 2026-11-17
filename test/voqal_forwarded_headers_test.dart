@@ -2,6 +2,37 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:voqal_flutter/voqal_flutter.dart';
 
 void main() {
+  test('filtered keeps the original names without a prefix', () {
+    final Map<String, String> result = VoqalForwardedHeaders.filtered(
+      <String, String>{'X-Tenant-Id': 't_42', 'Authorization': 'Bearer xyz'},
+    );
+
+    expect(result, <String, String>{
+      'Authorization': 'Bearer xyz',
+      'X-Tenant-Id': 't_42',
+    });
+  });
+
+  test('filtered drops reserved control headers and empty names', () {
+    final Map<String, String> result = VoqalForwardedHeaders.filtered(
+      <String, String>{'x-voqal-key': 'leak', '': 'x', 'X-Safe': 'keep'},
+    );
+
+    expect(result, <String, String>{'X-Safe': 'keep'});
+  });
+
+  test('filtered caps the set at maxCount', () {
+    final Map<String, String> many = <String, String>{
+      for (int i = 0; i < VoqalForwardedHeaders.maxCount + 5; i++)
+        'X-H-${i.toString().padLeft(2, '0')}': '$i',
+    };
+
+    expect(
+      VoqalForwardedHeaders.filtered(many).length,
+      VoqalForwardedHeaders.maxCount,
+    );
+  });
+
   test('namespaced prefixes each header with X-Voqal-Forward-', () {
     final Map<String, String> result = VoqalForwardedHeaders.namespaced(
       <String, String>{'X-Tenant-Id': 't_42'},

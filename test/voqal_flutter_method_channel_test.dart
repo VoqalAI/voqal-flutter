@@ -73,7 +73,7 @@ void main() {
     );
   });
 
-  test('prewarm pushes namespaced forwarded headers before warming', () async {
+  test('prewarm pushes the raw forwarded headers before warming', () async {
     platform.forwardedHeaders = () => <String, String>{
       'Authorization': 'Bearer xyz',
       'X-Tenant-Id': 't_42',
@@ -86,13 +86,15 @@ void main() {
       'setForwardedHeaders',
       'prewarm',
     ]);
+    // Un-prefixed: the native SDK adds `X-Voqal-Forward-` exactly once, so the
+    // wire name is `X-Voqal-Forward-<name>` and the backend receives `<name>`.
     expect(argsOf(callNamed('setForwardedHeaders'))['headers'], <String, String>{
-      'X-Voqal-Forward-Authorization': 'Bearer xyz',
-      'X-Voqal-Forward-X-Tenant-Id': 't_42',
+      'Authorization': 'Bearer xyz',
+      'X-Tenant-Id': 't_42',
     });
   });
 
-  test('present pushes namespaced forwarded headers before presenting', () async {
+  test('present pushes forwarded headers before presenting', () async {
     platform.forwardedHeaders = () => <String, String>{'X-A': '1'};
 
     await platform.present();
@@ -117,6 +119,19 @@ void main() {
     ]);
   });
 
+  test('pushed headers are never pre-prefixed, so native prefixes once', () async {
+    platform.forwardedHeaders = () => <String, String>{
+      'X-Demo-Tenant': 'rabbit',
+      'X-Token': 'dropped',
+    };
+
+    await platform.prewarm();
+
+    final Map<Object?, Object?> pushed =
+        argsOf(callNamed('setForwardedHeaders'))['headers']! as Map<Object?, Object?>;
+    expect(pushed, <String, String>{'X-Demo-Tenant': 'rabbit'});
+  });
+
   test('the provider is read live on each turn-serving call', () async {
     int calls = 0;
     platform.forwardedHeaders = () {
@@ -135,8 +150,8 @@ void main() {
           .map((MethodCall c) => argsOf(c)['headers'])
           .toList(),
       <Map<String, String>>[
-        <String, String>{'X-Voqal-Forward-X-Seq': '1'},
-        <String, String>{'X-Voqal-Forward-X-Seq': '2'},
+        <String, String>{'X-Seq': '1'},
+        <String, String>{'X-Seq': '2'},
       ],
     );
   });

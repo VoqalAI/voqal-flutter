@@ -34,7 +34,7 @@ abstract class VoqalFlutterPlatform extends PlatformInterface {
 
   /// Provider of the host's developer headers to forward to its own backend,
   /// wired from [VoqalConfig.forwardedHeaders] at [setup]. Read live before each
-  /// turn-serving native call, its output namespaced and pushed down. Null (the
+  /// turn-serving native call, its output filtered and pushed down. Null (the
   /// default) forwards nothing, so existing integrations are unaffected. Stored
   /// process-globally like [onActionButtonTapped].
   Map<String, String> Function()? forwardedHeaders;
@@ -60,10 +60,10 @@ abstract class VoqalFlutterPlatform extends PlatformInterface {
     throw UnimplementedError('setCredentials() has not been implemented.');
   }
 
-  /// Pushes the already-namespaced forwarded [headers] into the native cache. The
-  /// native delegate serves them synchronously on every turn-serving request, so
-  /// the wrapper never issues them itself. Keys are the full `X-Voqal-Forward-*`
-  /// wire names produced by [VoqalForwardedHeaders.namespaced].
+  /// Pushes the filtered forwarded [headers] into the native cache. The native
+  /// delegate serves them on every turn-serving request and the native SDK adds
+  /// the `X-Voqal-Forward-` prefix once. Keys are the developer's own names, as
+  /// produced by [VoqalForwardedHeaders.filtered].
   Future<void> setForwardedHeaders(Map<String, String> headers) {
     throw UnimplementedError('setForwardedHeaders() has not been implemented.');
   }

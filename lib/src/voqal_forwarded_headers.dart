@@ -37,30 +37,41 @@ abstract final class VoqalForwardedHeaders {
     'accept',
   };
 
-  /// The namespaced headers to send: empty names and control-header collisions
-  /// removed, sorted by original name, capped at [maxCount], each prefixed with
-  /// [prefix]. Sorting makes the forwarded set deterministic so the cap drops a
-  /// stable subset.
+  /// The developer headers to forward: empty names and control-header
+  /// collisions removed, sorted by name, capped at [maxCount], names unchanged.
+  /// Sorting makes the set deterministic so the cap drops a stable subset.
   ///
-  /// Returns an empty map when [developerHeaders] is null or yields nothing to
-  /// send, so a host that never opts in stays byte-identical to the pre-2.0 SDK.
-  static Map<String, String> namespaced(Map<String, String>? developerHeaders) {
+  /// This is what the plugin pushes to the native SDK, which adds [prefix]
+  /// exactly once on the wire. Returns an empty map for null or empty input.
+  static Map<String, String> filtered(Map<String, String>? developerHeaders) {
     if (developerHeaders == null || developerHeaders.isEmpty) {
       return const <String, String>{};
     }
-
     final List<MapEntry<String, String>> retained =
         developerHeaders.entries
-            .where((MapEntry<String, String> header) =>
-                header.key.isNotEmpty &&
-                !_reservedControlHeaders.contains(header.key.toLowerCase()))
+            .where(
+              (MapEntry<String, String> header) =>
+                  header.key.isNotEmpty &&
+                  !_reservedControlHeaders.contains(header.key.toLowerCase()),
+            )
             .toList()
-          ..sort((MapEntry<String, String> a, MapEntry<String, String> b) =>
-              a.key.compareTo(b.key));
-
+          ..sort(
+            (MapEntry<String, String> a, MapEntry<String, String> b) =>
+                a.key.compareTo(b.key),
+          );
     return <String, String>{
       for (final MapEntry<String, String> header in retained.take(maxCount))
-        '$prefix${header.key}': header.value,
+        header.key: header.value,
     };
   }
+
+  /// The wire form of [filtered]: each name prefixed with [prefix], exactly as
+  /// the native SDK sends it. Informational only; the plugin pushes [filtered]
+  /// so the prefix is never applied twice.
+  static Map<String, String> namespaced(Map<String, String>? developerHeaders) =>
+      <String, String>{
+        for (final MapEntry<String, String> header
+            in filtered(developerHeaders).entries)
+          '$prefix${header.key}': header.value,
+      };
 }

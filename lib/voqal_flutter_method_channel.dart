@@ -137,8 +137,9 @@ class MethodChannelVoqalFlutter extends VoqalFlutterPlatform {
     await methodChannel.invokeMethod<void>('present');
   }
 
-  /// Reads the live [forwardedHeaders] provider, namespaces its output, and pushes
-  /// the result to native so the next turn carries the current set. It runs before
+  /// Reads the live [forwardedHeaders] provider, filters its output (names
+  /// unchanged; native adds the `X-Voqal-Forward-` prefix once), and pushes the
+  /// result to native so the next turn carries the current set. It runs before
   /// warming (`prewarm`/`present`) and after each `setup`/`setCredentials`, so a
   /// rotating header is captured at every touchpoint that precedes a turn.
   ///
@@ -147,6 +148,6 @@ class MethodChannelVoqalFlutter extends VoqalFlutterPlatform {
   Future<void> _syncForwardedHeaders() {
     final Map<String, String> Function()? provider = forwardedHeaders;
     if (provider == null) return Future<void>.value();
-    return setForwardedHeaders(VoqalForwardedHeaders.namespaced(provider()));
+    return setForwardedHeaders(VoqalForwardedHeaders.filtered(provider()));
   }
 }

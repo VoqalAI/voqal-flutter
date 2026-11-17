@@ -32,8 +32,9 @@ public class VoqalFlutterPlugin: NSObject, FlutterPlugin {
   private static var cachedToken = ""
   private static var cachedMetadata: String?
 
-  /// Latest forwarded headers pushed from Dart, already namespaced as
-  /// `X-Voqal-Forward-<name>`. In-memory only, guarded like the credential cache.
+  /// Latest forwarded headers pushed from Dart, under the developer's own names;
+  /// the native SDK adds `X-Voqal-Forward-` once on the wire. In-memory only,
+  /// guarded like the credential cache.
   /// The `Coordinator.voqalForwardedHeaders()` delegate hook (VoqalSDK 2.0.0) serves
   /// these to the native SDK per request (see the cross-platform PROTOCOL.md).
   private static var cachedForwardedHeaders: [String: String] = [:]
