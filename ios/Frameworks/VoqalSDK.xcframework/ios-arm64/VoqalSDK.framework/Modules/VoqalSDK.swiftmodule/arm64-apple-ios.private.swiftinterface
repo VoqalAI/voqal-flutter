@@ -760,6 +760,7 @@ public struct VoqalBookingDetails : Swift.Equatable {
   public let price: Swift.Double?
   public let deposit: Swift.Double?
   public let currency: Swift.String?
+  public let confirmId: Swift.String?
   public let raw: [Swift.String : VoqalSDK.JSONValue]
   public init(raw: [Swift.String : VoqalSDK.JSONValue])
   public var dictionary: [Swift.String : Any] {

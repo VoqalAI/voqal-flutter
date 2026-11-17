@@ -12,7 +12,7 @@ native SDKs ship first; this plugin is tagged last.
    lists `mavenLocal()` first (pre-existing), so verify against the published
    artifact with `~/.m2/repository/ai/voqal/voqal-sdk/2.2.0` moved aside.
 2. **iOS native published, then re-vendored.** `ios/Frameworks/VoqalSDK.xcframework`
-   on this branch is a **DEV build** from VoqalAI/iOS-SDK `release/2.2.0` @ `7399c69`.
+   on this branch is a **DEV build** from VoqalAI/iOS-SDK `release/2.2.0` @ `00d9b03`.
    Replace it with the contents of the published `VoqalSDK-2.2.0.zip` from
    `s3://voqal-sdk-releases-eu/` (the same zip `VoqalAI/voqal-ios` 2.2.0 points at),
    then confirm `shasum -a 256` on that zip equals the `Package.swift` checksum. If
