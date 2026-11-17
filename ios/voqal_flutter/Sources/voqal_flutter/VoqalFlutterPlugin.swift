@@ -70,6 +70,14 @@ public class VoqalFlutterPlugin: NSObject, FlutterPlugin {
     return cachedMetadata
   }
 
+  /// Booking calls waiting for Dart; ended on engine detach so none hangs forever.
+  @MainActor static let pendingBookingReplies = PendingBookingReplies()
+
+  /// Dart can't reply once the engine is gone: end the pending booking waits.
+  public func detachFromEngine(for registrar: FlutterPluginRegistrar) {
+    Task { @MainActor in VoqalFlutterPlugin.pendingBookingReplies.failAll() }
+  }
+
   /// Retained delegate — prewarm's background work needs it alive.
   private static let coordinator = Coordinator()
 
@@ -274,14 +282,12 @@ public class VoqalFlutterPlugin: NSObject, FlutterPlugin {
     @MainActor
     func voqalDidConfirmBooking(_ details: VoqalBookingDetails) async throws -> VoqalBookingResult {
       let arguments = details.dictionary
-      let reply: Any? = await withCheckedContinuation { continuation in
+      let reply: Any? = await VoqalFlutterPlugin.pendingBookingReplies.wait { respond in
         guard let channel = VoqalFlutterPlugin.channel else {
-          continuation.resume(returning: nil)
+          respond(nil)
           return
         }
-        channel.invokeMethod("onBookingConfirmed", arguments: arguments) { reply in
-          continuation.resume(returning: reply)
-        }
+        channel.invokeMethod("onBookingConfirmed", arguments: arguments, result: respond)
       }
       return try BookingReply.result(from: reply)
         ?? VoqalBookingResult(status: .failed, code: BookingReply.noResultCode)

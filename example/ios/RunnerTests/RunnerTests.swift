@@ -1,29 +1,92 @@
 import Flutter
 import UIKit
+import VoqalSDK
 import XCTest
-
-// If your plugin has been explicitly set to "type: .dynamic" in the Package.swift,
-// you will need to add your plugin as a dependency of RunnerTests within Xcode.
 
 @testable import voqal_flutter
 
-// This demonstrates a simple unit test of the Swift portion of this plugin's implementation.
-//
-// See https://developer.apple.com/documentation/xctest for more information about using XCTest.
+/// Decoding Dart's reply to `onBookingConfirmed` into the SDK's result type.
+final class BookingReplyTests: XCTestCase {
 
-class RunnerTests: XCTestCase {
-
-  func testGetPlatformVersion() {
-    let plugin = VoqalFlutterPlugin()
-
-    let call = FlutterMethodCall(methodName: "getPlatformVersion", arguments: [])
-
-    let resultExpectation = expectation(description: "result block must be called.")
-    plugin.handle(call) { result in
-      XCTAssertEqual(result as! String, "iOS " + UIDevice.current.systemVersion)
-      resultExpectation.fulfill()
-    }
-    waitForExpectations(timeout: 1)
+  func testNilReplyMeansNoResult() throws {
+    XCTAssertNil(try BookingReply.result(from: nil))
   }
 
+  func testNSNullReplyMeansNoResult() throws {
+    XCTAssertNil(try BookingReply.result(from: NSNull()))
+  }
+
+  func testNotImplementedReplyMeansNoResult() throws {
+    XCTAssertNil(try BookingReply.result(from: FlutterMethodNotImplemented))
+  }
+
+  func testSuccessMapBuildsTheResult() throws {
+    let reply: [String: Any] = ["status": "success", "message": "Booked!", "reference": "8812"]
+
+    let result = try BookingReply.result(from: reply)
+
+    XCTAssertEqual(result, VoqalBookingResult(status: .success, message: "Booked!", reference: "8812"))
+  }
+
+  func testFlutterErrorThrowsHostErrorWithDartsCode() {
+    let reply = FlutterError(code: "host_error", message: "StateError", details: nil)
+
+    XCTAssertThrowsError(try BookingReply.result(from: reply)) { error in
+      XCTAssertEqual(error as? BookingReply.Failure, .hostError(code: "host_error"))
+    }
+  }
+
+  func testUnknownStatusThrowsMalformedReply() {
+    XCTAssertThrowsError(try BookingReply.result(from: ["status": "ok"])) { error in
+      XCTAssertEqual(error as? BookingReply.Failure, .malformedReply)
+    }
+  }
+
+  func testNonMapReplyThrowsMalformedReply() {
+    XCTAssertThrowsError(try BookingReply.result(from: "success")) { error in
+      XCTAssertEqual(error as? BookingReply.Failure, .malformedReply)
+    }
+  }
+}
+
+/// Booking calls waiting for Dart must always end, even if the engine detaches.
+@MainActor
+final class PendingBookingRepliesTests: XCTestCase {
+
+  func testWaitReturnsDartsReply() async {
+    let pending = PendingBookingReplies()
+
+    let reply = await pending.wait { respond in respond(["status": "success"]) }
+
+    XCTAssertEqual((reply as? [String: Any])?["status"] as? String, "success")
+  }
+
+  func testFailAllEndsAWaitWithEngineDetached() async {
+    let pending = PendingBookingReplies()
+
+    let reply = await pending.wait { _ in pending.failAll() }
+
+    XCTAssertEqual((reply as? FlutterError)?.code, PendingBookingReplies.engineDetachedCode)
+  }
+
+  func testASettledWaitIsNoLongerTracked() async {
+    let pending = PendingBookingReplies()
+
+    _ = await pending.wait { respond in respond(nil) }
+
+    XCTAssertTrue(pending.isEmpty)
+  }
+
+  func testAReplyAfterFailAllIsIgnored() async {
+    let pending = PendingBookingReplies()
+    var lateRespond: ((Any?) -> Void)?
+
+    _ = await pending.wait { respond in
+      lateRespond = respond
+      pending.failAll()
+    }
+    lateRespond?(["status": "success"])
+
+    XCTAssertTrue(pending.isEmpty)
+  }
 }

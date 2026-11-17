@@ -5,7 +5,7 @@ PODS:
   - Sentry (8.58.3):
     - Sentry/Core (= 8.58.3)
   - Sentry/Core (8.58.3)
-  - voqal_flutter (0.0.1):
+  - voqal_flutter (2.2.0):
     - Flutter
     - Sentry (~> 8.0)
 
@@ -30,7 +30,7 @@ SPEC CHECKSUMS:
   Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
   integration_test: 4a889634ef21a45d28d50d622cf412dc6d9f586e
   Sentry: 108fdbb76299c4189af12246bf0308c09c278922
-  voqal_flutter: 3a359435d1f02713089316af673a0e0086839fbc
+  voqal_flutter: 64662ca3073f44d5cce363c5e1b4c1fb8e850550
 
 PODFILE CHECKSUM: 0f3738e3a1f9c88dffef5585fe9d23c498cf099f
 
