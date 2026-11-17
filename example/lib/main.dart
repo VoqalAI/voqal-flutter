@@ -35,9 +35,18 @@ class _RabbitHomeState extends State<RabbitHome> {
   final Voqal _voqal = Voqal();
   bool _ready = false;
   bool _fullScreen = false; // demo toggle: sheet (default) vs full app screen
+  bool _hostBooks = false; // demo toggle: the app books confirmed bookings (2.2.0)
 
   // LOCAL TEST: agentUrl points at the local engine instead of the baked prod URL.
   VoqalConfig _config(VoqalPresentationStyle style) => VoqalConfig(
+    // Booking confirmations (v2.2.0): `host` hands a confirmed booking to
+    // onBookingConfirmed (below); `server` (default) lets Voqal book it and
+    // shows an Add-funds card when the wallet is short.
+    bookingMode: _hostBooks ? VoqalBookingMode.host : VoqalBookingMode.server,
+    addFundsButtonTitle: const VoqalLocalizedText(
+      en: 'Top up wallet',
+      ar: 'اشحن المحفظة',
+    ),
     apiKey: demoApiKey,
     requestId: 'prod-rabbit-demo',
     agentUrl: demoAgentUrl,
@@ -72,6 +81,15 @@ class _RabbitHomeState extends State<RabbitHome> {
       if (!mounted) return;
       Navigator.of(context).push(
         MaterialPageRoute<void>(builder: (_) => const CheckoutPage()),
+      );
+    };
+    _voqal.onBookingConfirmed = _bookWithStubBackend;
+    _voqal.onAddFundsTapped = (double? amount, String? currency) {
+      if (!mounted) return;
+      Navigator.of(context).push(
+        MaterialPageRoute<void>(
+          builder: (_) => WalletPage(amount: amount, currency: currency),
+        ),
       );
     };
     try {
@@ -112,6 +130,31 @@ class _RabbitHomeState extends State<RabbitHome> {
       debugPrint('Voqal present error: $e');
       _toast('Could not open the assistant.');
     }
+  }
+
+  /// Stands in for the host's own booking API: a real app calls its backend
+  /// with the ids and local times in [details], then reports the outcome.
+  Future<VoqalBookingResult?> _bookWithStubBackend(
+    VoqalBookingDetails details,
+  ) async {
+    await Future<void>.delayed(const Duration(milliseconds: 600));
+    debugPrint(
+      'Stub host booked space ${details.spaceId} on ${details.date} '
+      '${details.start}-${details.end}',
+    );
+    return const VoqalBookingResult(
+      status: VoqalBookingStatus.success,
+      message: 'Booked! Ref #FL-8812',
+      reference: 'FL-8812',
+    );
+  }
+
+  @override
+  void dispose() {
+    _voqal.onActionButtonTapped = null;
+    _voqal.onBookingConfirmed = null;
+    _voqal.onAddFundsTapped = null;
+    super.dispose();
   }
 
   void _toast(String message) {
@@ -173,6 +216,23 @@ class _RabbitHomeState extends State<RabbitHome> {
                 contentPadding: EdgeInsets.zero,
               ),
             ),
+            SizedBox(
+              width: 260,
+              child: SwitchListTile(
+                value: _hostBooks,
+                onChanged: (bool v) => setState(() => _hostBooks = v),
+                title: const Text(
+                  'App books',
+                  style: TextStyle(color: Colors.white),
+                ),
+                subtitle: const Text(
+                  'off = Voqal books (default)',
+                  style: TextStyle(color: Colors.white38, fontSize: 12),
+                ),
+                activeThumbColor: const Color(0xFFC7ED4A),
+                contentPadding: EdgeInsets.zero,
+              ),
+            ),
           ],
         ),
       ),
@@ -198,6 +258,39 @@ class CheckoutPage extends StatelessWidget {
         child: Text(
           '🛍  Checkout Page',
           style: TextStyle(
+            color: Colors.white,
+            fontSize: 28,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// A stand-in wallet screen the example opens from the Add-funds card.
+class WalletPage extends StatelessWidget {
+  const WalletPage({super.key, this.amount, this.currency});
+
+  final double? amount;
+  final String? currency;
+
+  @override
+  Widget build(BuildContext context) {
+    final String shortfall = amount == null
+        ? 'Top up your wallet'
+        : 'Add ${amount!.toStringAsFixed(0)} ${currency ?? ''}'.trim();
+    return Scaffold(
+      backgroundColor: const Color(0xFF0B0B0D),
+      appBar: AppBar(
+        backgroundColor: const Color(0xFF0B0B0D),
+        foregroundColor: Colors.white,
+        title: const Text('Wallet'),
+      ),
+      body: Center(
+        child: Text(
+          shortfall,
+          style: const TextStyle(
             color: Colors.white,
             fontSize: 28,
             fontWeight: FontWeight.bold,

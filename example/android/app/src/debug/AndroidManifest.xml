@@ -4,4 +4,7 @@
          to allow setting breakpoints, to provide hot reload, etc.
     -->
     <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Debug builds only: lets the example reach a local http engine (e.g. a mock
+         on 127.0.0.1 via `adb reverse`). Release builds keep cleartext blocked. -->
+    <application android:usesCleartextTraffic="true"/>
 </manifest>
