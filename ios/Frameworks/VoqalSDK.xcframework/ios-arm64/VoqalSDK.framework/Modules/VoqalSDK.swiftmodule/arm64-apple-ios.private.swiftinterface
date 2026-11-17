@@ -83,10 +83,14 @@ public protocol VocalButtonDelegate : AnyObject {
   func voqalButton(didFailWith error: any Swift.Error)
   func voqalDidTapActionButton()
   func voqalForwardedHeaders() -> [Swift.String : Swift.String]
+  func voqalDidConfirmBooking(_ details: VoqalSDK.VoqalBookingDetails) async throws -> VoqalSDK.VoqalBookingResult?
+  func voqalDidTapAddFunds(amount: Swift.Double?, currency: Swift.String?)
 }
 extension VoqalSDK.VocalButtonDelegate {
   public func voqalDidTapActionButton()
   public func voqalForwardedHeaders() -> [Swift.String : Swift.String]
+  public func voqalDidConfirmBooking(_ details: VoqalSDK.VoqalBookingDetails) async throws -> VoqalSDK.VoqalBookingResult?
+  public func voqalDidTapAddFunds(amount: Swift.Double?, currency: Swift.String?)
 }
 public enum HTTPMethod : Swift.String {
   case get
@@ -159,6 +163,11 @@ public struct VoqalSDKConfiguration {
   public var hapticsEnabled: Swift.Bool
   public var observability: VoqalSDK.VoqalObservabilityOptions
   public var actionButton: VoqalSDK.VoqalActionButton?
+  public var wrapper: VoqalSDK.VoqalWrapper?
+  public var bookingMode: VoqalSDK.VoqalBookingMode
+  public var addFundsButtonTitle: VoqalSDK.VoqalLocalizedText
+  public var dismissOnAddFunds: Swift.Bool
+  public var hostActionTimeoutSeconds: Foundation.TimeInterval
 }
 public struct VoqalActionButton {
   public init(icon: UIKit.UIImage? = nil, dismissOnTap: Swift.Bool = true, accessibilityLabel: Swift.String = "Open")
@@ -276,12 +285,19 @@ public struct RenderSpec : Swift.Decodable, Swift.Equatable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct DoneSpec : Swift.Decodable, Swift.Equatable {
+  public static let insufficientFundsType: Swift.String
   public let type: Swift.String
   public let title: Swift.String
   public let line1: Swift.String?
   public let line2: Swift.String?
-  public static func == (a: VoqalSDK.DoneSpec, b: VoqalSDK.DoneSpec) -> Swift.Bool
+  public let amount: Swift.Double?
+  public let currency: Swift.String?
+  public init(type: Swift.String, title: Swift.String, line1: Swift.String?, line2: Swift.String?, amount: Swift.Double? = nil, currency: Swift.String? = nil)
   public init(from decoder: any Swift.Decoder) throws
+  public var isInsufficientFunds: Swift.Bool {
+    get
+  }
+  public static func == (a: VoqalSDK.DoneSpec, b: VoqalSDK.DoneSpec) -> Swift.Bool
 }
 public struct ExecuteResponse : Swift.Decodable, Swift.Equatable {
   public let done: VoqalSDK.DoneSpec
@@ -434,9 +450,11 @@ public struct Confirm : Swift.Codable, Swift.Equatable {
   public let cta: Swift.String?
   public let requiresBiometric: Swift.Bool?
   public let execute: VoqalSDK.ExecuteSpec
-  public static func == (a: VoqalSDK.Confirm, b: VoqalSDK.Confirm) -> Swift.Bool
-  public func encode(to encoder: any Swift.Encoder) throws
+  public let details: VoqalSDK.VoqalBookingDetails?
+  public init(title: Swift.String, rows: [[Swift.String]]?, price: Swift.String?, cta: Swift.String?, requiresBiometric: Swift.Bool?, execute: VoqalSDK.ExecuteSpec, details: VoqalSDK.VoqalBookingDetails? = nil)
   public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public static func == (a: VoqalSDK.Confirm, b: VoqalSDK.Confirm) -> Swift.Bool
 }
 public struct Ticket : Swift.Codable, Swift.Equatable {
   public let id: Swift.String
@@ -706,6 +724,66 @@ public enum VoqalObservability {
   public static func registerInstaller(_ installer: @escaping (VoqalSDK.VoqalObservabilityOptions) -> Swift.Void)
   public static func startIfConfigured(_ options: VoqalSDK.VoqalObservabilityOptions)
 }
+public struct VoqalWrapper : Swift.Equatable {
+  public let name: Swift.String
+  public let version: Swift.String
+  public init(name: Swift.String, version: Swift.String)
+  public static func == (a: VoqalSDK.VoqalWrapper, b: VoqalSDK.VoqalWrapper) -> Swift.Bool
+}
+public enum VoqalBookingMode : Swift.String, Swift.Equatable {
+  case server
+  case host
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct VoqalLocalizedText : Swift.Equatable {
+  public var en: Swift.String
+  public var ar: Swift.String
+  public init(en: Swift.String, ar: Swift.String)
+  public func resolved(rtl: Swift.Bool) -> Swift.String
+  public static func == (a: VoqalSDK.VoqalLocalizedText, b: VoqalSDK.VoqalLocalizedText) -> Swift.Bool
+}
+public struct VoqalBookingDetails : Swift.Equatable {
+  public let action: Swift.String?
+  public let venue: Swift.String?
+  public let court: Swift.String?
+  public let providerId: Swift.Int?
+  public let spaceId: Swift.Int?
+  public let areaId: Swift.Int?
+  public let date: Swift.String?
+  public let start: Swift.String?
+  public let end: Swift.String?
+  public let durationMinutes: Swift.Int?
+  public let price: Swift.Double?
+  public let deposit: Swift.Double?
+  public let currency: Swift.String?
+  public let raw: [Swift.String : VoqalSDK.JSONValue]
+  public init(raw: [Swift.String : VoqalSDK.JSONValue])
+  public var dictionary: [Swift.String : Any] {
+    get
+  }
+  public static func == (a: VoqalSDK.VoqalBookingDetails, b: VoqalSDK.VoqalBookingDetails) -> Swift.Bool
+}
+public enum VoqalBookingStatus : Swift.String, Swift.Equatable {
+  case success
+  case failed
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct VoqalBookingResult : Swift.Equatable {
+  public var status: VoqalSDK.VoqalBookingStatus
+  public var message: Swift.String?
+  public var code: Swift.String?
+  public var reference: Swift.String?
+  public init(status: VoqalSDK.VoqalBookingStatus, message: Swift.String? = nil, code: Swift.String? = nil, reference: Swift.String? = nil)
+  public static func == (a: VoqalSDK.VoqalBookingResult, b: VoqalSDK.VoqalBookingResult) -> Swift.Bool
+}
 extension VoqalSDK.RecordingError : Swift.Equatable {}
 extension VoqalSDK.RecordingError : Swift.Hashable {}
 extension VoqalSDK.HTTPMethod : Swift.Equatable {}
@@ -723,3 +801,7 @@ extension VoqalSDK.VoqalSpanStatus : Swift.RawRepresentable {}
 extension VoqalSDK.VoqalTracePhase : Swift.Equatable {}
 extension VoqalSDK.VoqalTracePhase : Swift.Hashable {}
 extension VoqalSDK.VoqalTracePhase : Swift.RawRepresentable {}
+extension VoqalSDK.VoqalBookingMode : Swift.Hashable {}
+extension VoqalSDK.VoqalBookingMode : Swift.RawRepresentable {}
+extension VoqalSDK.VoqalBookingStatus : Swift.Hashable {}
+extension VoqalSDK.VoqalBookingStatus : Swift.RawRepresentable {}
