@@ -7,7 +7,7 @@ native SDKs ship first; this plugin is tagged last.
 - iOS: VoqalAI/iOS-SDK `release/2.2.0` @ `2250c57`. The booking callbacks are on
   `VoqalBookingHandler` / `VoqalAddFundsHandler`, which the plugin's Coordinator
   adopts. Failed outcome reports arrive at `didFailWith` as `VoqalOutcomeReportError`.
-- Android: VoqalAI/voqal-android `release/2.2.0` @ `b2935a2`. It includes ef725cf,
+- Android: VoqalAI/voqal-android `release/2.2.0` @ `fa71b8e`. It includes ef725cf,
   where failed outcome reports reach `onError` as `VoqalOutcomeReportError`.
 
 If either native branch moves before it is published, redo steps 1 to 3 against the
